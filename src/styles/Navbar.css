@@ -1,0 +1,24 @@
+.navbar {
+  background: green;
+  height: 60px;
+}
+
+.navbar a {
+  color: whitesmoke;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 3;
+  
+}
+
+ /* Adding a new button color */
+#create {
+  border-color: purple;
+  background-color: purple;
+}
+
+ /* Adding a box shadow */
+#shadow {
+  box-shadow: 0 2px 4px gray;
+}
