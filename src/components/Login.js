@@ -1,11 +1,12 @@
 import React from "react";
+import '../components/login.css';
 
 import { AuthConsumer } from "../authContext";
 
 const Login = () => (
   <AuthConsumer>
     {({ initiateLogin }) => (
-      <button className="btn btn-sm btn-primary" onClick={initiateLogin}>
+      <button id="loginBtn" className="btn btn-sm btn-primary" onClick={initiateLogin}>
         Login
       </button>
     )}
