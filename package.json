@@ -3,24 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/auth0-js": "^8.11.11",
-    "auth0-js": "^9.10.0",
-    "braces": "^2.3.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "auth0-js": "^9.7.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.8",
-    "typescript": "^3.3.3333"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",

@@ -47,17 +47,17 @@ class Auth extends Component {
     });
   };
 
-  setSession = (data) => {
+  setSession(data) {
     const user = {
       id: data.sub,
       email: data.email,
       role: data[AUTH_CONFIG.roleUrl]
     };
-    this.setState  ({
+    this.setState({
       authenticated: true,
       accessToken: data.accessToken,
       user
-    }) ;
+    });
   }
 
   render() {

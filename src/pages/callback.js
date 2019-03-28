@@ -9,7 +9,7 @@ const Callback = props => (
       if (/access_token|id_token|error/.test(props.location.hash)) {
         handleAuthentication();
       }
-      return <Redirect to="/home"/>;
+      return <Redirect to="/"/>;
     }}
   </AuthConsumer>
 );
