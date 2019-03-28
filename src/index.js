@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App container">
       <Auth>
-        <div className="jumbotron">
+        <div className="routeHolder">
           <Router>
             <Switch>
               <Route exact path="/" component={HomePage}/>
