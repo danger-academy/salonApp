@@ -6,6 +6,7 @@ import Can from "../components/Can";
 import Logout from "../components/Logout";
 import Profile from "../components/Profile";
 import PostsList from "../components/PostsList";
+import Section from "../components/Section"
 
 const DashboardPage = () => (
   <AuthConsumer>
@@ -19,7 +20,9 @@ const DashboardPage = () => (
             <Logout />
             <Profile />
             <PostsList />
+            <Section />
           </div>
+          
         )}
         no={() => <Redirect to="/" />}
       />
