@@ -6,6 +6,7 @@ import Can from "../components/Can";
 import Logout from "../components/Logout";
 import Profile from "../components/Profile";
 import PostsList from "../components/PostsList";
+import Scheduler from "../components/Schedule/Schedule";
 
 const DashboardPage = () => (
   <AuthConsumer>
@@ -15,10 +16,11 @@ const DashboardPage = () => (
         perform="dashboard-page:visit"
         yes={() => (
           <div>
-            <h1>Dashboard</h1>
-            <Logout />
+            <h1>Dashboard</h1>            
             <Profile />
             <PostsList />
+            <Scheduler />
+            <Logout />
           </div>
         )}
         no={() => <Redirect to="/" />}
