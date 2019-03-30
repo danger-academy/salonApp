@@ -1,4 +1,6 @@
 #loginBtn {
+    color: white;
+    font-size: 20px;
     padding: 6%;
-    margin: 0% 37% 0% 37%;
+    /* margin-left: 33%; */
 }

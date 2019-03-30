@@ -6,7 +6,7 @@ const Profile = () => (
   <AuthConsumer>
     {({user}) => (
       <div>
-        <h2>User Profile</h2>
+        <h2>Profile</h2>
         <ul>
           <li>ID: {user.id}</li>
           <li>Email: {user.email}</li>

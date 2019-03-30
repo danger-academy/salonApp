@@ -5,10 +5,7 @@ import { AuthConsumer } from "../authContext";
 import Login from "../components/Login";
 import '../pages/home.css';
 // import PostsList from "../components/PostsList";
-let animateTop = '';
-
-setTimeout(() =>  console.log(animateTop = 'w3-animate-top'), 5000);
-// const animate = () => animateTop = 'w3-animate-top';
+// let animateTop = '';
 
 
 const HomePage = () => (
@@ -19,8 +16,7 @@ const HomePage = () => (
       ) : (
         <div id="container">
           <h2 id="greeting" className="w3-animate-zoom">Hello</h2>
-          
-          <p className={animateTop} >Enter here</p>
+          <p id="welcome" className="w3-animate-zoom">...Welcome Back ...</p>
           <Login />
           {/* <PostsList /> */}
         </div>
@@ -28,5 +24,8 @@ const HomePage = () => (
     }
   </AuthConsumer>
 );
+
+// setTimeout(() => (document.getElementById(welcome).visibility = "visible"), 5000);
+// const animate = () => animateTop = 'w3-animate-top';
 
 export default HomePage;
