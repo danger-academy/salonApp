@@ -3,7 +3,7 @@
     color: white;
     background-color: #DC8B55;
     font-size: 600%;
-    margin-top: 45%;
+    margin-top: 20%;
 }
 
 #welcome {
@@ -12,6 +12,10 @@
     font-size: 35px;
 }
 
-#container { 
-    background-color: #DC8B55;
+body { 
+    background-color: #DC8B55 !important;
+}
+
+#photocontainer {
+    padding-top: 24px;
 }
