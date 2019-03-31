@@ -1,9 +1,9 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-
 import { AuthConsumer } from "../authContext";
 import Login from "../components/Login";
 import '../pages/home.css';
+import Photo from "../components/photo";
 // import PostsList from "../components/PostsList";
 // let animateTop = '';
 
@@ -14,13 +14,18 @@ const HomePage = () => (
       authenticated ? (
         <Redirect to="/dashboard" />
       ) : (
-        <div id="container">
-          <h2 id="greeting" className="w3-animate-zoom">Hello</h2>
-          <p id="welcome" className="w3-animate-zoom">...Welcome Back ...</p>
-          <Login />
-          {/* <PostsList /> */}
-        </div>
-      )
+          <span className="background">
+            <div>
+              <h2 id="greeting" className="w3-animate-zoom">Hello</h2>
+              <p id="welcome" className="w3-animate-zoom">...Welcome Back ...</p>
+              <Login />
+              {/* <PostsList /> */}
+            </div>
+            <div id="photocontainer">
+              <Photo />
+            </div>
+          </span>
+        )
     }
   </AuthConsumer>
 );
