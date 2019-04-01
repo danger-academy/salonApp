@@ -1,7 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 import { AuthConsumer } from "../authContext";
-import Login from "../components/Login";
 import '../pages/home.css';
 import Photo from "../components/photo";
 import PageHeader from '../components/Header/Header';
@@ -22,15 +21,11 @@ const HomePage = () => (
             </div>
             <div id="photocontainer">
               <Photo />
-              <Login />
             </div>
           </span>
         )
     }
   </AuthConsumer>
 );
-
-// setTimeout(() => (document.getElementById(welcome).visibility = "visible"), 5000);
-// const animate = () => animateTop = 'w3-animate-top';
 
 export default HomePage;

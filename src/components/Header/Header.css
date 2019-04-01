@@ -1,5 +1,14 @@
+#dropdown {
+    float: right;
+}
+
 #welcome {
     font-family: 'Great Vibes', cursive;
     color: #606054;
     font-size: 35px;
+}
+
+#menu {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
 }
