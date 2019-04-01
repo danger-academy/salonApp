@@ -4,6 +4,7 @@ import { AuthConsumer } from "../authContext";
 import Login from "../components/Login";
 import '../pages/home.css';
 import Photo from "../components/photo";
+import PageHeader from '../components/Header/Header';
 // import PostsList from "../components/PostsList";
 // let animateTop = '';
 
@@ -13,16 +14,15 @@ const HomePage = () => (
     {({ authenticated }) =>
       authenticated ? (
         <Redirect to="/dashboard" />
-      ) : (
+      ) : (          
           <span className="background">
+            <PageHeader />
             <div>
-              <h2 id="greeting" className="w3-animate-zoom">Hello</h2>
-              <p id="welcome" className="w3-animate-zoom">...Welcome Back ...</p>
-              <Login />
               {/* <PostsList /> */}
             </div>
             <div id="photocontainer">
               <Photo />
+              <Login />
             </div>
           </span>
         )
