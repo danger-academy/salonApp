@@ -1,6 +1,6 @@
 #loginBtn {
-    color: white;
+    margin: auto;
+    color: #606054;
     font-size: 20px;
-    padding: 6%;
-    /* margin-left: 33%; */
+    font-family: 'Great Vibes', cursive;
 }

@@ -1,19 +1,5 @@
-#greeting {
-    font-family: 'Great Vibes', cursive;
-    color: white;
-    background-color: #DC8B55;
-    font-size: 600%;
-    margin-top: 20%;
-}
-
-#welcome {
-    font-family: 'Great Vibes', cursive;
-    color: white;
-    font-size: 35px;
-}
-
 body { 
-    background-color: #DC8B55 !important;
+    background-color: #DEDBD2 !important;
 }
 
 #photocontainer {
