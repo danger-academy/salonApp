@@ -28,7 +28,7 @@ const Pageheader = () => (
     </a>
   </Dropdown>
   </div>
-  <p id="welcome">...Ashley Love's Designs...</p>
+  <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
   </header>
 
 )
