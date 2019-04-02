@@ -4,8 +4,7 @@ import { AuthConsumer } from "../authContext";
 import '../pages/home.css';
 import Photo from "../components/photo";
 import PageHeader from '../components/Header/Header';
-// import PostsList from "../components/PostsList";
-// let animateTop = '';
+
 
 
 const HomePage = () => (
@@ -16,9 +15,6 @@ const HomePage = () => (
       ) : (          
           <span className="background">
             <PageHeader />
-            <div>
-              {/* <PostsList /> */}
-            </div>
             <div id="photocontainer">
               <Photo />
             </div>

@@ -1,27 +1,27 @@
 import React from "react";
+import './upcomingAppoint.css'
+import posts from "../../posts";
+import {AuthConsumer} from "../../authContext";
+import Can from "../Can";
 
-import posts from "../posts";
-import {AuthConsumer} from "../authContext";
-import Can from "./Can";
-
-const PostsList = () => (
+const UpcomingAppoint = () => (
   <AuthConsumer>
     {({user}) => (
       <div>
-        <h2>Posts List</h2>
+        <h2>Upcoming Appointments</h2>
         <table className="table">
           <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Actions</th>
+            <th scope="col">Name</th>
+            <th scope="col">Style</th>
           </tr>
           </thead>
           <tbody>
           {posts.map((post, index) => (
             <tr key={post.id}>
               <th scope="row">{index + 1}</th>
-              <td>{post.title}</td>
+              <td>{post.name}</td>
               <td>
                 <Can
                   role={user.role}
@@ -55,4 +55,4 @@ const PostsList = () => (
   </AuthConsumer>
 );
 
-export default PostsList;
+export default UpcomingAppoint;

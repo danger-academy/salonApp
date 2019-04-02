@@ -11,4 +11,9 @@
 #menu {
     font-family: 'Great Vibes', cursive;
     font-size: 25px;
+    color: #606054;
+}
+
+a {
+    color: #606054;
 }

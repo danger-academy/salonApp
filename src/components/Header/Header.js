@@ -30,7 +30,5 @@ const Pageheader = () => (
   </div>
   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
   </header>
-
 )
-
 export default Pageheader;

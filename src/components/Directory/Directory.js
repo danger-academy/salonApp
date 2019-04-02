@@ -5,11 +5,12 @@ import '../Directory/Directory.css';
 
 const Directory = () => (
     <div id="container">
-         <Button type="dashed" block>Dashed</Button>
-         <Button type="dashed" block>Dashed</Button>
-         <Button type="dashed" block>Dashed</Button>
-         <Button type="dashed" block>Dashed</Button>
-         <Button type="dashed" block>Dashed</Button>
+         <Button type="dashed" block id="">All Appointments</Button>
+         <Button type="dashed" block>My Schedule</Button>
+         <Button type="dashed" block>Lookbook</Button>
+         <Button type="dashed" block>Photos</Button>
+         <Button type="dashed" block>Users</Button>
+         <Button type="dashed" block>Inventory</Button>
     </div>
         
 );

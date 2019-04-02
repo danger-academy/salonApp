@@ -1,27 +1,27 @@
 const posts = [
   {
-    id: "a",
-    title: "Post a",
+    id: "1",
+    name: "Client a",
     ownerId: ""
   },
   {
     id: "b",
-    title: "Post b",
+    name: "Client b",
     ownerId: "auth0|5b9835ccf1642721ad85bf93"
   },
   {
     id: "c",
-    title: "Post c",
+    name: "Client c",
     ownerId: ""
   },
   {
     id: "d",
-    title: "Post d",
+    name: "Client d",
     ownerId: "auth0|5c885ef5db99d2476a8e69dd"
   },
   {
-    id: "generic",
-    title: "test",
+    id: "e",
+    name: "Client e",
     ownerId: "auth0|5c885ef5db99d2476a8e69dd"
   }
 ];
