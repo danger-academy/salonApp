@@ -13,8 +13,8 @@ const UpcomingAppoint = () => (
           <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Actions</th>
+            <th scope="col">Name</th>
+            <th scope="col">Style</th>
           </tr>
           </thead>
           <tbody>
