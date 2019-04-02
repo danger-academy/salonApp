@@ -5,7 +5,7 @@ import { AuthConsumer } from "../authContext";
 import Can from "../components/Can";
 import PageHeader from "../components/Header/Header";
 import Directory from "../components/Directory/Directory";
-import PostsList from "../components/PostsList";
+import UpcomingAppoint from "../components/Appointments/upcomingAppoint";
 // import Profile from "../components/Profile";
 // import Scheduler from "../components/Schedule/Schedule";
 
@@ -18,8 +18,7 @@ const DashboardPage = () => (
         yes={() => (
           <div>
             <PageHeader />
-            <h1>Upcoming Appointments</h1> 
-            <PostsList />           
+            <UpcomingAppoint />           
             <Directory />
             {/* <Profile /> */}
             {/* <Scheduler /> */}
