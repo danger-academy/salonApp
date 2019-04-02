@@ -1,64 +1,29 @@
-# React RBAC tutorial
+# Create React Express App
 
-Full tutorial originally appeared and is available on Auth0's blog: [How to Add Role-Based Access Control (RBAC) to React Apps](https://auth0.com/blog/role-based-access-control-rbac-and-react-apps/)
+## About This Boilerplate
 
-## Requirements
-* Node + npm
-* [Auth0 account](https://auth0.com/) with [application](https://manage.auth0.com/#/applications)
+This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
 
-## Install
+The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
 
-Clone this repository, then run:
+## Starting the app locally
 
-```
-$ npm install
-```
-
-## Setup
-
-### Sign Up for Auth0
-
-You'll need an [Auth0](https://auth0.com) account to manage authentication. You can [sign up for a free Auth0 account here](https://auth0.com/signup).
-
-Next, set up an Auth0 Application so Auth0 can interface with the React app.
-
-### Set Up an Auth0 Application
-
-1. Go to your [**Auth0 Dashboard**](https://manage.auth0.com/#/) and click the "[Create a New Application](https://manage.auth0.com/#/applications/create)" button.
-2. Name your new app (something like `React RBAC`) and select "Single Page Web Applications".
-3. In the **Settings** for your new Auth0 application app, add `http://localhost:3000/callback` to the **Allowed Callback URLs**.
-5. At the bottom of the **Settings** section, click "Show Advanced Settings". Choose the **OAuth** tab and verify that the **JsonWebToken Signature Algorithm** is set to "RS256".
-
-### Provide Credentials to React App
-
-1. Rename `auth0-variables.js.example` inside `src/constants/` to `auth0-variables.js`.
-1. Paste the auth0 credentials in `auth0-variables.js`.
-
-## Development server
+Start by installing front and backend dependencies. While in this directory, run the following command:
 
 ```
-$ npm start
+npm install
 ```
 
-## Auth0 Rule to Set Roles to a User
+This should install node modules within the server and the client folder.
 
-```js
-function (user, context, callback) {
-  user.app_metadata = user.app_metadata || {};
+After both installations complete, run the following command in your terminal:
 
-  if (user.email === 'bruno.krebs@auth0.com') {
-    user.app_metadata.role = 'admin';
-  } else {
-    user.app_metadata.role = 'writer';
-  }
-
-  auth0.users.updateAppMetadata(user.user_id, user.app_metadata)
-    .then(() => {
-      context.idToken['https://itaditya/role'] = user.app_metadata.role;
-      callback(null, user, context);
-    })
-    .catch((err) => {
-      callback(err);
-    });
-}
 ```
+npm start
+```
+
+Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+
+## Deployment (Heroku)
+
+To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
