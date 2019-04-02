@@ -21,7 +21,7 @@ const UpcomingAppoint = () => (
           {posts.map((post, index) => (
             <tr key={post.id}>
               <th scope="row">{index + 1}</th>
-              <td>{post.title}</td>
+              <td>{post.name}</td>
               <td>
                 <Can
                   role={user.role}
