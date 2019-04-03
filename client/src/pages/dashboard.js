@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 import './dashboard.css'
 import { AuthConsumer } from "../authContext";
 import Can from "../components/Can";
+import LookBook from "../components/lookbook";
 import PageHeader from "../components/Header/Header";
 import Directory from "../components/Directory/Directory";
 import UpcomingAppoint from "../components/Appointments/upcomingAppoint";
@@ -22,6 +23,7 @@ const DashboardPage = () => (
             <Directory />
             {/* <Profile /> */}
             {/* <Scheduler /> */}
+            <LookBook />
           </div>
         )}
         no={() => <Redirect to="/" />}
