@@ -26,8 +26,8 @@ class Drop extends React.Component {
         fd.append("time_stamp", WHAT_TIME);
         fd.append("upload_preset", UPLOAD_PRESET);
         axios.post('https://api.cloudinary.com/v1_1/dfosqdpwl/image/upload', fd, {
-            onUploadProgress: ProgressEvent => {
-                console.log('Upload Progress ' + ProgressEvent.loaded / ProgressEvent.total)
+            onUploadProgress: progressEvent => {
+                console.log('Upload Progress ' + Math.round(progressEvent.loaded / progressEvent.total * 100));
             }
         })
         .then(res => {
@@ -38,7 +38,8 @@ class Drop extends React.Component {
     render() {
         return (
             <div>
-                <input type="file" onChange={this.fileSelectedHandler}/>
+                <input style={{display: "none"}} type="file" onChange={this.fileSelectedHandler} ref={fileInput => this.fileInput = fileInput}/>
+                <button onClick={() => this.fileInput.click()}>Pick Photo</button>
                 <button onClick={this.fileUploadHandler.bind(this)}>Upload</button>
             </div>
         )
