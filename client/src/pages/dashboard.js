@@ -5,10 +5,10 @@ import { AuthConsumer } from "../authContext";
 import Can from "../components/Can";
 import PageHeader from "../components/Header/Header";
 import Directory from "../components/Directory/Directory";
-import UpcomingAppoint from "../components/Appointments/upcomingAppoint";
+// import UpcomingAppoint from "../components/Appointments/upcomingAppoint";
 // import Drop from "../components/Drop";
 // import Profile from "../components/Profile";
-// import Scheduler from "../components/Schedule/Schedule";
+import Scheduler from "../components/Schedule/Schedule";
 
 const DashboardPage = () => (
   <AuthConsumer>
@@ -19,11 +19,12 @@ const DashboardPage = () => (
         yes={() => (
           <div>
             <PageHeader />
-            <UpcomingAppoint />           
+            {/* <Drop /> */}
+            {/* <UpcomingAppoint />            */}
             <Directory />
             {/* <Drop /> */}
             {/* <Profile /> */}
-            {/* <Scheduler /> */}
+            <Scheduler />
           </div>
         )}
         no={() => <Redirect to="/" />}
