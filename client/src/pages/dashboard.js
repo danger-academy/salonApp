@@ -6,6 +6,7 @@ import Can from "../components/Can";
 import PageHeader from "../components/Header/Header";
 import Directory from "../components/Directory/Directory";
 import UpcomingAppoint from "../components/Appointments/upcomingAppoint";
+// import Drop from "../components/Drop";
 // import Profile from "../components/Profile";
 // import Scheduler from "../components/Schedule/Schedule";
 
@@ -20,6 +21,7 @@ const DashboardPage = () => (
             <PageHeader />
             <UpcomingAppoint />           
             <Directory />
+            {/* <Drop /> */}
             {/* <Profile /> */}
             {/* <Scheduler /> */}
           </div>
