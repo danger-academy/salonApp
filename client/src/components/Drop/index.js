@@ -15,13 +15,14 @@ class Drop extends React.Component {
         event.preventDefault();
         console.log(event.target.files[0]);
         this.setState({
+            // selectedFile: URL.createObjectURL(event.target.files[0])
             selectedFile: event.target.files[0]
         })
     }
 
     fileUploadHandler = () => {
         const fd = new FormData();
-        fd.append('file', this.state.selectedFile, this.state.selectedFile.name);
+        fd.append("file", this.state.selectedFile, this.state.selectedFile.name);
         fd.append("api_key", API_KEY);
         fd.append("time_stamp", WHAT_TIME);
         fd.append("upload_preset", UPLOAD_PRESET);
@@ -41,6 +42,7 @@ class Drop extends React.Component {
                 <input style={{display: "none"}} type="file" onChange={this.fileSelectedHandler} ref={fileInput => this.fileInput = fileInput}/>
                 <button onClick={() => this.fileInput.click()}>Pick Photo</button>
                 <button onClick={this.fileUploadHandler.bind(this)}>Upload</button>
+                <img src={this.state.selectedFile}/>
             </div>
         )
     }
