@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Card, Button } from 'antd';
+import ZoomImg from './ZoomImg';
 import 'antd/dist/antd.css';
 import "./lookbook.css";
 
@@ -22,7 +23,10 @@ function LookBook() {
                 <Col span={6}>
                     <Card
                         hoverable
-                        cover={<img alt="example" className="pic" src={HairPic4} />}
+                        cover={<ZoomImg
+                            src={HairPic4}
+                            className="pic"
+                        />}
                         bordered={false}>
                         <div id="buttonbackground">
                             <Button className="buttons commentButton" justify="center" type="default">Add Comment</Button>
@@ -33,7 +37,10 @@ function LookBook() {
                 <Col span={6}>
                     <Card
                         hoverable
-                        cover={<img alt="example" className="pic" src={HairPic5} />}
+                        cover={<ZoomImg
+                            src={HairPic5}
+                            className="pic"
+                        />}
                         bordered={false}>
                         <div id="buttonbackground">
                             <Button className="buttons commentButton" justify="center" type="default">Add Comment</Button>
@@ -44,7 +51,10 @@ function LookBook() {
                 <Col span={6}>
                     <Card
                         hoverable
-                        cover={<img alt="example" className="pic" src={HairPic6} />}
+                        cover={<ZoomImg
+                            src={HairPic6}
+                            className="pic"
+                        />}
                         bordered={false}>
                         <div id="buttonbackground">
                             <Button className="buttons commentButton" justify="center" type="default">Add Comment</Button>
@@ -55,7 +65,10 @@ function LookBook() {
                 <Col span={6}>
                     <Card
                         hoverable
-                        cover={<img alt="example" className="pic" src={HairPic7} />}
+                        cover={<ZoomImg
+                            src={HairPic7}
+                            className="pic"
+                        />}
                         bordered={false}>
                         <div id="buttonbackground">
                             <Button className="buttons commentButton" justify="center" type="default">Add Comment</Button>
