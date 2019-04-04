@@ -15,6 +15,10 @@ span {
     font-size: 100%;
 }
 
+.ant-layout-footer {
+    margin-left: 11%;
+}
+
 .ant-layout-sider-children {
     background-color: #606054;
 }
@@ -54,4 +58,5 @@ p {
 
 #content {
     margin-left: 11%; 
+    margin-bottom: 5%
 }
