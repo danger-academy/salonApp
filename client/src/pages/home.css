@@ -26,6 +26,8 @@ span {
 
 .App.container {
     background-color: #DEDBD2;
+    padding-left: 0%;
+    margin-left: 0%;
 }
 
 #menu {
