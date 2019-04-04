@@ -55,8 +55,8 @@ class HomePage extends React.Component {
         </Sider>
         <Layout>
           <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
-          <Content style={{ margin: '0 16px' }}>
-            <div style={{ padding: 24, background: '#fff', minHeight: 300 }}>
+          <Content id="content">
+            <div style={{ padding: 15, background: '#fff', minHeight: 100 }}>
               <Photo />
             </div>
           </Content>

@@ -1,7 +1,7 @@
 #components-layout-demo-side .logo {
     height: 32px;
     background: #DEDBD2;
-    margin: 10px;
+    margin: 5px;
 }
 
 span {
@@ -11,8 +11,8 @@ span {
 .ant-layout, .ant-layout-footer {
     background-color: #DEDBD2;
     font-family: 'Charmonman', cursive;
-    color: black;
-    font-size: 115%;
+    color: #606054;
+    font-size: 100%;
 }
 
 .ant-layout-sider-children {
@@ -48,4 +48,10 @@ p {
     font-family: 'Great Vibes', cursive;
     color: #606054;
     font-size: 35px;
+    margin-bottom: 0px;
+    margin-left: 11%;
+}
+
+#content {
+    margin-left: 11%; 
 }
