@@ -3,3 +3,7 @@ body {
     font-family: 'Great Vibes', cursive;
     text-align: center;
 }
+
+#root {
+    background-color: #DEDBD2;
+}
