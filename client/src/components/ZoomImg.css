@@ -1,0 +1,21 @@
+img {
+    cursor: zoom-in;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  img.zoomed {
+    cursor: zoom-out;
+  }
+  
+  .frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: white;
+    transform: translateZ(0);
+  }
