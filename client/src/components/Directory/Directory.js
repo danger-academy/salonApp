@@ -17,6 +17,7 @@ class Directory extends React.Component {
             <div id="container">
                 <Button type="dashed" block id="">All Appointments</Button>
                 <Button type="dashed" block>My Schedule</Button>
+                [// lookbook on click set state to poo]
                 <Button type="dashed" block onClick={this.showBook}>Lookbook</Button>
                 <Button type="dashed" block>Photos</Button>
                 <Button type="dashed" block>Users</Button>

@@ -3,9 +3,10 @@ import { Redirect } from "react-router-dom";
 import './dashboard.css'
 import { AuthConsumer } from "../authContext";
 import Can from "../components/Can";
-import LookBook from "../components/lookbook";
+// import LookBook from "../components/lookbook";
+import Portfolio from "../components/portfolio";
 import PageHeader from "../components/Header/Header";
-import Directory from "../components/Directory/Directory";
+// import Directory from "../components/Directory/Directory";
 // import UpcomingAppoint from "../components/Appointments/upcomingAppoint";
 // import Drop from "../components/Drop";
 // import Profile from "../components/Profile";
@@ -39,13 +40,14 @@ class DashboardPage extends React.Component {
               <PageHeader />
               {/* <Drop /> */}
               {/* <UpcomingAppoint />            */}
-              { this.state.showLookBook ? <LookBook /> : <Directory />}
+              {/* { this.state.showLookBook ? <LookBook /> : <Directory />} */}
               {/* <Directory /> */}
               {/* <Drop /> */}
               {/* <Profile /> */}
               {/* // if state.showlook is true then  */}
               {/* <LookBook /> */}
               <Scheduler />
+              <Portfolio />
   
             </div>
           )}
