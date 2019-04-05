@@ -21,7 +21,7 @@ const DashboardPage = () => (
             <PageHeader />
             <UpcomingAppoint />           
             <Directory />
-            <Drop />
+            {/* <Drop /> */}
             {/* <Profile /> */}
             {/* <Scheduler /> */}
           </div>
