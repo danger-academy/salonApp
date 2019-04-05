@@ -15,15 +15,12 @@ class Drop extends React.Component {
         }
     }
 
-    // state = {
-    //     selectedFiles: null
-    // }
-
     fileSelectedHandler = event => {
         event.preventDefault();
         
         let reader = new FileReader();
         let selectedFiles = event.target.files[0];
+        console.log(selectedFiles);
 
         reader.onloadend = () => {
             this.setState({
@@ -33,11 +30,6 @@ class Drop extends React.Component {
         }
         reader.readAsDataURL(selectedFiles)
     }
-    //     console.log(event.target.files[0]);
-    //     this.setState({
-    //         selectedFiles: event.target.files[0]
-    //     })
-    // }
 
     fileUploadHandler = () => {
         const fd = new FormData();
