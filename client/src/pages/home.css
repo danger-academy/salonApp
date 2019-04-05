@@ -1,7 +1,51 @@
+#components-layout-demo-side .logo {
+    height: 32px;
+    background: #DEDBD2;
+    margin: 10px;
+}
+
+span {
+    font-family: 'Charmonman';
+}
+
+.ant-layout, .ant-layout-footer {
+    background-color: #DEDBD2;
+    font-family: 'Charmonman', cursive;
+    color: black;
+    font-size: 115%;
+}
+
+.ant-layout-sider-children {
+    background-color: #606054;
+}
+
+.ant-layout-sider-trigger {
+    color: #606054;
+    background-color: #DC8B55;
+}
+
+.App.container {
+    background-color: #DEDBD2;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+
+#menu {
+    font-family: 'Charmonman';
+    font-size: 25px;
+    color: #606054;
+}
+
 body { 
     background-color: #DEDBD2 !important;
 }
 
 #photocontainer {
     padding-top: 24px;
+}
+
+p {
+    font-family: 'Great Vibes', cursive;
+    color: #606054;
+    font-size: 35px;
 }
