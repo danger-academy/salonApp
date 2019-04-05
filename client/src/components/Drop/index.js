@@ -7,22 +7,41 @@ const UPLOAD_PRESET = "fnccpzwc";
 
 class Drop extends React.Component {
 
-    state = {
-        selectedFile: null
+    constructor(props){
+        super(props)
+        this.state = {
+            selectedFiles : [],
+            imagePreviewUrl: ''
+        }
     }
+
+    // state = {
+    //     selectedFiles: null
+    // }
 
     fileSelectedHandler = event => {
         event.preventDefault();
-        console.log(event.target.files[0]);
-        this.setState({
-            // selectedFile: URL.createObjectURL(event.target.files[0])
-            selectedFile: event.target.files[0]
-        })
+        
+        let reader = new FileReader();
+        let selectedFiles = event.target.files[0];
+
+        reader.onloadend = () => {
+            this.setState({
+                selectedFiles: selectedFiles,
+                imagePreviewUrl: reader.result
+            });
+        }
+        reader.readAsDataURL(selectedFiles)
     }
+    //     console.log(event.target.files[0]);
+    //     this.setState({
+    //         selectedFiles: event.target.files[0]
+    //     })
+    // }
 
     fileUploadHandler = () => {
         const fd = new FormData();
-        fd.append("file", this.state.selectedFile, this.state.selectedFile.name);
+        fd.append('file', this.state.selectedFiles, this.state.selectedFiles.name);
         fd.append("api_key", API_KEY);
         fd.append("time_stamp", WHAT_TIME);
         fd.append("upload_preset", UPLOAD_PRESET);
@@ -37,12 +56,17 @@ class Drop extends React.Component {
     }
 
     render() {
+        let {imagePreviewUrl} = this.state;
+        let $imagePreview = null;
+        if (imagePreviewUrl) {
+            $imagePreview = (<img src={imagePreviewUrl} />);
+        }
         return (
             <div>
-                <input style={{display: "none"}} type="file" onChange={this.fileSelectedHandler} ref={fileInput => this.fileInput = fileInput}/>
+                <input style={{display: "none"}} type="file" onChange={this.fileSelectedHandler.bind(this)} ref={fileInput => this.fileInput = fileInput}/>
                 <button onClick={() => this.fileInput.click()}>Pick Photo</button>
                 <button onClick={this.fileUploadHandler.bind(this)}>Upload</button>
-                <img src={this.state.selectedFile}/>
+                {$imagePreview}
             </div>
         )
     }
