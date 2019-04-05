@@ -60,3 +60,13 @@ p {
     margin-left: 11%; 
     margin-bottom: 5%
 }
+
+@media only screen and (max-width: 414px) {
+
+.ant-layout-footer {
+    font-size: 65%;
+    padding: 20px;
+}
+
+
+}
