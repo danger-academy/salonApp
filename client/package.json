@@ -2,6 +2,7 @@
   "name": "rbac-tutorial-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "antd": "^3.15.2",
     "auth0-js": "^9.7.3",

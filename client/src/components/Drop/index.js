@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
+import API from "../../utils/API";
 
 const API_KEY = "164352566276885";
 const WHAT_TIME = Date.now()/1000;
 const UPLOAD_PRESET = "fnccpzwc";
+// const dasLink = theLink;
 
-class Drop extends React.Component {
+class Drop extends Component {
 
     constructor(props){
         super(props)
@@ -44,7 +46,23 @@ class Drop extends React.Component {
         })
         .then(res => {
             console.log(res);
+            console.log(res.data.secure_url);
+            this.fileSaveHandler(res);
         })
+    }
+
+    fileSaveHandler = res => {
+    //     // const image = this.state.image.find(image => image.id === id);
+        // console.log(res.data.secure_url);
+    
+        API.saveIt({
+            link: res.data.secure_url
+    //         // categories: image.volumeInfo.category,
+    //         // comments: image.volumeInfo.description
+        })
+        // .then(dbModel => {
+        //     console.log(dbModel);
+        // })
     }
 
     render() {
