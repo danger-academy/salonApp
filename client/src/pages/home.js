@@ -6,6 +6,7 @@ import Logout from '../components/Logout';
 import LookBook from "../components/lookbook";
 import Scheduler from '../components/Schedule/Schedule';
 import Profile from '../components/Profile/Profile';
+import Portfolio from '../components/portfolio';
 import { AuthConsumer } from "../authContext";
 import {Route, Link}  from "react-router-dom";
 import './home.css';
@@ -34,9 +35,9 @@ class HomePage extends Component {
                   <div className="logo" />
                   <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
                     <Menu.Item key="1">
-                      <Link to="/">
+                      <Link to="/portfolio">
                         <Icon type="camera" />
-                      <span>Photo Collection</span>
+                      <span>Portfolio</span>
                       </Link>
                     </Menu.Item>
                     <Menu.Item key="2">
@@ -86,7 +87,7 @@ class HomePage extends Component {
                     </SubMenu>
                   </Menu>
                 </Sider>
-                <Layout>
+                <Layout id="background">
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
                       <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
@@ -94,10 +95,11 @@ class HomePage extends Component {
                           <Route path="/profile" component={Profile} />
                           <Route path="/schedule" component={Scheduler} />
                           <Route path="/lookbook" component={LookBook} />
+                          <Route path="/portfolio" component={Portfolio} />
                           <Route exact path="/" component={Photo} />
                       </div>
                   </Content>
-                  <Footer style={{ textAlign: 'center' }}>
+                  <Footer id="footer">
                     SalonApp ©2019 Created by LMRT
                   </Footer>
                 </Layout>
@@ -123,9 +125,9 @@ class HomePage extends Component {
                   <div className="logo" />
                   <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
                     <Menu.Item key="1">
-                      <Link to="/">
+                      <Link to="/portfolio">
                         <Icon type="camera" />
-                      <span>Photo Collection</span>
+                      <span>Portfolio</span>
                       </Link>
                     </Menu.Item>
                     <SubMenu
@@ -145,10 +147,10 @@ class HomePage extends Component {
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
                       <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
-                        {/* <Photo /> */}
-                          <Route path="/profile" component={Profile} />
+                          {/* <Route path="/profile" component={Profile} />
                           <Route path="/schedule" component={Scheduler} />
-                          <Route path="/lookbook" component={LookBook} />
+                          <Route path="/lookbook" component={LookBook} /> */}
+                          <Route path="/portfolio" component={Portfolio} />
                           <Route exact path="/" component={Photo} />
                       </div>
                   </Content>

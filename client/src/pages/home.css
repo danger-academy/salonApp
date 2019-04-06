@@ -8,6 +8,10 @@ span {
   font-family: 'Charmonman';
 }
 
+#welcome {
+  margin: 0; 
+}
+
 .ant-layout {
   background-color: #DEDBD2;
   font-family: 'Charmonman', cursive;
