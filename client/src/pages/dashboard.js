@@ -3,14 +3,7 @@ import { Redirect } from "react-router-dom";
 import './dashboard.css'
 import { AuthConsumer } from "../authContext";
 import Can from "../components/Can";
-// import LookBook from "../components/lookbook";
-import Portfolio from "../components/portfolio";
-import PageHeader from "../components/Header/Header";
-// import Directory from "../components/Directory/Directory";
-// import UpcomingAppoint from "../components/Appointments/upcomingAppoint";
-import Drop from "../components/Drop";
-// import Profile from "../components/Profile";
-import Scheduler from "../components/Schedule/Schedule";
+import Profile from '../components/Profile/Profile'
 
 class DashboardPage extends React.Component {
   constructor(props) {
@@ -21,12 +14,6 @@ class DashboardPage extends React.Component {
     };
   }
 
-  // showBook() {
-  //   console.log("showBook works")
-  //   this.setState({
-  //       showComponent: true,
-  //     });
-  // }
 
   render() {
     return (
@@ -37,18 +24,8 @@ class DashboardPage extends React.Component {
           perform="dashboard-page:visit"
           yes={() => (
             <div>
-              <PageHeader />
-              {/* <Drop /> */}
-              {/* <UpcomingAppoint />            */}
-              {/* { this.state.showLookBook ? <LookBook /> : <Directory />} */}
-              {/* <Directory /> */}
-              <Drop />
-              {/* <Profile /> */}
-              {/* // if state.showlook is true then  */}
-              {/* <LookBook /> */}
-              <Scheduler />
-              <Portfolio />
-  
+              {console.log(user)}
+              <Profile />
             </div>
           )}
           no={() => <Redirect to="/" />}
@@ -59,30 +36,5 @@ class DashboardPage extends React.Component {
     )
 }
 }
-
-// const DashboardPage = () => (
-//   <AuthConsumer>
-//     {({ user }) => (
-//       <Can
-//         role={user.role}
-//         perform="dashboard-page:visit"
-//         yes={() => (
-//           <div>
-//             <PageHeader />
-//             {/* <Drop /> */}
-//             {/* <UpcomingAppoint />            */}
-//             <Directory />
-//             {/* <Drop /> */}
-//             {/* <Profile /> */}
-//             <LookBook />
-//             <Scheduler />
-
-//           </div>
-//         )}
-//         no={() => <Redirect to="/" />}
-//       />
-//     )}
-//   </AuthConsumer>
-// );
 
 export default DashboardPage;
