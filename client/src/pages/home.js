@@ -40,8 +40,10 @@ class HomePage extends Component {
                   <div className="logo" />
                   <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
                     <Menu.Item key="1">
-                      <Icon type="camera" />
-                      <span> Photo Collection</span>
+                      <Link to="/">
+                        <Icon type="camera" />
+                      <span>Photo Collection</span>
+                      </Link>
                     </Menu.Item>
                     <Menu.Item key="2">
                       <Link to="/lookbook">
@@ -51,24 +53,36 @@ class HomePage extends Component {
                     </Menu.Item>
                     <Menu.Item key="3">
                       <Link to="/schedule">
-                        <Icon type="calendar" />
+                        <Icon type="schedule" />
                         <span>Schedule</span>
                       </Link>
                     </Menu.Item>
                     <Menu.Item key="4">
                       <Link to="/profile">
-                        <Icon type="user" />
-                        <span>User</span>
+                        <Icon type="idcard" />
+                        <span>Profile</span>
+                      </Link>
+                    </Menu.Item>
+                    <Menu.Item key="5">
+                      <Link to="/">
+                        <Icon type="team" />
+                        <span>Users</span>
+                      </Link>
+                    </Menu.Item>
+                    <Menu.Item key="6">
+                      <Link to="/">
+                        <Icon type="project" />
+                        <span>Inventory</span>
                       </Link>
                     </Menu.Item>
                     <SubMenu
                       key="sub1"
                       title={<span><Icon type="login" /><span> Login</span></span>}
                     >
-                      <Menu.Item key="5">
+                      <Menu.Item key="7">
                         <Login />
                       </Menu.Item>
-                      <Menu.Item key="6">
+                      <Menu.Item key="8">
                         <Logout />
                       </Menu.Item>
                     </SubMenu>
