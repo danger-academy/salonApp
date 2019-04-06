@@ -91,7 +91,7 @@ class HomePage extends Component {
                 <Layout>
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
-                      <div style={{ padding: 24, background: '#fff', minHeight: 300 }}>
+                      <div id="content" style={{ padding: 24, background: '#DEDBD2', minHeight: 300 }}>
                         {/* <Photo /> */}
                           <Route path="/profile" component={Profile} />
                           <Route path="/schedule" component={Scheduler} />
