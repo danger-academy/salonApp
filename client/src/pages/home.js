@@ -88,7 +88,7 @@ class HomePage extends Component {
                     </SubMenu>
                   </Menu>
                 </Sider>
-                <Layout>
+                <Layout id="background">
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
                       <div id="content" style={{ padding: 24, background: '#DEDBD2', minHeight: 300 }}>
@@ -99,7 +99,7 @@ class HomePage extends Component {
                           <Route exact path="/" component={Photo} />
                       </div>
                   </Content>
-                  <Footer style={{ textAlign: 'center' }}>
+                  <Footer id="footer">
                     SalonApp ©2019 Created by LMRT
                   </Footer>
                 </Layout>

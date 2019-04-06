@@ -8,16 +8,16 @@ span {
   font-family: 'Charmonman';
 }
 
-.ant-layout,
-.ant-layout-footer {
+.ant-layout {
   background-color: #DEDBD2;
   font-family: 'Charmonman', cursive;
   color: #606054;
   font-size: 100%;
 }
 
-.ant-layout-footer {
-  margin-left: 11%;
+#footer {
+  text-align: center;
+  background: rgba(76, 175, 80, 0.0)
 }
 
 .ant-layout-sider-children {
@@ -63,7 +63,14 @@ p {
 
 #content {
   margin-left: 11%;
+  margin-right: 11%;
   margin-bottom: 5%
+}
+
+#background {
+  background-image: url("../components/flowerbordersquare.png");
+  background-size: cover;
+  /* overflow: hidden;  */
 }
 
 @media only screen and (max-width: 414px) {

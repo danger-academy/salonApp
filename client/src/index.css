@@ -1,0 +1,10 @@
+#appContainer {
+    margin: 0; 
+    padding: 0; 
+}
+
+@media (min-width: 1200px) {
+#appContainer {
+    max-width: 1600px !important; 
+}
+}
