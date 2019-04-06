@@ -5,6 +5,7 @@ import Login from '../components/Login';
 import Logout from '../components/Logout';
 import LookBook from "../components/lookbook";
 import Scheduler from '../components/Schedule/Schedule';
+import Profile from '../components/Profile/Profile';
 import { AuthConsumer } from "../authContext";
 import {Route, Redirect, Link}  from "react-router-dom";
 import './home.css';
@@ -54,14 +55,20 @@ class HomePage extends Component {
                         <span>Schedule</span>
                       </Link>
                     </Menu.Item>
+                    <Menu.Item key="4">
+                      <Link to="/profile">
+                        <Icon type="user" />
+                        <span>User</span>
+                      </Link>
+                    </Menu.Item>
                     <SubMenu
                       key="sub1"
                       title={<span><Icon type="login" /><span> Login</span></span>}
                     >
-                      <Menu.Item key="4">
+                      <Menu.Item key="5">
                         <Login />
                       </Menu.Item>
-                      <Menu.Item key="4">
+                      <Menu.Item key="6">
                         <Logout />
                       </Menu.Item>
                     </SubMenu>
@@ -72,6 +79,7 @@ class HomePage extends Component {
                   <Content style={{ margin: '0 16px' }}>
                       <div style={{ padding: 24, background: '#fff', minHeight: 300 }}>
                         {/* <Photo /> */}
+                          <Route path="/profile" component={Profile} />
                           <Route path="/schedule" component={Scheduler} />
                           <Route path="/lookbook" component={LookBook} />
                           <Route exact path="/" component={Photo} />
