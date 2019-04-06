@@ -1,9 +1,7 @@
 import React from "react";
-import PageHeader from "./Header/Header";
-import {AuthConsumer} from "../authContext";
+import {AuthConsumer} from "../../authContext";
 
 const Profile = () => (
-  <PageHeader />
   <AuthConsumer>
     {({user}) => (
       <div>
