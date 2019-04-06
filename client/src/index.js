@@ -16,10 +16,10 @@ function App() {
           <Router>
             <Switch> 
               {/* Switch means to only render the first matching route, top to bottom */}
-              {/* <Route path="/dashboard" component={DashboardPage}/> )}/> */}
-              {/* <Route path="/callback" component={CallbackPage}/> */}
-              {/* <Route path="/" component={HomePage}/> */}
-              <Route path="/upload" component={Upload} />
+              <Route path="/dashboard" component={DashboardPage}/> )}/>
+              <Route path="/callback" component={CallbackPage}/>
+              <Route path="/" component={HomePage}/>
+              {/* <Route path="/upload" component={Upload} /> */}
             </Switch>
           </Router>
         </div>
