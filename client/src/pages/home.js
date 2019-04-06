@@ -4,6 +4,7 @@ import { Layout, Menu, Icon } from 'antd';
 import Login from '../components/Login';
 import Logout from '../components/Logout';
 import LookBook from "../components/lookbook";
+import Scheduler from '../components/Schedule/Schedule';
 import { AuthConsumer } from "../authContext";
 import {Route, Redirect, Link}  from "react-router-dom";
 import './home.css';
@@ -43,15 +44,21 @@ class HomePage extends Component {
                     </Menu.Item>
                     <Menu.Item key="2">
                       <Link to="/lookbook">
-                        <Icon type="camera" />
-                        Look Book
+                        <Icon type="book" />
+                        <span>Look Book</span>
+                      </Link>
+                    </Menu.Item>
+                    <Menu.Item key="3">
+                      <Link to="/schedule">
+                        <Icon type="calendar" />
+                        <span>Schedule</span>
                       </Link>
                     </Menu.Item>
                     <SubMenu
                       key="sub1"
                       title={<span><Icon type="login" /><span> Login</span></span>}
                     >
-                      <Menu.Item key="3">
+                      <Menu.Item key="4">
                         <Login />
                       </Menu.Item>
                       <Menu.Item key="4">
@@ -65,6 +72,7 @@ class HomePage extends Component {
                   <Content style={{ margin: '0 16px' }}>
                       <div style={{ padding: 24, background: '#fff', minHeight: 300 }}>
                         {/* <Photo /> */}
+                          <Route path="/schedule" component={Scheduler} />
                           <Route path="/lookbook" component={LookBook} />
                           <Route exact path="/" component={Photo} />
                       </div>
