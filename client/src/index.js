@@ -7,10 +7,11 @@ import DashboardPage from "./pages/dashboard";
 import CallbackPage from "./pages/callback";
 import Upload from "./pages/Upload";
 import Auth from "./components/Auth";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App container" id="appContainer">
       <Auth>
         <div className="routeHolder">
           <Router>
