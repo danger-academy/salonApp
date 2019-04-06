@@ -6,10 +6,11 @@ import HomePage from "./pages/home";
 import DashboardPage from "./pages/dashboard";
 import CallbackPage from "./pages/callback";
 import Auth from "./components/Auth";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App container" id="appContainer">
       <Auth>
         <div className="routeHolder">
           <Router>

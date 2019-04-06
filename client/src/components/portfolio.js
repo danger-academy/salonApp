@@ -38,13 +38,6 @@ class Portfolio extends Component {
                 thumbnail: "https://cdn.pixabay.com/photo/2019/02/17/20/03/fair-4003075_960_720.jpg",
                 thumbnailWidth: 212,
                 thumbnailHeight: 300
-            },
-            {
-                src: "https://cdn.pixabay.com/photo/2019/04/04/06/07/cherry-blossoms-4102077_1280.jpg",
-                thumbnail: "https://cdn.pixabay.com/photo/2019/04/04/06/07/cherry-blossoms-4102077_1280.jpg",
-                thumbnailWidth: 500,
-                thumbnailHeight: 300
-        
             }]
         }
     }

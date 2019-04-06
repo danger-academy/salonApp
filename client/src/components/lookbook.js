@@ -29,7 +29,7 @@ function LookBook() {
                         />}
                         bordered={false}>
                         <div id="buttonbackground">
-                            <Button className="buttons commentButton" justify="center" type="default">Add Comment</Button>
+                            <Button className="buttons commentButton" justify="center" type="default">Comment</Button>
                             <Button className="buttons" justify="center" type="danger">Delete</Button>
                         </div>
                     </Card>
@@ -43,7 +43,7 @@ function LookBook() {
                         />}
                         bordered={false}>
                         <div id="buttonbackground">
-                            <Button className="buttons commentButton" justify="center" type="default">Add Comment</Button>
+                            <Button className="buttons commentButton" justify="center" type="default">Comment</Button>
                             <Button className="buttons" justify="center" type="danger">Delete</Button>
                         </div>
                     </Card>
@@ -57,7 +57,7 @@ function LookBook() {
                         />}
                         bordered={false}>
                         <div id="buttonbackground">
-                            <Button className="buttons commentButton" justify="center" type="default">Add Comment</Button>
+                            <Button className="buttons commentButton" justify="center" type="default">Comment</Button>
                             <Button className="buttons" justify="center" type="danger">Delete</Button>
                         </div>
                     </Card>
@@ -71,7 +71,7 @@ function LookBook() {
                         />}
                         bordered={false}>
                         <div id="buttonbackground">
-                            <Button className="buttons commentButton" justify="center" type="default">Add Comment</Button>
+                            <Button className="buttons commentButton" justify="center" type="default">Comment</Button>
                             <Button className="buttons" justify="center" type="danger">Delete</Button>
                         </div>
                     </Card>
