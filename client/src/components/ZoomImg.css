@@ -1,0 +1,24 @@
+img {
+    cursor: zoom-in;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    z-index: 1;
+  }
+  
+  img.zoomed {
+    cursor: zoom-out;
+    z-index: 1000;
+  }
+  
+  .frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: white;
+    transform: translateZ(0);
+    /* z-index: 1; */
+  }

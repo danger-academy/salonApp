@@ -1,15 +1,25 @@
 import React from 'react';
-import { TimePicker } from 'antd';
-import moment from 'moment';
-import ReactDOM from 'react-dom';
+import { DatePicker } from 'antd';
 
 
-const format = 'HH:mm';
+function onChange(value, dateString) {
+  console.log('Selected Time: ', value);
+  console.log('Formatted Selected Time: ', dateString);
+}
 
-function Scheduler () {
-ReactDOM.render(
-  <TimePicker defaultValue={moment('12:08', format)} format={format} />
+function onOk(value) {
+  console.log('onOk: ', value);
+}
+
+const Scheduler = () => (
+  <div>
+    <DatePicker
+      showTime
+      placeholder="Select Time"
+      onChange={onChange}
+      onOk={onOk}
+    />
+  </div>
 );
-};
 
 export default Scheduler;

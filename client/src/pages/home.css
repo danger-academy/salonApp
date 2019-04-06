@@ -1,7 +1,79 @@
-body { 
-    background-color: #DEDBD2 !important;
+#components-layout-demo-side .logo {
+  height: 32px;
+  background: #DEDBD2;
+  margin: 5px;
+}
+
+span {
+  font-family: 'Charmonman';
+}
+
+.ant-layout,
+.ant-layout-footer {
+  background-color: #DEDBD2;
+  font-family: 'Charmonman', cursive;
+  color: #606054;
+  font-size: 100%;
+}
+
+.ant-layout-footer {
+  margin-left: 11%;
+}
+
+.ant-layout-sider-children {
+  background-color: #606054;
+}
+
+.ant-layout-sider-trigger {
+  color: #606054;
+  background-color: #DC8B55;
+}
+
+#content {
+  border: 2px #606054 solid;
+}
+
+.App.container {
+  background-color: #DEDBD2;
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+#menu {
+  font-family: 'Charmonman';
+  font-size: 25px;
+  color: #606054;
+}
+
+body {
+  background-color: #DEDBD2 !important;
 }
 
 #photocontainer {
-    padding-top: 24px;
+  padding-top: 24px;
+}
+
+p {
+  font-family: 'Great Vibes', cursive;
+  color: #606054;
+  font-size: 35px;
+  margin-bottom: 0px;
+  margin-left: 11%;
+}
+
+#content {
+  margin-left: 11%;
+  margin-bottom: 5%
+}
+
+@media only screen and (max-width: 414px) {
+  p {
+    font-size: 5px;
+  }
+
+  .ant-layout-footer {
+    font-size: 65%;
+    padding: 20px;
+  }
+
 }
