@@ -5,7 +5,7 @@ import Login from '../components/Login';
 import Logout from '../components/Logout';
 import LookBook from "../components/lookbook";
 import { AuthConsumer } from "../authContext";
-import { Redirect, Route, BrowserRouter as Router, Link, Switch} from "react-router-dom";
+import {Route, Redirect, Link}  from "react-router-dom";
 import './home.css';
 
 const { Content, Footer, Sider } = Layout;
@@ -41,7 +41,7 @@ class HomePage extends Component {
                       <Icon type="camera" />
                       <span> Photo Collection</span>
                     </Menu.Item>
-                    <Menu.Item key="1">
+                    <Menu.Item key="2">
                       <Link to="/lookbook">
                         <Icon type="camera" />
                         Look Book
@@ -63,15 +63,11 @@ class HomePage extends Component {
                 <Layout>
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
-                    <Router>
                       <div style={{ padding: 24, background: '#fff', minHeight: 300 }}>
                         {/* <Photo /> */}
-                        <Switch>
-                          <Route exact path="/" component={Photo} />
                           <Route path="/lookbook" component={LookBook} />
-                        </Switch>
+                          <Route exact path="/" component={Photo} />
                       </div>
-                    </Router>
                   </Content>
                   <Footer style={{ textAlign: 'center' }}>
                     SalonApp ©2019 Created by LMRT

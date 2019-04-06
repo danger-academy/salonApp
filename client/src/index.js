@@ -13,10 +13,11 @@ function App() {
       <Auth>
         <div className="routeHolder">
           <Router>
-            <Switch>
-              <Route exact path="/" component={HomePage}/>
-              <Route path="/dashboard" component={DashboardPage}/>
+            <Switch> 
+              {/* Switch means to only render the first matching route, top to bottom */}
+              <Route path="/dashboard" component={DashboardPage}/> )}/>
               <Route path="/callback" component={CallbackPage}/>
+              <Route path="/" component={HomePage}/>
             </Switch>
           </Router>
         </div>
