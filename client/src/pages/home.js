@@ -76,6 +76,7 @@ class HomePage extends Component {
               </Layout>
             )
         }
+       
       </AuthConsumer>
     )
   }
