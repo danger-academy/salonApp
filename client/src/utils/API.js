@@ -10,7 +10,7 @@ export default {
     // deleteIt: (id) => {
     //     return axios.delete("/api/books/" + id);
     // },
-    saveIt: (imageData) => {
+    saveIt: function(imageData) {
         return axios.post("/api/images", imageData);
     }
 };

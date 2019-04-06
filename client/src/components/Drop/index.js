@@ -52,7 +52,6 @@ class Drop extends Component {
     }
 
     fileSaveHandler = res => {
-    //     // const image = this.state.image.find(image => image.id === id);
         // console.log(res.data.secure_url);
     
         API.saveIt({
@@ -60,9 +59,6 @@ class Drop extends Component {
     //         // categories: image.volumeInfo.category,
     //         // comments: image.volumeInfo.description
         })
-        // .then(dbModel => {
-        //     console.log(dbModel);
-        // })
     }
 
     render() {

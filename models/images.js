@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
 const ImageSchema = new Schema({
@@ -7,11 +6,9 @@ const ImageSchema = new Schema({
         type: String,
         required: true
     },
-    categories: [
-        {
-            type: String
-        }
-    ],
+    categories: {
+            type: [String]
+    },
     comments: {
         type: String
     }
