@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import HomePage from "./pages/home";
 import DashboardPage from "./pages/dashboard";
 import CallbackPage from "./pages/callback";
+import Upload from "./pages/Upload";
 import Auth from "./components/Auth";
 import "./index.css";
 
@@ -19,6 +20,7 @@ function App() {
               <Route path="/dashboard" component={DashboardPage}/> )}/>
               <Route path="/callback" component={CallbackPage}/>
               <Route path="/" component={HomePage}/>
+              {/* <Route path="/upload" component={Upload} /> */}
             </Switch>
           </Router>
         </div>

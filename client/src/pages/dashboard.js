@@ -5,7 +5,6 @@ import { AuthConsumer } from "../authContext";
 import Can from "../components/Can";
 import Profile from '../components/Profile/Profile'
 
-
 class DashboardPage extends React.Component {
   constructor(props) {
     super(props);

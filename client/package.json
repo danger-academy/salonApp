@@ -2,6 +2,7 @@
   "name": "rbac-tutorial-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "antd": "^3.15.2",
     "auth0-js": "^9.7.3",
@@ -10,6 +11,7 @@
     "moment": "^2.24.0",
     "react": "^16.5.1",
     "react-dom": "^16.8.6",
+    "react-grid-gallery": "^0.5.4",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",

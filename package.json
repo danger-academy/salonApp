@@ -1,7 +1,7 @@
 {
-  "name": "mern",
+  "name": "salonapp",
   "version": "1.0.0",
-  "description": "Mern Demo",
+  "description": "SalonApp",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -22,6 +22,7 @@
     "axios": "^0.18.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
+    "mongoose": "^5.4.22",
     "react-grid-gallery": "^0.5.4",
     "react-pose": "^4.0.8"
   }
