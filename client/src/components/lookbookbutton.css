@@ -1,0 +1,29 @@
+#buttonbackground {
+    background-color: #A9535F;
+}
+
+.buttons {
+    margin: 3%; 
+}
+
+.ant-btn-primary, .ant-btn-primary:hover, .ant-btn-primary:active, .commentButton:focus {
+    background-color: #DC8B55; 
+    border: black;
+}
+
+.commentButton, .commentButton:hover, .commentButton:active, .commentButton:focus, 
+.deleteButton, .deleteButton:hover, .deleteButton:active, .deleteButton:focus{
+    background-color: #DEDBD2; 
+    color: black;
+    border: black;
+}
+
+#modal {
+    width: 100%; 
+    height: auto;
+    padding: 3%;
+}
+
+.ant-modal-body {
+    padding: 0; 
+}
