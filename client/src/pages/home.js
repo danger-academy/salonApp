@@ -7,6 +7,7 @@ import LookBook from "../components/lookbook";
 import Scheduler from '../components/Schedule/Schedule';
 import Profile from '../components/Profile/Profile';
 import Portfolio from '../components/portfolio';
+import makeAppoint from '../components/Appointments/makeAppoint';
 import { AuthConsumer } from "../authContext";
 import {Route, Link}  from "react-router-dom";
 import './home.css';
@@ -47,9 +48,9 @@ class HomePage extends Component {
                       </Link>
                     </Menu.Item>
                     <Menu.Item key="3">
-                      <Link to="/schedule">
-                        <Icon type="schedule" />
-                        <span>Schedule</span>
+                      <Link to="/makeAppoint">
+                        <Icon type="solution" />
+                        <span>Make Appointment</span>
                       </Link>
                     </Menu.Item>
                     <Menu.Item key="4">
@@ -67,6 +68,12 @@ class HomePage extends Component {
                           </Link>
                         </Menu.Item>
                         <Menu.Item key="6">
+                          <Link to="/schedule">
+                            <Icon type="calendar" />
+                            <span>My Schedule</span>
+                          </Link>
+                        </Menu.Item>
+                        <Menu.Item key="7">
                           <Link to="/">
                             <Icon type="project" />
                             <span>Inventory</span>
@@ -78,10 +85,10 @@ class HomePage extends Component {
                       key="sub1"
                       title={<span><Icon type="login" /><span> Login</span></span>}
                     >
-                      <Menu.Item key="7">
+                      <Menu.Item key="8">
                         <Login />
                       </Menu.Item>
-                      <Menu.Item key="8">
+                      <Menu.Item key="9">
                         <Logout />
                       </Menu.Item>
                     </SubMenu>
@@ -91,6 +98,7 @@ class HomePage extends Component {
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
                       <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
+                          <Route path="/makeAppoint" component={makeAppoint} />
                           <Route path="/profile" component={Profile} />
                           <Route path="/schedule" component={Scheduler} />
                           <Route path="/lookbook" component={LookBook} />
