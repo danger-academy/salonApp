@@ -10,10 +10,20 @@
     color: #606054;
 }
 
-#buttonbackground {
+/* #buttonbackground {
     background-color: #A9535F;
 }
 
 .buttons {
     margin: 3%; 
 }
+
+#modal {
+    width: 100%; 
+    height: auto;
+    padding: 3%;
+}
+
+.ant-modal-body {
+    padding: 0; 
+} */
