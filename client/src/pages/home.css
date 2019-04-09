@@ -5,7 +5,7 @@
 }
 
 span {
-  font-family: 'Charmonman';
+  font-family: 'Ovo';
 }
 
 #welcome {
@@ -14,7 +14,7 @@ span {
 
 .ant-layout {
   background-color: #DEDBD2;
-  font-family: 'Charmonman', cursive;
+  font-family: 'Charmonman';
   color: #606054;
   font-size: 100%;
 }
@@ -29,8 +29,8 @@ span {
 }
 
 .ant-layout-sider-trigger {
-  color: #606054;
-  background-color: #DC8B55;
+  color: #DEDBD2;
+  background-color: #a9535f;
 }
 
 .App.container {
@@ -40,7 +40,7 @@ span {
 }
 
 #menu {
-  font-family: 'Charmonman';
+  font-family: 'Yrsa';
   font-size: 25px;
   color: #606054;
 }
