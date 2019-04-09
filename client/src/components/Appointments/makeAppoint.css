@@ -1,3 +1,8 @@
-p {
-    font-family: 'Yrsa';
+#title {
+    font-family: 'Ovo';
+    font-size: 20px;
+}
+
+a {
+    font-family: 'Ovo'
 }

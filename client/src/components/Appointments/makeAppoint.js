@@ -29,18 +29,20 @@ const menu = (
 
 const makeAppoint = () => (
   <div>
-    <p>To create a new appointment, select a service and an available date.</p>
+    <p id="title">To create a new appointment, select a service and an available date.</p>
     <Dropdown overlay={menu}>
     <a className="ant-dropdown-link" href="#">
       Services <Icon type="down" />
     </a>
     </Dropdown>
+    
     <DatePicker
       showTime
       placeholder="Select Time"
       onChange={onChange}
       onOk={onOk}
     />
+
     <UpcomingAppoint />
     </div>
 );
