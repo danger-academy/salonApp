@@ -1,5 +1,6 @@
 import React from "react";
 import {AuthConsumer} from "../../authContext";
+import UpcomingAppoint from '../Appointments/upcomingAppoint';
 
 const Profile = () => (
   <AuthConsumer>
@@ -11,6 +12,7 @@ const Profile = () => (
           <li>Email: {user.email}</li>
           <li>Role: {user.role}</li>
         </ul>
+        <UpcomingAppoint />
       </div>
     )}
   </AuthConsumer>
