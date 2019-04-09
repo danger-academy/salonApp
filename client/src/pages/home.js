@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Photo from "../components/photo";
 import { Layout, Menu, Icon } from 'antd';
 import Login from '../components/Login';
@@ -7,8 +7,9 @@ import LookBook from "../components/lookbook";
 import Scheduler from '../components/Schedule/Schedule';
 import Profile from '../components/Profile/Profile';
 import Portfolio from '../components/portfolio';
+import Cuts from '../components/cuts.js';
 import { AuthConsumer } from "../authContext";
-import {Route, Link}  from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import './home.css';
 
 const { Content, Footer, Sider } = Layout;
@@ -26,83 +27,87 @@ class HomePage extends Component {
 
   onLoggedIn = (user) => (
     <Layout style={{ minHeight: '100vh' }}>
-                <Sider
-                  id="sider"
-                  collapsible
-                  collapsed={this.state.collapsed}
-                  onCollapse={this.onCollapse}
-                >
-                  <div className="logo" />
-                  <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
-                    <Menu.Item key="1">
-                      <Link to="/portfolio">
-                        <Icon type="camera" />
-                      <span>Portfolio</span>
-                      </Link>
-                    </Menu.Item>
-                    <Menu.Item key="2">
-                      <Link to="/lookbook">
-                        <Icon type="book" />
-                        <span>Look Book</span>
-                      </Link>
-                    </Menu.Item>
-                    <Menu.Item key="3">
-                      <Link to="/schedule">
-                        <Icon type="schedule" />
-                        <span>Schedule</span>
-                      </Link>
-                    </Menu.Item>
-                    <Menu.Item key="4">
-                      <Link to="/profile">
-                        <Icon type="idcard" />
-                        <span>Profile</span>
-                      </Link>
-                    </Menu.Item>
-                    {(user.role === 'admin') ? (
-                      <Menu>
-                        <Menu.Item key="5">
-                          <Link to="/">
-                            <Icon type="team" />
-                            <span>Users</span>
-                          </Link>
-                        </Menu.Item>
-                        <Menu.Item key="6">
-                          <Link to="/">
-                            <Icon type="project" />
-                            <span>Inventory</span>
-                          </Link>
-                        </Menu.Item>
-                      </Menu>
-                    ) : (console.log("No standards")) }
-                    <SubMenu
-                      key="sub1"
-                      title={<span><Icon type="login" /><span> Login</span></span>}
-                    >
-                      <Menu.Item key="7">
-                        <Login />
-                      </Menu.Item>
-                      <Menu.Item key="8">
-                        <Logout />
-                      </Menu.Item>
-                    </SubMenu>
-                  </Menu>
-                </Sider>
-                <Layout id="background">
-                  <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
-                  <Content style={{ margin: '0 16px' }}>
-                      <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
-                          <Route path="/profile" component={Profile} />
-                          <Route path="/schedule" component={Scheduler} />
-                          <Route path="/lookbook" component={LookBook} />
-                          <Route path="/portfolio" component={Portfolio} />
-                          <Route exact path="/" component={Photo} />
-                      </div>
-                  </Content>
-                  <Footer id="footer">
-                    SalonApp ©2019 Created by LMRT
+      <Sider
+        id="sider"
+        collapsible
+        collapsed={this.state.collapsed}
+        onCollapse={this.onCollapse}
+      >
+        <div className="logo" />
+        <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
+          <SubMenu key="sub4" title={<span><Icon type="camera" /><span>Portfolio</span></span>}>
+            <Menu.Item key="1">
+              <Link to="/cuts">
+                <span>Cuts</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="2">Colors</Menu.Item>
+            <Menu.Item key="3">Styles</Menu.Item>
+          </SubMenu>
+          <Menu.Item key="5">
+            <Link to="/lookbook">
+              <Icon type="book" />
+              <span>Look Book</span>
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="6">
+            <Link to="/schedule">
+              <Icon type="schedule" />
+              <span>Schedule</span>
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="7">
+            <Link to="/profile">
+              <Icon type="idcard" />
+              <span>Profile</span>
+            </Link>
+          </Menu.Item>
+          {(user.role === 'admin') ? (
+            <Menu>
+              <Menu.Item key="8">
+                <Link to="/">
+                  <Icon type="team" />
+                  <span>Users</span>
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="9">
+                <Link to="/">
+                  <Icon type="project" />
+                  <span>Inventory</span>
+                </Link>
+              </Menu.Item>
+            </Menu>
+          ) : (console.log("No standards"))}
+          <SubMenu
+            key="sub1"
+            title={<span><Icon type="login" /><span> Login</span></span>}
+          >
+            <Menu.Item key="10">
+              <Login />
+            </Menu.Item>
+            <Menu.Item key="11">
+              <Logout />
+            </Menu.Item>
+          </SubMenu>
+        </Menu>
+      </Sider>
+      <Layout id="background">
+        <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
+        <Content style={{ margin: '0 16px' }}>
+          <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
+            <Route path="/profile" component={Profile} />
+            <Route path="/schedule" component={Scheduler} />
+            <Route path="/lookbook" component={LookBook} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/cuts" component={Cuts} />
+            <Route exact path="/" component={Photo} />
+          </div>
+        </Content>
+        <Footer id="footer">
+          SalonApp ©2019 Created by LMRT
                   </Footer>
-                </Layout>
-              </Layout>
+      </Layout>
+    </Layout>
   )
 
   render() {
@@ -123,12 +128,15 @@ class HomePage extends Component {
                 >
                   <div className="logo" />
                   <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
-                    <Menu.Item key="1">
-                      <Link to="/portfolio">
-                        <Icon type="camera" />
-                      <span>Portfolio</span>
-                      </Link>
-                    </Menu.Item>
+                    <SubMenu key="sub4" title={<span><Icon type="camera" /><span>Portfolio</span></span>}>
+                      <Menu.Item key="1">
+                        <Link to="/cuts">
+                          <span>Cuts</span>
+                        </Link>
+                      </Menu.Item>
+                      <Menu.Item key="2">Colors</Menu.Item>
+                      <Menu.Item key="3">Styles</Menu.Item>
+                    </SubMenu>
                     <SubMenu
                       key="sub1"
                       title={<span><Icon type="login" /><span> Login</span></span>}
@@ -145,13 +153,11 @@ class HomePage extends Component {
                 <Layout id="background">
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
-                      <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
-                          {/* <Route path="/profile" component={Profile} />
-                          <Route path="/schedule" component={Scheduler} />
-                          <Route path="/lookbook" component={LookBook} /> */}
-                          <Route path="/portfolio" component={Portfolio} />
-                          <Route exact path="/" component={Photo} />
-                      </div>
+                    <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
+                      <Route path="/portfolio" component={Portfolio} />
+                      <Route path="/cuts" component={Cuts} />
+                      <Route exact path="/" component={Photo} />
+                    </div>
                   </Content>
                   <Footer id="footer">
                     SalonApp ©2019 Created by LMRT
@@ -160,7 +166,7 @@ class HomePage extends Component {
               </Layout>
             )
         }
-       
+
       </AuthConsumer>
     )
   }
