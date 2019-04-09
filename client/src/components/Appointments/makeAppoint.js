@@ -1,6 +1,5 @@
 import React from 'react';
 import { DatePicker, Menu, Dropdown, Icon, message, } from 'antd';
-import UpcomingAppoint from '../Appointments/upcomingAppoint';
 import '../Appointments/makeAppoint.css';
 
 function onChange(value, dateString) {
@@ -31,19 +30,17 @@ const makeAppoint = () => (
   <div>
     <p id="title">To create a new appointment, select a service and an available date.</p>
     <Dropdown overlay={menu}>
-    <a className="ant-dropdown-link" href="#">
+    <a className="ant-dropdown-link">
       Services <Icon type="down" />
     </a>
     </Dropdown>
-    
+
     <DatePicker
       showTime
       placeholder="Select Time"
       onChange={onChange}
       onOk={onOk}
     />
-
-    <UpcomingAppoint />
     </div>
 );
 
