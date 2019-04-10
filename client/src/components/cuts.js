@@ -1,68 +1,54 @@
 import React, { Component } from "react";
 import { Row, Col, Card } from 'antd';
-import ZoomImg from './ZoomImg';
-import LBButton from './lookbookbutton.js';
 import 'antd/dist/antd.css';
-import "./lookbook.css";
+import "./cuts.css";
 
 import HairPic4 from "./hairsquare4.jpg";
 import HairPic5 from "./hairsquare5.jpg";
 import HairPic6 from "./hairsquare6.jpg";
-import HairPic7 from "./hairsquare7.jpg";
 
-class LookBook extends Component {
+class Cuts extends Component {
 
     render() {
         return (
             <div>
                 <Row>
                     <Col span={24}>
-                        <h1 id="header">Look Book</h1>
+                        <h1 id="header">Cuts</h1>
                     </Col>
                 </Row>
                 <Row gutter={20}>
-                    <Col span={6}>
+                    <Col span={8}>
                         <Card
                             hoverable
-                            cover={<ZoomImg
+                            cover={<img
                                 src={HairPic4}
                                 className="pic"
                             />}
                             bordered={false}>
-                            <LBButton></LBButton>
+                            <h4>Long</h4>
                         </Card>
                     </Col>
-                    <Col span={6}>
+                    <Col span={8}>
                         <Card
                             hoverable
-                            cover={<ZoomImg
+                            cover={<img
                                 src={HairPic5}
                                 className="pic"
                             />}
                             bordered={false}>
-                            <LBButton></LBButton>
+                            <h4>Short</h4>
                         </Card>
                     </Col>
-                    <Col span={6}>
+                    <Col span={8}>
                         <Card
                             hoverable
-                            cover={<ZoomImg
+                            cover={<img
                                 src={HairPic6}
                                 className="pic"
                             />}
                             bordered={false}>
-                            <LBButton></LBButton>
-                        </Card>
-                    </Col>
-                    <Col span={6}>
-                        <Card
-                            hoverable
-                            cover={<ZoomImg
-                                src={HairPic7}
-                                className="pic"
-                            />}
-                            bordered={false}>
-                            <LBButton></LBButton>
+                            <h4>Men's</h4>
                         </Card>
                     </Col>
                 </Row>
@@ -71,4 +57,4 @@ class LookBook extends Component {
     }
 }
 
-export default LookBook;
+export default Cuts;
