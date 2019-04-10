@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Row, Col, Card } from 'antd';
 import 'antd/dist/antd.css';
-import "./cuts.css";
+import "./colors.css";
 
 import HairPic4 from "./hairsquare4.jpg";
 import HairPic5 from "./hairsquare5.jpg";
 import HairPic6 from "./hairsquare6.jpg";
+import HairPic7 from "./hairsquare7.jpg";
 
 class Colors extends Component {
 
@@ -14,11 +15,11 @@ class Colors extends Component {
             <div>
                 <Row>
                     <Col span={24}>
-                        <h1 id="header">Cuts</h1>
+                        <h1 id="header">Colors</h1>
                     </Col>
                 </Row>
                 <Row gutter={20}>
-                    <Col span={8}>
+                    <Col span={6}>
                         <Card
                             hoverable
                             cover={<img
@@ -26,10 +27,10 @@ class Colors extends Component {
                                 className="pic"
                             />}
                             bordered={false}>
-                            <h4>Long</h4>
+                            <h4>Blonde</h4>
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col span={6}>
                         <Card
                             hoverable
                             cover={<img
@@ -37,10 +38,10 @@ class Colors extends Component {
                                 className="pic"
                             />}
                             bordered={false}>
-                            <h4>Short</h4>
+                            <h4>Dark</h4>
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col span={6}>
                         <Card
                             hoverable
                             cover={<img
@@ -48,7 +49,18 @@ class Colors extends Component {
                                 className="pic"
                             />}
                             bordered={false}>
-                            <h4>Men's</h4>
+                            <h4>Red</h4>
+                        </Card>
+                    </Col>
+                    <Col span={6}>
+                        <Card
+                            hoverable
+                            cover={<img
+                                src={HairPic7}
+                                className="pic"
+                            />}
+                            bordered={false}>
+                            <h4>Fashion</h4>
                         </Card>
                     </Col>
                 </Row>
