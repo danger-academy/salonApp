@@ -19,6 +19,12 @@ const Scheduler = () => (
       onChange={onChange}
       onOk={onOk}
     />
+    <DatePicker
+      showTime
+      placeholder="Select Time"
+      onChange={onChange}
+      onOk={onOk}
+    />
   </div>
 );
 

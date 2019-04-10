@@ -8,6 +8,7 @@ import Scheduler from '../components/Schedule/Schedule';
 import Profile from '../components/Profile/Profile';
 import Portfolio from '../components/portfolio';
 import Cuts from '../components/cuts.js';
+import makeAppoint from '../components/Appointments/makeAppoint';
 import { AuthConsumer } from "../authContext";
 import { Route, Link } from "react-router-dom";
 import './home.css';
@@ -50,13 +51,19 @@ class HomePage extends Component {
               <span>Look Book</span>
             </Link>
           </Menu.Item>
-          <Menu.Item key="6">
+           <Menu.Item key="6">
+                      <Link to="/makeAppoint">
+                        <Icon type="solution" />
+                        <span>Make Appointment</span>
+                      </Link>
+                    </Menu.Item>
+          <Menu.Item key="7">
             <Link to="/schedule">
               <Icon type="schedule" />
-              <span>Schedule</span>
+              <span>My Schedule</span>
             </Link>
           </Menu.Item>
-          <Menu.Item key="7">
+          <Menu.Item key="8">
             <Link to="/profile">
               <Icon type="idcard" />
               <span>Profile</span>
@@ -64,13 +71,13 @@ class HomePage extends Component {
           </Menu.Item>
           {(user.role === 'admin') ? (
             <Menu>
-              <Menu.Item key="8">
+              <Menu.Item key="9">
                 <Link to="/">
                   <Icon type="team" />
                   <span>Users</span>
                 </Link>
               </Menu.Item>
-              <Menu.Item key="9">
+              <Menu.Item key="10">
                 <Link to="/">
                   <Icon type="project" />
                   <span>Inventory</span>
@@ -82,10 +89,10 @@ class HomePage extends Component {
             key="sub1"
             title={<span><Icon type="login" /><span> Login</span></span>}
           >
-            <Menu.Item key="10">
+            <Menu.Item key="11">
               <Login />
             </Menu.Item>
-            <Menu.Item key="11">
+            <Menu.Item key="12">
               <Logout />
             </Menu.Item>
           </SubMenu>
@@ -105,6 +112,7 @@ class HomePage extends Component {
         </Content>
         <Footer id="footer">
           SalonApp ©2019 Created by LMRT
+
                   </Footer>
       </Layout>
     </Layout>
