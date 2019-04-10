@@ -1,0 +1,17 @@
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#header {
+    font-family: 'Great Vibes', cursive;
+    color: #606054;
+}
+
+h4 {
+    background-color: #A9535F;
+    padding: 5%; 
+    margin: 0;
+}

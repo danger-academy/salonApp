@@ -8,6 +8,8 @@ import Scheduler from '../components/Schedule/Schedule';
 import Profile from '../components/Profile/Profile';
 import Portfolio from '../components/portfolio';
 import Cuts from '../components/cuts.js';
+import Colors from '../components/colors.js';
+import Styles from '../components/styles.js';
 import makeAppoint from '../components/Appointments/makeAppoint';
 import { AuthConsumer } from "../authContext";
 import { Route, Link } from "react-router-dom";
@@ -42,8 +44,16 @@ class HomePage extends Component {
                 <span>Cuts</span>
               </Link>
             </Menu.Item>
-            <Menu.Item key="2">Colors</Menu.Item>
-            <Menu.Item key="3">Styles</Menu.Item>
+            <Menu.Item key="2">
+              <Link to="/colors">
+                <span>Colors</span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="3">
+              <Link to="/styles">
+                <span>Styles</span>
+              </Link>
+            </Menu.Item>
           </SubMenu>
           <Menu.Item key="5">
             <Link to="/lookbook">
@@ -51,12 +61,12 @@ class HomePage extends Component {
               <span>Look Book</span>
             </Link>
           </Menu.Item>
-           <Menu.Item key="6">
-                      <Link to="/makeAppoint">
-                        <Icon type="solution" />
-                        <span>Make Appointment</span>
-                      </Link>
-                    </Menu.Item>
+          <Menu.Item key="6">
+            <Link to="/makeAppoint">
+              <Icon type="solution" />
+              <span>Make Appointment</span>
+            </Link>
+          </Menu.Item>
           <Menu.Item key="7">
             <Link to="/schedule">
               <Icon type="schedule" />
@@ -107,6 +117,8 @@ class HomePage extends Component {
             <Route path="/lookbook" component={LookBook} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/cuts" component={Cuts} />
+            <Route path="/colors" component={Colors} />
+            <Route path="/styles" component={Styles} />
             <Route exact path="/" component={Photo} />
           </div>
         </Content>
@@ -142,8 +154,16 @@ class HomePage extends Component {
                           <span>Cuts</span>
                         </Link>
                       </Menu.Item>
-                      <Menu.Item key="2">Colors</Menu.Item>
-                      <Menu.Item key="3">Styles</Menu.Item>
+                      <Menu.Item key="2">
+                        <Link to="/colors">
+                          <span>Colors</span>
+                        </Link>
+                      </Menu.Item>
+                      <Menu.Item key="3">
+                        <Link to="/styles">
+                          <span>Styles</span>
+                        </Link>
+                      </Menu.Item>
                     </SubMenu>
                     <SubMenu
                       key="sub1"
@@ -164,6 +184,8 @@ class HomePage extends Component {
                     <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
                       <Route path="/portfolio" component={Portfolio} />
                       <Route path="/cuts" component={Cuts} />
+                      <Route path="/colors" component={Colors} />
+                      <Route path="/styles" component={Styles} />
                       <Route exact path="/" component={Photo} />
                     </div>
                   </Content>
