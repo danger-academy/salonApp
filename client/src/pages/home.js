@@ -113,6 +113,7 @@ class HomePage extends Component {
         <Content style={{ margin: '0 16px' }}>
           <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
             <Route path="/profile" component={Profile} />
+            <Route path="/makeAppoint" component={makeAppoint} />
             <Route path="/schedule" component={Scheduler} />
             <Route path="/lookbook" component={LookBook} />
             <Route path="/portfolio" component={Portfolio} />
