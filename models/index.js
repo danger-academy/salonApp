@@ -1,3 +1,4 @@
 module.exports = {
-    Image: require("./images")
+    Image: require("./images"),
+    Appt: require("./appointment")
 };
