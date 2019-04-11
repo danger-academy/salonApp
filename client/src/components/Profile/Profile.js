@@ -1,17 +1,18 @@
 import React from "react";
 import {AuthConsumer} from "../../authContext";
 import UpcomingAppoint from '../Appointments/upcomingAppoint';
+import '../Profile/profile.css';
 
 const Profile = () => (
   <AuthConsumer>
     {({user}) => (
-      <div>
+      <div className=''>
         <h2>Profile</h2>
         <ul>
-          <li>ID: {user.id}</li>
           <li>Email: {user.email}</li>
           <li>Role: {user.role}</li>
         </ul>
+        <br />
         <UpcomingAppoint />
       </div>
     )}
