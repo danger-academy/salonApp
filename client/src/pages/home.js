@@ -6,7 +6,15 @@ import Logout from '../components/Logout';
 import LookBook from "../components/lookbook";
 import Scheduler from '../components/Schedule/Schedule';
 import Profile from '../components/Profile/Profile';
-import Portfolio from '../components/portfolio';
+import PortfolioLong from '../components/portfoliolong';
+import PortfolioShort from '../components/portfolioshort';
+import PortfolioMens from '../components/portfoliomens';
+import PortfolioBlonde from '../components/portfolioblonde';
+import PortfolioDark from '../components/portfoliodark';
+import PortfolioRed from '../components/portfoliored';
+import PortfolioFashion from '../components/portfoliofashion';
+import PortfolioUpDos from '../components/portfolioupdos';
+import PortfolioDayToDay from '../components/portfoliodaytoday';
 import Cuts from '../components/cuts.js';
 import Colors from '../components/colors.js';
 import Styles from '../components/styles.js';
@@ -116,7 +124,15 @@ class HomePage extends Component {
             <Route path="/makeAppoint" component={makeAppoint} />
             <Route path="/schedule" component={Scheduler} />
             <Route path="/lookbook" component={LookBook} />
-            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/portfoliolong" component={PortfolioLong} />
+            <Route path="/portfolioshort" component={PortfolioShort} />
+            <Route path="/portfoliomens" component={PortfolioMens} />
+            <Route path="/portfolioblonde" component={PortfolioBlonde} />
+            <Route path="/portfoliodark" component={PortfolioDark} />
+            <Route path="/portfoliored" component={PortfolioRed} />
+            <Route path="/portfoliofashion" component={PortfolioFashion} />
+            <Route path="/portfolioupdos" component={PortfolioUpDos} />
+            <Route path="/portfoliodaytoday" component={PortfolioDayToDay} />
             <Route path="/cuts" component={Cuts} />
             <Route path="/colors" component={Colors} />
             <Route path="/styles" component={Styles} />
@@ -183,7 +199,15 @@ class HomePage extends Component {
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
                     <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
-                      <Route path="/portfolio" component={Portfolio} />
+                      <Route path="/portfoliolong" component={PortfolioLong} />
+                      <Route path="/portfolioshort" component={PortfolioShort} />
+                      <Route path="/portfoliomens" component={PortfolioMens} />
+                      <Route path="/portfolioblonde" component={PortfolioBlonde} />
+                      <Route path="/portfoliodark" component={PortfolioDark} />
+                      <Route path="/portfoliored" component={PortfolioRed} />
+                      <Route path="/portfoliofashion" component={PortfolioFashion} />
+                      <Route path="/portfolioupdos" component={PortfolioUpDos} />
+                      <Route path="/portfoliodaytoday" component={PortfolioDayToDay} />
                       <Route path="/cuts" component={Cuts} />
                       <Route path="/colors" component={Colors} />
                       <Route path="/styles" component={Styles} />

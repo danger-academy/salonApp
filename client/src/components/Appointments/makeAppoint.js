@@ -1,14 +1,21 @@
 import React from 'react';
 import { DatePicker, Menu, Dropdown, Icon, message, } from 'antd';
 import '../Appointments/makeAppoint.css';
+import API from "../../utils/API";
 
 function onChange(value, dateString) {
   console.log('Selected Time: ', value);
   console.log('Formatted Selected Time: ', dateString);
 }
 
-function onOk(value) {
-  console.log('onOk: ', value);
+const onOk = dateString => {
+  console.log('onOk: ', dateString); 
+  API.saveTheDate({
+      date: dateString
+  })
+//   .then(res => {
+//       console.log(res);
+//   })
 }
 
 const onClick = ({ key }) => {
@@ -37,8 +44,8 @@ const makeAppoint = () => (
     </Dropdown>
     <br />
     <DatePicker
-      showTime
-      format="YYYY-MM-DD HH:mm"
+      showTime={{ use12Hours: true, format: "HH:mm a" }}
+      format="YYYY-MM-DD HH:mm a"
       placeholder="Select Time"
       onChange={onChange}
       onOk={onOk}

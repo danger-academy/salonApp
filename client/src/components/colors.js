@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Card } from 'antd';
+import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./colors.css";
 
@@ -20,48 +21,56 @@ class Colors extends Component {
                 </Row>
                 <Row gutter={20}>
                     <Col span={6}>
-                        <Card
-                            hoverable
-                            cover={<img
-                                src={HairPic4}
-                                className="pic"
-                            />}
-                            bordered={false}>
-                            <h4>Blonde</h4>
-                        </Card>
+                        <Link to="/portfolioblonde">
+                            <Card
+                                hoverable
+                                cover={<img
+                                    src={HairPic4}
+                                    className="pic"
+                                />}
+                                bordered={false}>
+                                <h4>Blonde</h4>
+                            </Card>
+                        </Link>
                     </Col>
                     <Col span={6}>
-                        <Card
-                            hoverable
-                            cover={<img
-                                src={HairPic5}
-                                className="pic"
-                            />}
-                            bordered={false}>
-                            <h4>Dark</h4>
-                        </Card>
+                        <Link to="/portfoliodark">
+                            <Card
+                                hoverable
+                                cover={<img
+                                    src={HairPic5}
+                                    className="pic"
+                                />}
+                                bordered={false}>
+                                <h4>Dark</h4>
+                            </Card>
+                        </Link>
                     </Col>
                     <Col span={6}>
-                        <Card
-                            hoverable
-                            cover={<img
-                                src={HairPic6}
-                                className="pic"
-                            />}
-                            bordered={false}>
-                            <h4>Red</h4>
-                        </Card>
+                        <Link to="/portfoliored">
+                            <Card
+                                hoverable
+                                cover={<img
+                                    src={HairPic6}
+                                    className="pic"
+                                />}
+                                bordered={false}>
+                                <h4>Red</h4>
+                            </Card>
+                        </Link>
                     </Col>
                     <Col span={6}>
-                        <Card
-                            hoverable
-                            cover={<img
-                                src={HairPic7}
-                                className="pic"
-                            />}
-                            bordered={false}>
-                            <h4>Fashion</h4>
-                        </Card>
+                        <Link to="/portfoliofashion">
+                            <Card
+                                hoverable
+                                cover={<img
+                                    src={HairPic7}
+                                    className="pic"
+                                />}
+                                bordered={false}>
+                                <h4>Fashion</h4>
+                            </Card>
+                        </Link>
                     </Col>
                 </Row>
             </div>
