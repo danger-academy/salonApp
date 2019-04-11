@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Card } from 'antd';
+import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./styles.css";
 
@@ -18,26 +19,30 @@ class Styles extends Component {
                 </Row>
                 <Row gutter={20}>
                     <Col span={12}>
-                        <Card
-                            hoverable
-                            cover={<img
-                                src={HairPic4}
-                                className="pic"
-                            />}
-                            bordered={false}>
-                            <h4>Up-Do</h4>
-                        </Card>
+                        <Link to="/portfolioupdos">
+                            <Card
+                                hoverable
+                                cover={<img
+                                    src={HairPic4}
+                                    className="pic"
+                                />}
+                                bordered={false}>
+                                <h4>Up-Do</h4>
+                            </Card>
+                        </Link>
                     </Col>
                     <Col span={12}>
-                        <Card
-                            hoverable
-                            cover={<img
-                                src={HairPic5}
-                                className="pic"
-                            />}
-                            bordered={false}>
-                            <h4>Day to Day</h4>
-                        </Card>
+                        <Link to="/portfoliodaytoday">
+                            <Card
+                                hoverable
+                                cover={<img
+                                    src={HairPic5}
+                                    className="pic"
+                                />}
+                                bordered={false}>
+                                <h4>Day to Day</h4>
+                            </Card>
+                        </Link>
                     </Col>
                 </Row>
             </div>
