@@ -16,7 +16,7 @@ const onClick = ({ key }) => {
   };
 
 const menu = (
-    <Menu onClick={onClick}>
+    <Menu className="menu" onClick={onClick}>
       <Menu.Item key="1">Men's Cut</Menu.Item>
       <Menu.Item key="2">Woman's Cut</Menu.Item>
       <Menu.Item key="3">Woman's Cut and Style</Menu.Item>
@@ -29,14 +29,16 @@ const menu = (
 const makeAppoint = () => (
   <div>
     <p id="title">To create a new appointment, select a service and an available date.</p>
+    <br />
     <Dropdown overlay={menu}>
     <a className="ant-dropdown-link">
       Services <Icon type="down" />
     </a>
     </Dropdown>
-
+    <br />
     <DatePicker
       showTime
+      format="YYYY-MM-DD HH:mm"
       placeholder="Select Time"
       onChange={onChange}
       onOk={onOk}
