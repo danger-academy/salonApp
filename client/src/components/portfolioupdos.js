@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-// import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
-import "./portfolio.css";
+import "./portfolioupdos.css";
 
    
 
-class Portfolio extends Component {
+class PortfolioUpDos extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
             images:  [{
-                src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-                thumbnailWidth: 320,
+                src: "https://www.closetcouture.com/wp-content/uploads/2018/12/24190618-updos-for-long-hair-.jpg",
+                thumbnail: "https://www.closetcouture.com/wp-content/uploads/2018/12/24190618-updos-for-long-hair-.jpg",
+                thumbnailWidth: 200,
                 thumbnailHeight: 174,
                 // isSelected: true,
                 // caption: "After Rain (Jeshu John - designerspics.com)"
@@ -32,18 +31,9 @@ class Portfolio extends Component {
                 thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212
-            },
-            {
-                src: "https://cdn.pixabay.com/photo/2019/02/17/20/03/fair-4003075_960_720.jpg",
-                thumbnail: "https://cdn.pixabay.com/photo/2019/02/17/20/03/fair-4003075_960_720.jpg",
-                thumbnailWidth: 212,
-                thumbnailHeight: 300
             }]
         }
     }
-
-
-
 
     render() {
         return (
@@ -56,4 +46,4 @@ class Portfolio extends Component {
 
 }
 
-export default Portfolio; 
+export default PortfolioUpDos;  
