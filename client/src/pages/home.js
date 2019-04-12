@@ -72,7 +72,7 @@ class HomePage extends Component {
           <Menu.Item key="6">
             <Link to="/makeAppoint">
               <Icon type="solution" />
-              <span>Make Appointment</span>
+              <span>Appointments</span>
             </Link>
           </Menu.Item>
           <Menu.Item key="7">
