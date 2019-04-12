@@ -67,6 +67,7 @@ p {
 
 #content {
   text-align: center;
+  width: 100%; 
 }
 
 #background {
@@ -95,13 +96,10 @@ p {
     font-size: 65%;
     padding: 20px;
   }
-
-  #sider { 
-    max-width: 100% !important;
-  }
-
-  .ant-layout-sider-trigger {
-    max-width: 150px !important;
-  }
-
 }
+
+/* @media only screen and (max-width: 320px) {
+  #sider {
+    max-width: 150px !important; 
+  }
+} */

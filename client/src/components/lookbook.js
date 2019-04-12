@@ -24,6 +24,7 @@ class LookBook extends Component {
                     <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
                             className="top"
+                            className="smallscreen"
                             hoverable
                             cover={<ZoomImg
                                 src={HairPic4}
@@ -36,6 +37,7 @@ class LookBook extends Component {
                     <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
                             className="top"
+                            className="smallscreen"
                             hoverable
                             cover={<ZoomImg
                                 src={HairPic5}
@@ -47,6 +49,7 @@ class LookBook extends Component {
                     </Col>
                     <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
+                            className="smallscreen"
                             hoverable
                             cover={<ZoomImg
                                 src={HairPic6}

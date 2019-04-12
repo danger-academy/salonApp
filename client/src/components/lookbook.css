@@ -15,3 +15,9 @@
         margin-bottom: 24px; 
     }
 }
+
+@media (max-width: 576px) {
+    .smallscreen {
+        margin-bottom: 24px; 
+    }
+}
