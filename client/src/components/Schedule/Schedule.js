@@ -18,6 +18,8 @@ const Scheduler = () => (
     <p className="font">Pick your start time/date::</p>
     <DatePicker
       showTime
+      showTime={{ use12Hours: true, format: "HH:mm a" }}
+      format="YYYY-MM-DD HH:mm a"
       placeholder="Select Time"
       onChange={onChange}
       onOk={onOk}
@@ -26,6 +28,8 @@ const Scheduler = () => (
     <p className="font">Pick your end time/date::</p>
     <DatePicker
       showTime
+      showTime={{ use12Hours: true, format: "HH:mm a" }}
+      format="YYYY-MM-DD HH:mm a"
       placeholder="Select Time"
       onChange={onChange}
       onOk={onOk}

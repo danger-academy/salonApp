@@ -12,6 +12,10 @@ span {
   margin: 0; 
 }
 
+svg {
+  margin-top: 0px;
+}
+
 .ant-layout {
   background-color: #DEDBD2;
   font-family: 'Charmonman';
@@ -37,6 +41,11 @@ span {
   background-color: #DEDBD2;
   padding-left: 0%;
   margin-left: 0%;
+}
+
+.ant-layout-sider-zero-width-trigger, .ant-layout-sider-zero-width-trigger-left, .ant-layout-sider-zero-width-trigger:hover {
+  background-color: #a9535f;
+  position: top;
 }
 
 #menu {
