@@ -1,10 +1,8 @@
 const mongoose = require('mongoose');
-
-// const Schema = mongoose.Schema;
-const { Schema } = mongoose;
+const Schema = mongoose.Schema;
 
 // user_id and id_token and email required for auth0
-const userSchema = new Schema({
+const UserSchema = new Schema({
   user_id: {
     type: String,
     required: true
@@ -36,6 +34,6 @@ const userSchema = new Schema({
   },
 });
 
-const UserModel = mongoose.model('UserModel', userSchema);
+const User = mongoose.model("UserModel", UserSchema);
 
-module.exports = UserModel;
+module.exports = User;

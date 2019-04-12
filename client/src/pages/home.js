@@ -154,6 +154,7 @@ class HomePage extends Component {
           authenticated ? (
             <div>
               {this.onLoggedIn(user)}
+              {console.log("home user id is " + user.id)}
             </div>
           ) : (
               <Layout style={{ minHeight: '100vh' }}>
@@ -212,6 +213,7 @@ class HomePage extends Component {
                       <Route path="/colors" component={Colors} />
                       <Route path="/styles" component={Styles} />
                       <Route exact path="/" component={Photo} />
+                      
                     </div>
                   </Content>
                   <Footer id="footer">
