@@ -27,6 +27,7 @@ class Colors extends Component {
                                 cover={<img
                                     src={HairPic4}
                                     className="pic"
+                                    alt=""
                                 />}
                                 bordered={false}>
                                 <h4>Blonde</h4>
@@ -40,6 +41,7 @@ class Colors extends Component {
                                 cover={<img
                                     src={HairPic5}
                                     className="pic"
+                                    alt=""
                                 />}
                                 bordered={false}>
                                 <h4>Dark</h4>
@@ -53,6 +55,7 @@ class Colors extends Component {
                                 cover={<img
                                     src={HairPic6}
                                     className="pic"
+                                    alt=""
                                 />}
                                 bordered={false}>
                                 <h4>Red</h4>
@@ -66,6 +69,7 @@ class Colors extends Component {
                                 cover={<img
                                     src={HairPic7}
                                     className="pic"
+                                    alt=""
                                 />}
                                 bordered={false}>
                                 <h4>Fashion</h4>

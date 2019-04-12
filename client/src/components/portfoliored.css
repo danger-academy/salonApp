@@ -1,3 +1,7 @@
 .ReactGridGallery_tile-viewport img {
     margin-left: 0 !important;
 }
+
+#content {
+    min-height: 230px !important;
+}
