@@ -35,11 +35,11 @@ const menu = (
 
 const makeAppoint = () => (
   <div>
-    <p id="title">Select your service and an available date</p>
+    <p id="title">Create a new appointment</p>
     <br />
     <Dropdown overlay={menu}>
     <a className="ant-dropdown-link">
-      Services<Icon type="more" />
+      Select a service<Icon type="more" />
     </a>
     </Dropdown>
     <br />

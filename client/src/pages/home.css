@@ -39,6 +39,11 @@ span {
   margin-left: 0%;
 }
 
+.ant-layout-sider-zero-width-trigger, .ant-layout-sider-zero-width-trigger-left, .ant-layout-sider-zero-width-trigger:hover {
+  background-color: #a9535f;
+  position: top;
+}
+
 #menu {
   font-family: 'Yrsa';
   font-size: 25px;

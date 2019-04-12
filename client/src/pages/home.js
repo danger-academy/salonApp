@@ -157,12 +157,16 @@ class HomePage extends Component {
               {console.log("home user id is " + user.id)}
             </div>
           ) : (
-              <Layout style={{ minHeight: '100vh' }}>
+              <Layout style={{ minHeight: '100vh'}}>
                 <Sider
                   id="sider"
-                  collapsible
-                  collapsed={this.state.collapsed}
-                  onCollapse={this.onCollapse}
+                  // collapsible
+                  // collapsed={this.state.collapsed}
+                  // onCollapse={this.onCollapse}
+                  breakpoint="lg"
+                  collapsedWidth="0"
+                  onBreakpoint={(broken) => { console.log(broken); }}
+                  onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
                 >
                   <div className="logo" />
                   <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
