@@ -19,7 +19,8 @@ const onOk = dateString => {
 }
 
 const onClick = ({ key }) => {
-    message.info(`Click on item ${key}`);
+    message.info(`Service Chosen`);
+    console.log(key);
   };
 
 const menu = (
@@ -37,19 +38,22 @@ const makeAppoint = () => (
   <div>
     <p id="title">Create a new appointment</p>
     <br />
+    <div id='choices'>
     <Dropdown overlay={menu}>
     <a className="ant-dropdown-link">
-      Select a service<Icon type="more" />
+      Select a service<Icon type="down" />
     </a>
     </Dropdown>
     <br />
     <DatePicker
+      id='dateMake'
       showTime={{ use12Hours: true, format: "HH:mm a" }}
       format="YYYY-MM-DD HH:mm a"
       placeholder="Select Time"
       onChange={onChange}
       onOk={onOk}
     />
+    </div>
     </div>
 );
 
