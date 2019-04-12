@@ -1,6 +1,8 @@
 const db = require('../models');
 ///import axios to do axios call .
 // const axios = require('axios');
+// const User = require('../models');
+
 
 module.exports = {
     findAll: function(req, res) {
@@ -63,6 +65,7 @@ module.exports = {
 //                 // res.status(200).json({message: 'mEssages'})
 //                 User.findOne({auth0_id: sub}, (err, user) => {
 //                     if(err) console.log('Login Error--------------', err);
+
 
 //                     //If the user is undefined.
 //                     if(!user) { 

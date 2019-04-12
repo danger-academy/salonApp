@@ -7,22 +7,28 @@ import CallbackPage from "./pages/callback";
 // import Upload from "./pages/Upload";
 import Auth from "./components/Auth";
 import "./index.css";
+import { AuthConsumer } from "./authContext";
 
 function App() {
   return (
     <div className="App container" id="appContainer">
       <Auth>
-        <div className="routeHolder">
-          <Router>
-            <Switch> 
-              {/* Switch means to only render the first matching route, top to bottom */}
-              <Route path="/dashboard" component={DashboardPage}/> )}/>
-              <Route path="/callback" component={CallbackPage}/>
-              <Route path="/" component={HomePage}/>
-              {/* <Route path="/upload" component={Upload} /> */}
-            </Switch>
-          </Router>
-        </div>
+        <AuthConsumer>
+        {({user}) => (
+          <div className="routeHolder">
+            <Router>
+              <Switch> 
+                {/* Switch means to only render the first matching route, top to bottom */}
+                <Route path="/dashboard" component={DashboardPage}/> )}/>
+                <Route path="/callback" component={CallbackPage}/>
+                <Route path="/" component={HomePage}/>
+                {/* <Route path="/upload" component={Upload} /> */}
+              </Switch>
+            </Router>
+          {console.log("index user id is " + user.id)}
+          </div>
+          )}
+        </AuthConsumer>
       </Auth>
     </div>
   );

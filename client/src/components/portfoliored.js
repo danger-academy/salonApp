@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Gallery from 'react-grid-gallery';
 import "./portfoliored.css";
 
-   
-
 class PortfolioRed extends Component {
 
     constructor(props) {

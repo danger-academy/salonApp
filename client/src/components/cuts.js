@@ -3,7 +3,7 @@ import { Row, Col, Card } from 'antd';
 import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./cuts.css";
-
+import { AuthConsumer } from '../authContext';
 import HairPic4 from "./hairsquare4.jpg";
 import HairPic5 from "./hairsquare5.jpg";
 import HairPic6 from "./hairsquare6.jpg";
@@ -12,6 +12,8 @@ class Cuts extends Component {
 
     render() {
         return (
+            <AuthConsumer>
+        {({user}) => (
             <div>
                 <Row>
                     <Col span={24}>
@@ -62,7 +64,11 @@ class Cuts extends Component {
                         </Link>
                     </Col>
                 </Row>
+                {console.log("cuts user id is " + user.id)}
+                {console.log("cuts user email is " + user.email)}
             </div>
+            )}
+            </AuthConsumer>
         );
     }
 }
