@@ -6,8 +6,8 @@ router.route("/")
     .post(userControl.create);
 
 router.route("/:id")
-    .get(userControl.findById)
+    .get(userControl.findById);
     // .put(userControl.update)
-    .delete(userControl.remove);
+    // .delete(userControl.remove);
 
 module.exports = router;

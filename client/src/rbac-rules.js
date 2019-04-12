@@ -1,3 +1,5 @@
+import API from "/utils/API";
+
 const rules = {
   visitor: {
     static: ["posts:list", "home-page:visit"]
