@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Gallery from 'react-grid-gallery';
 import "./portfolioblonde.css";
 
-   
-
 class PortfolioBlonde extends Component {
 
     constructor(props) {
@@ -31,12 +29,6 @@ class PortfolioBlonde extends Component {
                 thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
                 thumbnailWidth: 320,
                 thumbnailHeight: 212
-            },
-            {
-                src: "https://cdn.pixabay.com/photo/2019/02/17/20/03/fair-4003075_960_720.jpg",
-                thumbnail: "https://cdn.pixabay.com/photo/2019/02/17/20/03/fair-4003075_960_720.jpg",
-                thumbnailWidth: 212,
-                thumbnailHeight: 300
             }]
         }
     }

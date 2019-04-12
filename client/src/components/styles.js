@@ -25,6 +25,7 @@ class Styles extends Component {
                                 cover={<img
                                     src={HairPic4}
                                     className="pic"
+                                    alt=""
                                 />}
                                 bordered={false}>
                                 <h4>Up-Do</h4>
@@ -38,6 +39,7 @@ class Styles extends Component {
                                 cover={<img
                                     src={HairPic5}
                                     className="pic"
+                                    alt=""
                                 />}
                                 bordered={false}>
                                 <h4>Day to Day</h4>

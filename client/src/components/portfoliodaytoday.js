@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Gallery from 'react-grid-gallery';
-import "./portfoliodaytoday.css";
-
-   
+import "./portfoliodaytoday.css"
 
 class PortfolioDayToDay extends Component {
 
