@@ -2,7 +2,6 @@ import React from 'react';
 import { DatePicker } from 'antd';
 import '../Schedule/Schedule.css';
 
-
 function onChange(value, dateString) {
   console.log('Selected Time: ', value);
   console.log('Formatted Selected Time: ', dateString);

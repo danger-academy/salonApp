@@ -1,10 +1,9 @@
 import React from "react";
 import {AuthConsumer} from "../../authContext";
-import GetEmail from "../GetEmail";
+//import GetEmail from "../GetEmail";
 import UpcomingAppoint from '../Appointments/upcomingAppoint';
 import '../Profile/profile.css';
 
-//const userEmail = require("../UserEmail.js");
 const Profile = () => (
   <AuthConsumer>
     {({user}) => (
@@ -20,5 +19,5 @@ const Profile = () => (
     )}
   </AuthConsumer>
 );
-console.log("dammit" + GetEmail);
+
 export default Profile;

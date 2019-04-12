@@ -1,6 +1,6 @@
-const User = require('../models/user');
-///import axios to do axios call .
+const User = require('../models');
 const axios = require('axios');
+
 module.exports = {
     readUserData(req, res) {
       //Get the session, for update the reducer.
@@ -57,6 +57,7 @@ module.exports = {
                     req.session.user = user;
                     req.session.save();
                     res.redirect('/');
+                    console.log("userController test log= " + user);
                 })
             }).catch(err => console.log('Auth0 get user info Error------------', err));
         }).catch(err => console.log('Auth0 Axios Post backend Error------------', err));
