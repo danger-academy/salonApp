@@ -1,6 +1,7 @@
 #title {
     font-family: 'Ovo';
     font-size: 20px;
+    margin-left: 0px;
 }
 
 a {
@@ -10,4 +11,9 @@ a {
 
 .menu {
     font-family: 'Ovo';
+}
+
+.ant-calendar-picker-input {
+    margin-right: 65px;
+    margin-top: 10px;
 }

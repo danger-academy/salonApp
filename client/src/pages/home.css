@@ -12,10 +12,6 @@ span {
   margin: 0; 
 }
 
-svg {
-  margin-top: 0px;
-}
-
 .ant-layout {
   background-color: #DEDBD2;
   font-family: 'Charmonman';
@@ -44,8 +40,7 @@ svg {
 }
 
 .ant-layout-sider-zero-width-trigger, .ant-layout-sider-zero-width-trigger-left, .ant-layout-sider-zero-width-trigger:hover {
-  background-color: #a9535f;
-  position: top;
+  background-color: #606054;
 }
 
 #menu {
@@ -71,9 +66,7 @@ p {
 }
 
 #content {
-  margin-left: 11%;
-  margin-right: 11%;
-  margin-bottom: 5%
+  text-align: center;
 }
 
 #background {
@@ -83,8 +76,19 @@ p {
 }
 
 @media only screen and (max-width: 414px) {
-  p {
-    font-size: 5px;
+
+  #footer {
+    color: black;
+  }
+
+  #content {
+    margin-top: 75px;
+  }
+
+  #welcome {
+    background-color: whitesmoke;
+    border-bottom: 3px solid #606054; 
+    font-size: 35px;
   }
 
   .ant-layout-footer {
@@ -92,8 +96,7 @@ p {
     padding: 20px;
   }
 
-  #sider {
-    min-width: 20% !important; 
+  #sider { 
     max-width: 100% !important;
   }
 
