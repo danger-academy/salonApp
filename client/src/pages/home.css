@@ -12,6 +12,10 @@ span {
   margin: 0; 
 }
 
+svg {
+  margin-top: 0px;
+}
+
 .ant-layout {
   background-color: #DEDBD2;
   font-family: 'Charmonman';
