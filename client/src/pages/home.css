@@ -83,4 +83,13 @@ p {
     padding: 20px;
   }
 
+  #sider {
+    min-width: 20% !important; 
+    max-width: 100% !important;
+  }
+
+  .ant-layout-sider-trigger {
+    max-width: 150px !important;
+  }
+
 }

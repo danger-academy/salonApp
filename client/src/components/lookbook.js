@@ -21,8 +21,9 @@ class LookBook extends Component {
                     </Col>
                 </Row>
                 <Row gutter={20}>
-                    <Col span={6}>
+                    <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
+                            className="top"
                             hoverable
                             cover={<ZoomImg
                                 src={HairPic4}
@@ -32,8 +33,9 @@ class LookBook extends Component {
                             <LBButton></LBButton>
                         </Card>
                     </Col>
-                    <Col span={6}>
+                    <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
+                            className="top"
                             hoverable
                             cover={<ZoomImg
                                 src={HairPic5}
@@ -43,7 +45,7 @@ class LookBook extends Component {
                             <LBButton></LBButton>
                         </Card>
                     </Col>
-                    <Col span={6}>
+                    <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
                             hoverable
                             cover={<ZoomImg
@@ -54,7 +56,7 @@ class LookBook extends Component {
                             <LBButton></LBButton>
                         </Card>
                     </Col>
-                    <Col span={6}>
+                    <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
                             hoverable
                             cover={<ZoomImg
