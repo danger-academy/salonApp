@@ -12,10 +12,6 @@ span {
   margin: 0; 
 }
 
-svg {
-  margin-top: 0px;
-}
-
 .ant-layout {
   background-color: #DEDBD2;
   font-family: 'Charmonman';
@@ -44,8 +40,7 @@ svg {
 }
 
 .ant-layout-sider-zero-width-trigger, .ant-layout-sider-zero-width-trigger-left, .ant-layout-sider-zero-width-trigger:hover {
-  background-color: #a9535f;
-  position: top;
+  background-color: #606054;
 }
 
 #menu {
@@ -81,9 +76,18 @@ p {
 }
 
 @media only screen and (max-width: 414px) {
+
+  #footer {
+    color: black;
+  }
+
+  #content {
+    margin-top: 75px;
+  }
+
   #welcome {
-    background-color: #DEDBD2;
-    border-bottom: 5px solid #606054; 
+    background-color: whitesmoke;
+    border-bottom: 3px solid #606054; 
     font-size: 35px;
   }
 
