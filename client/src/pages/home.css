@@ -9,12 +9,15 @@ span {
 }
 
 #welcome {
-  margin: 0; 
+  font-family: 'Cormorant Garamond';
+  font-size: 45px;
+  margin-left: 0;
+  margin-top: 12px; 
 }
 
 .ant-layout {
   background-color: #DEDBD2;
-  font-family: 'Charmonman';
+  font-family: 'Cormorant Garamond';
   color: #606054;
   font-size: 100%;
 }
@@ -44,7 +47,7 @@ span {
 }
 
 #menu {
-  font-family: 'Yrsa';
+  font-family: 'Fira Sans';
   font-size: 25px;
   color: #606054;
 }
@@ -58,7 +61,7 @@ body {
 }
 
 p {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Cormorant Garamond', cursive;
   color: #606054;
   font-size: 35px;
   margin-bottom: 0px;
@@ -66,8 +69,11 @@ p {
 }
 
 #content {
+  margin-top: 25px;
   text-align: center;
-  border-style: round;
+  border: solid 1px #DEDBD2;
+  border-radius: 7px;
+  min-height: 200px;
 }
 
 #background {
@@ -91,6 +97,7 @@ p {
     background-color: whitesmoke;
     border-bottom: 3px solid #606054; 
     font-size: 35px;
+    margin-top: 0px;
   }
 
   .ant-layout-footer {

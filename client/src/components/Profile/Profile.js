@@ -7,7 +7,7 @@ import '../Profile/profile.css';
 const Profile = () => (
   <AuthConsumer>
     {({user}) => (
-      <div className=''>
+      <div>
         <h2>Profile</h2>
         <ul>
           <li>Email: {user.email}</li>
