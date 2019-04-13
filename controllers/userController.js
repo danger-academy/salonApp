@@ -1,8 +1,4 @@
 const db = require('../models');
-///import axios to do axios call .
-// const axios = require('axios');
-// const User = require('../models');
-
 
 module.exports = {
     findAll: function(req, res) {
@@ -12,6 +8,11 @@ module.exports = {
     },
     findById: function(req, res) {
         db.UserModel.findById(req.params.id)
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).json(err));
+    },
+    findByUser: function(req, res) {
+        db.UserModel.findOne({email: req.params.id})
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },

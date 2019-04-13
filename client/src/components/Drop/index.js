@@ -5,7 +5,6 @@ import API from "../../utils/API";
 const API_KEY = "164352566276885";
 const WHAT_TIME = Date.now()/1000;
 const UPLOAD_PRESET = "fnccpzwc";
-// const dasLink = theLink;
 
 class Drop extends Component {
 

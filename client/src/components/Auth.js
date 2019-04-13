@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import auth0 from "auth0-js";
-
 import {AUTH_CONFIG} from "../auth0-variables";
 import {AuthProvider} from "../authContext";
+import API from "../utils/API";
 
 const auth = new auth0.WebAuth({
   domain: AUTH_CONFIG.domain,
@@ -58,6 +58,29 @@ class Auth extends Component {
       accessToken: data.accessToken,
       user
     });
+    // const userData = user.email;
+    this.isTheUserReal(user);
+  }
+
+  isTheUserReal = async(user) => {
+      console.log("the search begins " + user.email);
+      API.findTheUser(user.email)
+        // .then(res => res.json(res))
+        // .then(res => console.log("Did it work? " + res.data.email))
+        .then(res => {
+            if (res === null) {
+                console.log("Nothing to see here");
+                API.saveTheUser({
+                    user_id: user.id,
+                    email: user.email
+                })
+                    // .then(result => res.json(result))
+                    .then(result => console.log("created a user " + result.data.email));
+            }
+            else {
+                console.log("user already be there " + res.data.email);
+            }
+        })
   }
 
   render() {
