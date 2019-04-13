@@ -18,9 +18,10 @@ class Styles extends Component {
                     </Col>
                 </Row>
                 <Row gutter={20}>
-                    <Col span={12}>
+                    <Col xs={{span: 24}} sm={{span: 12}}>
                         <Link to="/portfolioupdos">
                             <Card
+                                className="stylesmallscreen"
                                 hoverable
                                 cover={<img
                                     src={HairPic4}
@@ -32,7 +33,7 @@ class Styles extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col span={12}>
+                    <Col  xs={{span: 24}} sm={{span: 12}}>
                         <Link to="/portfoliodaytoday">
                             <Card
                                 hoverable

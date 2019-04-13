@@ -12,7 +12,7 @@ const UpcomingAppoint = () => (
         <table className="table">
           <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Time</th>
             <th scope="col">Name/Service</th>
             <th scope="col">Edit</th>
           </tr>
@@ -20,7 +20,7 @@ const UpcomingAppoint = () => (
           <tbody>
           {posts.map((post, index) => (
             <tr key={post.id}>
-              <th scope="row">{index + 1}</th>
+              <th scope="row">{post.id}</th>
               <td>{post.name}</td>
               <td>
                 <Can
@@ -32,7 +32,7 @@ const UpcomingAppoint = () => (
                   }}
                   yes={() => (
                     <button className="btn btn-sm btn-default">
-                      Edit Post
+                      Edit Appt
                     </button>
                   )}
                 />
@@ -41,7 +41,7 @@ const UpcomingAppoint = () => (
                   perform="posts:delete"
                   yes={() => (
                     <button className="btn btn-sm btn-danger">
-                      Delete Post
+                      Delete Appt
                     </button>
                   )}
                 />

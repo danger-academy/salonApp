@@ -12,7 +12,7 @@ const auth = new auth0.WebAuth({
   responseType: "token id_token"
 });
 
-class Auth extends Component {
+class UserId extends Component {
   state = {
     authenticated: false,
     user: {
@@ -48,11 +48,8 @@ class Auth extends Component {
   };
 
   setSession(data) {
-    const user = {
-      id: data.sub,
-      email: data.email,
-      role: data[AUTH_CONFIG.roleUrl]
-    };
+    const user = data.sub;
+    
     this.setState({
       authenticated: true,
       accessToken: data.accessToken,
@@ -68,10 +65,8 @@ class Auth extends Component {
       logout: this.logout
     };
     return (
-      <AuthProvider value={authProviderValue}>
-        {this.props.children}
-      </AuthProvider>
+      authProviderValue.user
     );
   }
 }
-export default Auth;
+export default UserId.user;

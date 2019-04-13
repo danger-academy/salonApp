@@ -15,3 +15,21 @@ h4 {
     padding: 5%; 
     margin: 0;
 }
+
+@media (max-width: 576px) {
+    .colorsmallscreen {
+        margin-bottom: 24px; 
+    }
+}
+
+@media(max-width: 768px){
+    .top {
+        margin-bottom: 24px; 
+    }
+}
+
+/* @media(max-width: 1024px){
+    .colorsmallscreen {
+        margin-bottom: 24px; 
+    }
+} */

@@ -27,3 +27,10 @@
 .ant-modal-body {
     padding: 0; 
 }
+
+@media (max-width: 576px) {
+    .commentButton, .deleteButton {
+        height: 25px; 
+        padding: 5px; 
+    }
+}
