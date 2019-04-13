@@ -21,9 +21,10 @@ class Cuts extends Component {
                     </Col>
                 </Row>
                 <Row gutter={20}>
-                    <Col span={8}>
+                    <Col xs={{span: 24}} sm={{span: 8}}>
                         <Link to="/portfoliolong">
                             <Card
+                                className="cutsmallscreen"
                                 hoverable
                                 cover={<img
                                     src={HairPic4}
@@ -35,9 +36,10 @@ class Cuts extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col span={8}>
+                    <Col xs={{span: 24}} sm={{span: 8}}>
                         <Link to="/portfolioshort">
                             <Card
+                                className="cutsmallscreen"
                                 hoverable
                                 cover={<img
                                     src={HairPic5}
@@ -49,7 +51,7 @@ class Cuts extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col span={8}>
+                    <Col xs={{span: 24}} sm={{span: 8}}>
                         <Link to="/portfoliomens">
                             <Card
                                 hoverable

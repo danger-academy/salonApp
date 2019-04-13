@@ -10,10 +10,10 @@
   color: #fff;
 }
 
-.pictures .picture2 {
+/* .pictures .picture2 {
     height: 100px !important;
     width: 100px !important; 
-}
+} */
 
 .ant-card-body {
     padding: 0 !important; 
@@ -21,4 +21,11 @@
 
 .ant-card-cover img {
     border-radius: 0; 
+}
+
+@media (min-width: 1200px) {
+  .ant-carousel .slick-slide {
+    height: 50%; 
+    width: 50%; 
+  }
 }

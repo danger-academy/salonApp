@@ -37,6 +37,7 @@ span {
   background-color: #DEDBD2;
   padding-left: 0%;
   margin-left: 0%;
+  max-width: 1100px;
 }
 
 .ant-layout-sider-zero-width-trigger, .ant-layout-sider-zero-width-trigger-left, .ant-layout-sider-zero-width-trigger:hover {
@@ -67,13 +68,15 @@ p {
 
 #content {
   text-align: center;
+  width: 100%; 
   border-style: round;
+
 }
 
 #background {
   background-image: url("../components/flowerbordersquare.png");
   background-size: cover;
-  /* overflow: hidden;  */
+  background-size: 100% 100%;
 }
 
 @media only screen and (max-width: 414px) {
@@ -97,13 +100,10 @@ p {
     font-size: 65%;
     padding: 20px;
   }
-
-  #sider { 
-    max-width: 100% !important;
-  }
-
-  .ant-layout-sider-trigger {
-    max-width: 150px !important;
-  }
-
 }
+
+/* @media only screen and (max-width: 320px) {
+  #sider {
+    max-width: 150px !important; 
+  }
+} */
