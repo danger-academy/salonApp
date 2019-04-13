@@ -13,7 +13,12 @@ export default {
     getTheDate: function() {
         return axios.get("/api/appt");
     },
-    saveTheUser: function(userData) {
-        return axios.post("/api/user", userData);
+    saveTheUser: function(newUserData) {
+        return axios.post("/api/user", newUserData);
+    },
+    findTheUser: function(q) {
+        console.log("What does it all mean? " + q);
+        return axios.get("/api/user/find/" + q);
+        
     }
 };

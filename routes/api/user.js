@@ -10,4 +10,7 @@ router.route("/:id")
     // .put(userControl.update)
     // .delete(userControl.remove);
 
+router.route("/find/:id")
+    .get(userControl.findByUser);
+
 module.exports = router;

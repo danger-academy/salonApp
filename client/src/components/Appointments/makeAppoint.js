@@ -20,7 +20,6 @@ const onOk = dateString => {
 
 const onClick = ({ key }) => {
     message.info(`Service Chosen`);
-    console.log(key);
   };
 
 const menu = (
