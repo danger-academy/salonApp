@@ -18,7 +18,14 @@ img {
     right: 0;
     bottom: 0;
     display: none;
-    /* background: white; */
+    background: #A9535F;
     transform: translateZ(0);
-    /* z-index: 1; */
+    z-index: 1;
   }
+
+  @media (max-width: 768px) {
+    img {
+      height: auto !important;
+      width: 100vw !important; 
+    }
+}
