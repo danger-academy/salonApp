@@ -1,27 +1,27 @@
 const posts = [
   {
-    id: "1",
-    name: "Client a",
+    id: "9:30am",
+    name: "Jimmy Haircuts / Men's Cut",
     ownerId: ""
   },
   {
-    id: "b",
-    name: "Client b",
+    id: "10:15am",
+    name: "Judy A / Women's Cut",
     ownerId: "auth0|5b9835ccf1642721ad85bf93"
   },
   {
-    id: "c",
-    name: "Client c",
+    id: "11:30am",
+    name: "Barb / Women's Cut and Color",
     ownerId: ""
   },
   {
-    id: "d",
-    name: "Client d",
+    id: "1:45pm",
+    name: "Client D",
     ownerId: "auth0|5c885ef5db99d2476a8e69dd"
   },
   {
-    id: "e",
-    name: "Client e",
+    id: "4:00pm",
+    name: "Client X",
     ownerId: "auth0|5c885ef5db99d2476a8e69dd"
   }
 ];
