@@ -13,7 +13,7 @@ function onOk(value) {
 
 const Scheduler = () => (
   <div id="scheduleContent">
-    <p className="font">Create your schedule!</p>
+    <p className="fontTitle">Create Your Schedule</p>
     <br />
     <p className="font">Pick your start time/date::</p>
     <DatePicker

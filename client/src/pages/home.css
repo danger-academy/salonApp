@@ -69,6 +69,8 @@ p {
 #content {
   text-align: center;
   width: 100%; 
+  border-style: round;
+
 }
 
 #background {
@@ -84,6 +86,7 @@ p {
   }
 
   #content {
+    border-style: round;
     margin-top: 75px;
   }
 
