@@ -16,6 +16,8 @@ import PortfolioFashion from '../components/portfoliofashion';
 import PortfolioUpDos from '../components/portfolioupdos';
 import PortfolioDayToDay from '../components/portfoliodaytoday';
 import Cuts from '../components/cuts.js';
+import Users from '../components/Users/Users';
+import Inventory from '../components/Inventory/Inventory.js';
 import Colors from '../components/colors.js';
 import Styles from '../components/styles.js';
 import makeAppoint from '../components/Appointments/makeAppoint';
@@ -91,13 +93,13 @@ class HomePage extends Component {
           {(user.role === 'admin') ? (
             <Menu>
               <Menu.Item key="9">
-                <Link to="/">
+                <Link to="/Users">
                   <Icon type="team" />
                   <span>Users</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="10">
-                <Link to="/">
+                <Link to="/Inventory">
                   <Icon type="project" />
                   <span>Inventory</span>
                 </Link>
@@ -121,6 +123,8 @@ class HomePage extends Component {
         <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
         <Content style={{ margin: '0 16px' }}>
           <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
+            <Route exact path="/Users" component={Users} />
+            <Route exact path="/Inventory" component={Inventory} />
             <Route path="/profile" component={Profile} />
             <Route path="/makeAppoint" component={makeAppoint} />
             <Route path="/schedule" component={Scheduler} />
@@ -205,6 +209,8 @@ class HomePage extends Component {
                   <p id="welcome" className="w3-animate-zoom">...Ashley Love's Designs...</p>
                   <Content style={{ margin: '0 16px' }}>
                     <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
+                      <Route exact path="/Users" component={Users} />
+                      <Route exact path="/Inventory" component={Inventory} />
                       <Route path="/portfoliolong" component={PortfolioLong} />
                       <Route path="/portfolioshort" component={PortfolioShort} />
                       <Route path="/portfoliomens" component={PortfolioMens} />

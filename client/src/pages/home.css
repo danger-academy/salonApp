@@ -67,6 +67,7 @@ p {
 
 #content {
   text-align: center;
+  border-style: round;
 }
 
 #background {
@@ -82,6 +83,7 @@ p {
   }
 
   #content {
+    border-style: round;
     margin-top: 75px;
   }
 
