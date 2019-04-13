@@ -15,7 +15,7 @@ const Scheduler = () => (
   <div id="scheduleContent">
     <p className="fontTitle">Create Your Schedule</p>
     <br />
-    <p className="font">Pick your start time/date::</p>
+    <p className="font">Start time/date</p>
     <DatePicker
       showTime
       showTime={{ use12Hours: true, format: "HH:mm a" }}
@@ -25,7 +25,7 @@ const Scheduler = () => (
       onOk={onOk}
     />
     <br />
-    <p className="font">Pick your end time/date::</p>
+    <p className="font">End time/date</p>
     <DatePicker
       showTime
       showTime={{ use12Hours: true, format: "HH:mm a" }}

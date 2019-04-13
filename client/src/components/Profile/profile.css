@@ -2,3 +2,7 @@ li {
     font-family: 'Ovo';
     font-size: 20px;
 }
+
+ul {
+    list-style-type: none;
+}
