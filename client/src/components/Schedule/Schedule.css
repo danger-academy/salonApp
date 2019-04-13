@@ -1,9 +1,9 @@
-.font {
+.fontTitle {
     font-family: 'Ovo';
     font-size: 20px;
+    margin-left: 0px;
 }
 
 #scheduleContent {
-    
     padding: 20px;
 }
