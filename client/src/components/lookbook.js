@@ -23,8 +23,7 @@ class LookBook extends Component {
                 <Row gutter={20}>
                     <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
-                            className="top"
-                            className="smallscreen"
+                            className="smallscreen top"
                             hoverable
                             cover={<ZoomImg
                                 src={HairPic4}
@@ -36,8 +35,7 @@ class LookBook extends Component {
                     </Col>
                     <Col md={{span: 12}} xl={{span: 6}}>
                         <Card
-                            className="top"
-                            className="smallscreen"
+                            className="smallscreen top"
                             hoverable
                             cover={<ZoomImg
                                 src={HairPic5}

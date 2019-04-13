@@ -20,9 +20,10 @@ class Colors extends Component {
                     </Col>
                 </Row>
                 <Row gutter={20}>
-                    <Col span={6}>
+                    <Col sm={{span: 24}} md={{span: 12}} xl={{span: 6}}>
                         <Link to="/portfolioblonde">
                             <Card
+                                className="colorsmallscreen top"
                                 hoverable
                                 cover={<img
                                     src={HairPic4}
@@ -34,9 +35,10 @@ class Colors extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col span={6}>
+                    <Col sm={{span: 24}} md={{span: 12}} xl={{span: 6}}>
                         <Link to="/portfoliodark">
                             <Card
+                                className="colorsmallscreen top"
                                 hoverable
                                 cover={<img
                                     src={HairPic5}
@@ -48,9 +50,10 @@ class Colors extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col span={6}>
+                    <Col sm={{span: 24}} md={{span: 12}} xl={{span: 6}}>
                         <Link to="/portfoliored">
                             <Card
+                                className="colorsmallscreen"
                                 hoverable
                                 cover={<img
                                     src={HairPic6}
@@ -62,7 +65,7 @@ class Colors extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col span={6}>
+                    <Col sm={{span: 24}} md={{span: 12}} xl={{span: 6}}>
                         <Link to="/portfoliofashion">
                             <Card
                                 hoverable
