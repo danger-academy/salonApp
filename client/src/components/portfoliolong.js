@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Gallery from 'react-grid-gallery';
 import "./portfoliolong.css";
 
-   
+ 
 
 class PortfolioLong extends Component {
 
