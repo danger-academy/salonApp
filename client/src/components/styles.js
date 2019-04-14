@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./styles.css";
 
-import HairPic4 from "./hairsquare4.jpg";
-import HairPic5 from "./hairsquare5.jpg";
+import mainupdo from "./ashleypics/mainupdo.jpg";
+import maindaytoday from "./ashleypics/maindaytoday.jpg";
 
 class Styles extends Component {
 
@@ -14,7 +14,7 @@ class Styles extends Component {
             <div>
                 <Row>
                     <Col span={24}>
-                        <h1 id="header">Colors</h1>
+                        <h1 id="header">Styles</h1>
                     </Col>
                 </Row>
                 <Row gutter={20}>
@@ -24,7 +24,7 @@ class Styles extends Component {
                                 className="stylesmallscreen"
                                 hoverable
                                 cover={<img
-                                    src={HairPic4}
+                                    src={mainupdo}
                                     className="pic"
                                     alt=""
                                 />}
@@ -38,7 +38,7 @@ class Styles extends Component {
                             <Card
                                 hoverable
                                 cover={<img
-                                    src={HairPic5}
+                                    src={maindaytoday}
                                     className="pic"
                                     alt=""
                                 />}

@@ -2,10 +2,20 @@
     margin-left: 0 !important;
 }
 
-#content {
-    min-height: 230px !important;
+.ReactGridGallery_tile-viewport {
+    width: auto !important; 
 }
+
+/* #content {
+    min-height: 230px !important;
+} */
 
 .images {
     overflow: auto;
 }
+
+/* @media only screen and (max-width: 768px) {
+    .ReactGridGallery_tile-viewport {
+        width: 400px !important;
+    }
+} */

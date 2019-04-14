@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./cuts.css";
 import { AuthConsumer } from '../authContext';
-import HairPic4 from "./hairsquare4.jpg";
-import HairPic5 from "./hairsquare5.jpg";
-import HairPic6 from "./hairsquare6.jpg";
+import mainlong from "./ashleypics/mainlong.jpg";
+import mainmen from "./ashleypics/mainmen.jpg";
+import mainshort from "./ashleypics/mainshort.jpg";
 
 class Cuts extends Component {
 
@@ -27,7 +27,7 @@ class Cuts extends Component {
                                 className="cutsmallscreen"
                                 hoverable
                                 cover={<img
-                                    src={HairPic4}
+                                    src={mainlong}
                                     className="pic"
                                     alt=""
                                 />}
@@ -42,7 +42,7 @@ class Cuts extends Component {
                                 className="cutsmallscreen"
                                 hoverable
                                 cover={<img
-                                    src={HairPic5}
+                                    src={mainshort}
                                     className="pic"
                                     alt=""
                                 />}
@@ -56,7 +56,7 @@ class Cuts extends Component {
                             <Card
                                 hoverable
                                 cover={<img
-                                    src={HairPic6}
+                                    src={mainmen}
                                     className="pic"
                                     alt=""
                                 />}
