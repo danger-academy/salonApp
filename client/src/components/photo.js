@@ -11,7 +11,6 @@ import HairPic3 from "./hairsquare3.jpg";
 function Photo() {
   return (
     <Carousel autoplay>
-      {/* <div><img className="pictures" src={HairPic} /></div> */}
       <div>
         <Card className="picture2"
         cover={<img alt="example" src={HairPic} />}>

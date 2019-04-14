@@ -32,6 +32,7 @@ const Image = posed.img({
     left: 0,
     right: 0,
     bottom: 0,
+    height: '100vh',
     transition,
     flip: true
   }

@@ -72,15 +72,9 @@ p {
 #content {
   margin-top: 25px;
   text-align: center;
-<<<<<<< HEAD
   border: solid 1px #DEDBD2;
   border-radius: 7px;
   min-height: 200px;
-=======
-  width: 100%; 
-  border-style: round;
-
->>>>>>> 8f74330a431340957411b1a9c136793cdaa94045
 }
 
 #background {
@@ -112,9 +106,3 @@ p {
     padding: 20px;
   }
 }
-
-/* @media only screen and (max-width: 320px) {
-  #sider {
-    max-width: 150px !important; 
-  }
-} */

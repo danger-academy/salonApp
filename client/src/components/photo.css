@@ -23,9 +23,24 @@
     border-radius: 0; 
 }
 
-@media (min-width: 1200px) {
-  .ant-carousel .slick-slide {
-    height: 50%; 
-    width: 50%; 
+/* @media (min-width: 1024px) {
+  .ant-layout-content {
+    width: 548px;
+    height: 548px;
   }
-}
+  /* .ant-carousel {
+    height: 500px;
+    width: 500px;
+  }
+
+  .ant-carousel .slick-slider {
+    height: 500px;
+    width: 500px;
+  } */
+
+  /* img {
+    height: 500px;
+    width: 500px;
+  /* }
+
+} */
