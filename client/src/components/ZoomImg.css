@@ -1,4 +1,4 @@
-img {
+.ant-card-cover img {
     cursor: zoom-in;
     display: block;
     max-width: 100%;
@@ -24,7 +24,7 @@ img {
   }
 
   @media (max-width: 768px) {
-    img {
+    .ant-card-cover img {
       height: auto !important;
       width: 100vw !important; 
     }
