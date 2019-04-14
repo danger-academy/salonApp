@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./colors.css";
 
-import HairPic4 from "./hairsquare4.jpg";
-import HairPic5 from "./hairsquare5.jpg";
-import HairPic6 from "./hairsquare6.jpg";
-import HairPic7 from "./hairsquare7.jpg";
+import mainblonde from "./ashleypics/mainblonde.jpg";
+import maindark from "./ashleypics/maindark.jpg";
+import mainred from "./ashleypics/mainred.jpg";
+import mainfashion from "./ashleypics/mainfashion.jpg";
 
 class Colors extends Component {
 
@@ -26,7 +26,7 @@ class Colors extends Component {
                                 className="colorsmallscreen top"
                                 hoverable
                                 cover={<img
-                                    src={HairPic4}
+                                    src={mainblonde}
                                     className="pic"
                                     alt=""
                                 />}
@@ -41,7 +41,7 @@ class Colors extends Component {
                                 className="colorsmallscreen top"
                                 hoverable
                                 cover={<img
-                                    src={HairPic5}
+                                    src={maindark}
                                     className="pic"
                                     alt=""
                                 />}
@@ -56,7 +56,7 @@ class Colors extends Component {
                                 className="colorsmallscreen"
                                 hoverable
                                 cover={<img
-                                    src={HairPic6}
+                                    src={mainred}
                                     className="pic"
                                     alt=""
                                 />}
@@ -70,7 +70,7 @@ class Colors extends Component {
                             <Card
                                 hoverable
                                 cover={<img
-                                    src={HairPic7}
+                                    src={mainfashion}
                                     className="pic"
                                     alt=""
                                 />}
