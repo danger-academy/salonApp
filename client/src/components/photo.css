@@ -1,3 +1,8 @@
+/* #carousel {
+  padding: 24px;
+  background: whitesmoke;
+} */
+
 .ant-carousel .slick-slide {
   text-align: center;
   height: auto; 
@@ -23,28 +28,38 @@
     border-radius: 0; 
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width: 1025px) {
+  /* .ant-layout-content {
+    width: 548px;
+    height: 548px;
+  } */
+
+   /* .ant-carousel {
+
+
   /* .ant-layout-content {
     width: 548px;
     height: 548px;
   }
   .ant-carousel {
+
     height: 500px;
     width: 500px;
-  }
+  } */
 
   .ant-carousel .slick-slider {
     height: 500px;
     width: 500px;
-  }
 
-   img {
+    margin: auto;
+
+  } 
+
+   /* img {
     height: 500px;
     width: 500px;
-  }  */
-
-  /*this works but changes the size for ALL of the pages*/
-  /* .ant-layout-content {
-    margin: 0 400px !important; 
   } */
+
+
 }

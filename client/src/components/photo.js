@@ -13,6 +13,7 @@ import carousel6 from "./ashleypics/carousel/carousel6.jpg";
 
 function Photo() {
   return (
+    
     <Carousel autoplay>
       <div> 
         <Card className="picture2"
