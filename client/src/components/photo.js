@@ -4,26 +4,44 @@ import { Card } from 'antd';
 import 'antd/dist/antd.css';
 import "./photo.css";
 
-import HairPic from "./hairsquare1.jpg";
-import HairPic2 from "./hairsquare2.jpg";
-import HairPic3 from "./hairsquare3.jpg";
+import carousel1 from "./ashleypics/carousel/carousel1.jpg";
+import carousel2 from "./ashleypics/carousel/carousel2.jpg";
+import carousel3 from "./ashleypics/carousel/carousel3.jpg";
+import carousel4 from "./ashleypics/carousel/carousel4.jpg";
+import carousel5 from "./ashleypics/carousel/carousel5.jpg";
+import carousel6 from "./ashleypics/carousel/carousel6.jpg";
 
 function Photo() {
   return (
     <Carousel autoplay>
-      <div>
+      <div> 
         <Card className="picture2"
-        cover={<img alt="example" src={HairPic} />}>
+        cover={<img alt="example" src={carousel1} />}>
         </Card>
       </div>
       <div>
         <Card className="picture2"
-        cover={<img alt="example" src={HairPic2} />}>
+        cover={<img alt="example" src={carousel2} />}>
         </Card>
       </div>
       <div>
         <Card className="picture2"
-        cover={<img alt="example" src={HairPic3} />}>
+        cover={<img alt="example" src={carousel3} />}>
+        </Card>
+      </div>
+      <div>
+        <Card className="picture2"
+        cover={<img alt="example" src={carousel4} />}>
+        </Card>
+      </div>
+      <div>
+        <Card className="picture2"
+        cover={<img alt="example" src={carousel5} />}>
+        </Card>
+      </div>
+      <div>
+        <Card className="picture2"
+        cover={<img alt="example" src={carousel6} />}>
         </Card>
       </div>
     </Carousel>
