@@ -166,9 +166,7 @@ class HomePage extends Component {
               <Layout style={{ minHeight: '100vh'}}>
                 <Sider
                   id="sider"
-                  // collapsible
-                  // collapsed={this.state.collapsed}
-                  // onCollapse={this.onCollapse}
+                  width='295'
                   breakpoint="lg"
                   collapsedWidth="0"
                   onBreakpoint={(broken) => { console.log(broken); }}
