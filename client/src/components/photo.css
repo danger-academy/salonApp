@@ -28,6 +28,7 @@
     border-radius: 0; 
 }
 
+
 @media (min-width: 1025px) {
   /* .ant-layout-content {
     width: 548px;
@@ -35,6 +36,14 @@
   } */
 
    /* .ant-carousel {
+
+
+  /* .ant-layout-content {
+    width: 548px;
+    height: 548px;
+  }
+  .ant-carousel {
+
     height: 500px;
     width: 500px;
   } */
@@ -42,6 +51,7 @@
   .ant-carousel .slick-slider {
     height: 500px;
     width: 500px;
+
     margin: auto;
 
   } 
@@ -50,5 +60,6 @@
     height: 500px;
     width: 500px;
   } */
+
 
 }

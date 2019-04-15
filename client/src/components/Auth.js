@@ -65,16 +65,13 @@ class Auth extends Component {
   isTheUserReal = async(user) => {
       console.log("the search begins " + user.email);
       API.findTheUser(user.email)
-        // .then(res => res.json(res))
-        // .then(res => console.log("Did it work? " + res.data.email))
         .then(res => {
-            if (res === null) {
+            if (res.data === null) {
                 console.log("Nothing to see here");
                 API.saveTheUser({
                     user_id: user.id,
                     email: user.email
                 })
-                    // .then(result => res.json(result))
                     .then(result => console.log("created a user " + result.data.email));
             }
             else {
