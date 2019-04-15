@@ -23,12 +23,12 @@
     border-radius: 0; 
 }
 
-/* @media (min-width: 1024px) {
-  .ant-layout-content {
+@media (min-width: 1024px) {
+  /* .ant-layout-content {
     width: 548px;
     height: 548px;
   }
-  /* .ant-carousel {
+  .ant-carousel {
     height: 500px;
     width: 500px;
   }
@@ -36,11 +36,15 @@
   .ant-carousel .slick-slider {
     height: 500px;
     width: 500px;
-  } */
+  }
 
-  /* img {
+   img {
     height: 500px;
     width: 500px;
-  /* }
+  }  */
 
-} */
+  /*this works but changes the size for ALL of the pages*/
+  /* .ant-layout-content {
+    margin: 0 400px !important; 
+  } */
+}
