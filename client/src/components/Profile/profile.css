@@ -1,8 +1,9 @@
 li {
     font-family: 'Ovo';
-    font-size: 20px;
+    font-size: 20px; 
 }
 
 ul {
+    float: right;
     list-style-type: none;
 }
