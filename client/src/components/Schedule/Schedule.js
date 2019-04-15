@@ -26,6 +26,7 @@ const Scheduler = () => (
       onOk={onOk}
     />
     <br />
+    <br />
     <p className="font">End time/date</p>
     <DatePicker
       showTime

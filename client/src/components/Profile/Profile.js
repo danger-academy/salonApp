@@ -6,16 +6,16 @@ import '../Profile/profile.css';
 import UserTest from '../UserTest';
 import UserId from '../UserId';
 import { Divider } from 'antd';
-// import Autoset from './Avatar';
+import Avatar from './Avatar';
 
 const Profile = () => (
   <AuthConsumer>
     {({user}) => (
       <div>
         <div id='autoset'>
-        {/* <Autoset /> */}
-        <p>Account Info</p>
+        <p id='accountInfo'>Account Info</p>
         <Divider />
+        <Avatar />
         <ul>
           <li>Email: {user.email}</li>
           <li>Role: {user.role}</li>
