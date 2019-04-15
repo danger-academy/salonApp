@@ -1,5 +1,5 @@
 import React from 'react';
-import { DatePicker, Menu, Dropdown, Icon, message, } from 'antd';
+import { DatePicker, Menu, Dropdown, Icon, message, Divider } from 'antd';
 import '../Appointments/makeAppoint.css';
 import API from "../../utils/API";
 
@@ -36,6 +36,7 @@ const menu = (
 const makeAppoint = () => (
   <div>
     <p id="title">Create a new appointment</p>
+    <Divider />
     <br />
     <div id='choices'>
     <Dropdown overlay={menu}>

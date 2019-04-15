@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Card } from 'antd';
+import { Row, Col, Card, Divider } from 'antd';
 import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./colors.css";
@@ -17,6 +17,7 @@ class Colors extends Component {
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Colors</h1>
+                        <Divider />
                     </Col>
                 </Row>
                 <Row gutter={20}>

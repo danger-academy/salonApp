@@ -5,6 +5,7 @@ import UpcomingAppoint from '../Appointments/upcomingAppoint';
 import '../Profile/profile.css';
 import UserTest from '../UserTest';
 import UserId from '../UserId';
+import { Divider } from 'antd';
 // import Autoset from './Avatar';
 
 const Profile = () => (
@@ -13,6 +14,8 @@ const Profile = () => (
       <div>
         <div id='autoset'>
         {/* <Autoset /> */}
+        <p>Account Info</p>
+        <Divider />
         <ul>
           <li>Email: {user.email}</li>
           <li>Role: {user.role}</li>

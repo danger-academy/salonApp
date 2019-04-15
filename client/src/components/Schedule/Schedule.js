@@ -1,5 +1,5 @@
 import React from 'react';
-import { DatePicker } from 'antd';
+import { DatePicker, Divider } from 'antd';
 import '../Schedule/Schedule.css';
 
 function onChange(value, dateString) {
@@ -14,6 +14,7 @@ function onOk(value) {
 const Scheduler = () => (
   <div id="scheduleContent">
     <p className="fontTitle">Create Your Schedule</p>
+    <Divider />
     <br />
     <p className="font">Start time/date</p>
     <DatePicker
