@@ -78,7 +78,7 @@ class Auth extends Component {
                     .then(result => console.log("created a user " + result.data.email));
             }
             else {
-                console.log("user already be there " + res.data.email);
+                // console.log("user already be there " + res.data.email);
             }
         })
   }

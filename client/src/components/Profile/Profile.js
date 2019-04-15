@@ -5,12 +5,15 @@ import UpcomingAppoint from '../Appointments/upcomingAppoint';
 import '../Profile/profile.css';
 import UserTest from '../UserTest';
 import UserId from '../UserId';
+import Autoset from '../Profile/Avatar';
 
 const Profile = () => (
   <AuthConsumer>
     {({user}) => (
       <div>
-        <h2>Profile</h2>
+        <div id='autoset'>
+        <Autoset />
+        </div>
         <ul>
           <li>Email: {user.email}</li>
           <li>Role: {user.role}</li>
