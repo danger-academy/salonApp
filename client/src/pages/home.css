@@ -5,14 +5,17 @@
 }
 
 span {
-  font-family: 'Ovo';
+  font-family: 'Fira Sans';
 }
 
 #welcome {
   font-family: 'Cormorant Garamond';
-  font-size: 45px;
+  font-size: 39px;
   margin-left: 0;
   margin-top: 12px; 
+  background-color: whitesmoke;
+  border-bottom: 3px solid #606054;
+  border-top: 3px solid #606054;
 }
 
 .ant-layout {
@@ -75,6 +78,7 @@ p {
   border: solid 1px #DEDBD2;
   border-radius: 7px;
   min-height: 200px;
+  font-family: 'Fira Sans';
 }
 
 #background {
@@ -83,7 +87,7 @@ p {
   background-size: 100% 100%;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 895px) {
 
   #footer {
     color: black;

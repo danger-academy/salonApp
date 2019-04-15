@@ -6,11 +6,12 @@
 }
 
 #header {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Fira Sans';
     color: #606054;
 }
 
 h4 {
+    font-family: 'Fira Sans';
     background-color: #A9535F;
     padding: 5%; 
     margin: 0;

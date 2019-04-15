@@ -5,19 +5,19 @@ import UpcomingAppoint from '../Appointments/upcomingAppoint';
 import '../Profile/profile.css';
 import UserTest from '../UserTest';
 import UserId from '../UserId';
-import Autoset from '../Profile/Avatar';
+// import Autoset from './Avatar';
 
 const Profile = () => (
   <AuthConsumer>
     {({user}) => (
       <div>
         <div id='autoset'>
-        <Autoset />
-        </div>
+        {/* <Autoset /> */}
         <ul>
           <li>Email: {user.email}</li>
           <li>Role: {user.role}</li>
         </ul>
+        </div>
         <br />
         <UpcomingAppoint />
         {console.log("profile inside div - UserTest is " + UserTest)}

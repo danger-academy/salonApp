@@ -1,9 +1,14 @@
 li {
-    font-family: 'Ovo';
+    font-family: 'Fira Sans';
     font-size: 20px; 
 }
 
+#autoset {
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 35px;
+}
+
 ul {
-    float: right;
     list-style-type: none;
 }
