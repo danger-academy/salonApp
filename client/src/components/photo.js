@@ -10,6 +10,7 @@ import HairPic3 from "./hairsquare3.jpg";
 
 function Photo() {
   return (
+    
     <Carousel autoplay>
       <div>
         <Card className="picture2"

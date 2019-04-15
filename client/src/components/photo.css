@@ -1,3 +1,8 @@
+/* #carousel {
+  padding: 24px;
+  background: whitesmoke;
+} */
+
 .ant-carousel .slick-slide {
   text-align: center;
   height: auto; 
@@ -23,24 +28,27 @@
     border-radius: 0; 
 }
 
-/* @media (min-width: 1024px) {
-  .ant-layout-content {
+@media (min-width: 1025px) {
+  /* .ant-layout-content {
     width: 548px;
     height: 548px;
-  }
-  /* .ant-carousel {
-    height: 500px;
-    width: 500px;
-  }
+  } */
 
-  .ant-carousel .slick-slider {
+   /* .ant-carousel {
     height: 500px;
     width: 500px;
   } */
 
-  /* img {
+  .ant-carousel .slick-slider {
     height: 500px;
     width: 500px;
-  /* }
+    margin: auto;
 
-} */
+  } 
+
+   /* img {
+    height: 500px;
+    width: 500px;
+  } */
+
+}
