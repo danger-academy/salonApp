@@ -21,8 +21,8 @@ class Cuts extends Component {
                         <Divider />
                     </Col>
                 </Row>
-                <Row gutter={20}>
-                    <Col xs={{span: 24}} sm={{span: 8}}>
+                <Row gutter={20} type="flex" justify="space-around">
+                    <Col xs={{span: 24}} sm={{span: 6}}>
                         <Link to="/portfoliolong">
                             <Card
                                 className="cutsmallscreen"
@@ -37,7 +37,7 @@ class Cuts extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col xs={{span: 24}} sm={{span: 8}}>
+                    <Col xs={{span: 24}} sm={{span: 6}}>
                         <Link to="/portfolioshort">
                             <Card
                                 className="cutsmallscreen"
@@ -52,7 +52,7 @@ class Cuts extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col xs={{span: 24}} sm={{span: 8}}>
+                    <Col xs={{span: 24}} sm={{span: 6}}>
                         <Link to="/portfoliomens">
                             <Card
                                 hoverable

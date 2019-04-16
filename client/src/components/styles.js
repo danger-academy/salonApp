@@ -18,8 +18,8 @@ class Styles extends Component {
                         <Divider />
                     </Col>
                 </Row>
-                <Row gutter={20}>
-                    <Col xs={{span: 24}} sm={{span: 12}}>
+                <Row gutter={20} type="flex" justify="space-around">
+                    <Col xs={{span: 24}} sm={{span: 6}}>
                         <Link to="/portfolioupdos">
                             <Card
                                 className="stylesmallscreen"
@@ -34,7 +34,7 @@ class Styles extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col  xs={{span: 24}} sm={{span: 12}}>
+                    <Col  xs={{span: 24}} sm={{span: 6}}>
                         <Link to="/portfoliodaytoday">
                             <Card
                                 hoverable
