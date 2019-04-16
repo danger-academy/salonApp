@@ -18,8 +18,8 @@ class PortfolioLong extends Component {
             {
                 src: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/53306888_10218543277392011_1518639782337445888_n.jpg?_nc_cat=100&_nc_ht=scontent-iad3-1.xx&oh=c0fe584da690e91cbb27e4e5e2209cd9&oe=5D2E6515",
                 thumbnail: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/53306888_10218543277392011_1518639782337445888_n.jpg?_nc_cat=100&_nc_ht=scontent-iad3-1.xx&oh=c0fe584da690e91cbb27e4e5e2209cd9&oe=5D2E6515",
-                thumbnailWidth: 200,
-                thumbnailHeight: 200,
+                thumbnailWidth: 400,
+                thumbnailHeight: 400,
             },
             {
                 src: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/52893734_10218543258031527_5787367224750637056_n.jpg?_nc_cat=106&_nc_ht=scontent-iad3-1.xx&oh=5a93ff93df093b8c326b36723b0de28c&oe=5D2BA32C",
