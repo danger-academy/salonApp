@@ -77,7 +77,7 @@ p {
   text-align: center;
   border: solid 1px #DEDBD2;
   border-radius: 7px;
-  min-height: 200px;
+  min-height: 200px !important;
   font-family: 'Fira Sans';
 }
 
