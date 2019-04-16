@@ -15,12 +15,15 @@ const Profile = () => (
         <div id='autoset'>
         <p id='accountInfo'>Account Info</p>
         <Divider />
-        <Avatar />
+        <Avatar id="avatar"/>
+        <br />
         <ul>
-          <li>Email: {user.email}</li>
           <li>Role: {user.role}</li>
+          <li>Email: {user.email}</li>
         </ul>
         </div>
+        <br />
+        <br />
         <br />
         <UpcomingAppoint />
         {console.log("profile inside div - UserTest is " + UserTest)}

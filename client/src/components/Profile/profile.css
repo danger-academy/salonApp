@@ -12,9 +12,14 @@ li {
     margin-left: 0px;
 }
 
+.ant-upload.ant-upload-select-picture-card {
+    margin: auto;
+}
+
 ul {
     list-style-type: none;
     margin-left: 0px;
+    padding-left: 0px;
 }
 
 #accountInfo {
