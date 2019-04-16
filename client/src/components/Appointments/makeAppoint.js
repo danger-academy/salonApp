@@ -34,7 +34,7 @@ const menu = (
   );
 
 const makeAppoint = () => (
-  <div>
+  <div id="makeAppContent">
     <p id="title">Create a new appointment</p>
     <Divider />
     <br />

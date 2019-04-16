@@ -11,5 +11,7 @@
 }
 
 #scheduleContent {
+    border: solid 2px #606054;
+    border-radius: 7px;
     padding: 20px;
 }

@@ -14,7 +14,7 @@ class Cuts extends Component {
         return (
             <AuthConsumer>
         {({user}) => (
-            <div>
+            <div id="cutsContent">
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Cuts</h1>

@@ -11,7 +11,7 @@ class Styles extends Component {
 
     render() {
         return (
-            <div>
+            <div id="styleContent">
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Styles</h1>

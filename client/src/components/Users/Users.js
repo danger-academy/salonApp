@@ -5,8 +5,9 @@ import { Empty } from 'antd';
 
 const Users = () => (
     
-    <div>
+    <div id="userContent">
         <Empty />
+        <br />
     </div>
     
 )

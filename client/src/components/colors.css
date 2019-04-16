@@ -11,6 +11,12 @@
     color: #606054;
 }
 
+#colorsContent {
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 20px;
+}
+
 h4 {
     font-family: 'Fira Sans';
     background-color: #A9535F;

@@ -17,3 +17,9 @@ a {
     margin-right: 65px;
     margin-top: 10px;
 }
+
+#makeAppContent {
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 20px;
+}

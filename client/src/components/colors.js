@@ -13,7 +13,7 @@ class Colors extends Component {
 
     render() {
         return (
-            <div>
+            <div id="colorsContent">
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Colors</h1>

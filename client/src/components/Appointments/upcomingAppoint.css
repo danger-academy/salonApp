@@ -1,4 +1,9 @@
-h2, table {
+h2 {
+    color: #606054;
+    font-family: 'Cormorant Garamond';
+}
+
+table {
     font-family: 'Fira Sans';
     color: #606054;
 }

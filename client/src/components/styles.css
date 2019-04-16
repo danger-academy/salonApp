@@ -18,6 +18,12 @@ h4 {
     margin: 0;
 }
 
+#styleContent {
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 20px;
+}
+
 @media (max-width: 576px) {
     .stylesmallscreen {
         margin-bottom: 24px; 

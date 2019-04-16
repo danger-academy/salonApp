@@ -18,14 +18,15 @@ const Profile = () => (
         <Avatar id="avatar"/>
         <br />
         <ul>
-          <li>Role: {user.role}</li>
-          <li>Email: {user.email}</li>
+          <li>Hello, {user.role}!</li>
+          <li>{user.email}</li>
         </ul>
-        </div>
         <br />
         <br />
         <br />
+        <Divider />
         <UpcomingAppoint />
+        </div>
         {console.log("profile inside div - UserTest is " + UserTest)}
         {console.log("profile inside div - UserId is " + UserId)}
       </div>

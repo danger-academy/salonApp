@@ -28,6 +28,12 @@
     border-radius: 0; 
 }
 
+#photoContent {
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 20px;
+}
+
 
 @media (min-width: 1025px) {
   /* .ant-layout-content {
