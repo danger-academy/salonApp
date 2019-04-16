@@ -7,9 +7,9 @@ li {
 #autoset {
     border: solid 2px #606054;
     border-radius: 7px;
-    padding: 35px;
     text-align: center;
     margin-left: 0px;
+    padding: 20px;
 }
 
 .ant-upload.ant-upload-select-picture-card {
@@ -25,4 +25,11 @@ ul {
 #accountInfo {
     margin-left: 0px;
     font-size: 25px;
+}
+
+@media only screen and (max-width: 414px) {
+    #autoset {
+        padding: 0px !important;
+        margin-left: 0px;
+    }
 }
