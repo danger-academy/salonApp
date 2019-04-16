@@ -8,6 +8,9 @@
 
 .images {
     overflow: auto;
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 320px) {
