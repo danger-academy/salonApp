@@ -3,7 +3,15 @@ h2 {
     font-family: 'Cormorant Garamond';
 }
 
-table {
+#tableContent {
     font-family: 'Fira Sans';
     color: #606054;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+@media only screen and (max-width: 414px) {
+    #tableContent {
+        
+    }
 }

@@ -1,58 +1,59 @@
-import React from "react";
-import './upcomingAppoint.css'
-import posts from "../../posts";
-import {AuthConsumer} from "../../authContext";
-import Can from "../Can";
+import React from 'react';
+import './upcomingAppoint.css';
+import { Table, Divider, Tag } from 'antd';
+
+const columns = [{
+  title: 'Name',
+  dataIndex: 'name',
+  key: 'name',
+  render: text => <a href="javascript:;">{text}</a>,
+}, {
+  title: 'Service',
+  dataIndex: 'service',
+  key: 'service',
+}, 
+// {
+//   title: 'Tags',
+//   key: 'tags',
+//   dataIndex: 'tags',
+//  ?
+// }, 
+{
+  title: 'Action',
+  key: 'action',
+  render: (text, record) => (
+    <span>
+      <a href="javascript:;">Edit</a>
+      <Divider type="vertical" />
+      <a href="javascript:;">Delete</a>
+    </span>
+  ),
+}];
+
+const data = [{
+  key: '1',
+  name: 'Samantha Brown',
+  service: 'Hair Cut/Style',
+  tags: ['nice', 'developer'],
+}, {
+  key: '2',
+  name: 'Jim Green',
+  service: 'Mens Cut',
+  tags: ['loser'],
+}, {
+  key: '3',
+  name: 'Rumi Carter',
+  service: 'Highlights',
+  tags: ['cool', 'teacher'],
+}];
 
 const UpcomingAppoint = () => (
-  <AuthConsumer>
-    {({user}) => (
-      <div>
-        <h2>Upcoming Appointments</h2>
-        <table className="table">
-          <thead>
-          <tr>
-            <th scope="col">Time</th>
-            <th scope="col">Name/Service</th>
-            <th scope="col">Edit</th>
-          </tr>
-          </thead>
-          <tbody>
-          {posts.map((post, index) => (
-            <tr key={post.id}>
-              <th scope="row">{post.id}</th>
-              <td>{post.name}</td>
-              <td>
-                <Can
-                  role={user.role}
-                  perform="posts:edit"
-                  data={{
-                    userId: user.id,
-                    postOwnerId: post.ownerId
-                  }}
-                  yes={() => (
-                    <button className="btn btn-sm btn-default">
-                      Edit Appt
-                    </button>
-                  )}
-                />
-                <Can
-                  role={user.role}
-                  perform="posts:delete"
-                  yes={() => (
-                    <button className="btn btn-sm btn-danger">
-                      Delete Appt
-                    </button>
-                  )}
-                />
-              </td>
-            </tr>
-          ))}
-          </tbody>
-        </table>
-      </div>
-    )}
-  </AuthConsumer>
-);
+
+<div id="tableContent">
+<h2>Upcoming Appointments</h2>
+<Table columns={columns} dataSource={data} />
+</div>
+
+)
 
 export default UpcomingAppoint;
