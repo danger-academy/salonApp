@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { AuthConsumer } from "../../authContext";
 import API from "../../utils/API";
 
 const API_KEY = "164352566276885";
@@ -58,6 +59,9 @@ class Drop extends Component {
     //         // categories: image.volumeInfo.category,
     //         // comments: image.volumeInfo.description
         })
+            .then(res => {
+                console.log(res);
+            })
     }
 
     render() {
