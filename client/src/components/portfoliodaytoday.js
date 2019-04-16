@@ -8,27 +8,22 @@ class PortfolioDayToDay extends Component {
         super(props);
         this.state = {
             images:  [{
-                src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2vdlNnE2wtLRupG5jVvrObGpoTUJWIvdxaK_hr_eU7bb6dGbnpw",
-                thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2vdlNnE2wtLRupG5jVvrObGpoTUJWIvdxaK_hr_eU7bb6dGbnpw",
-                thumbnailWidth: 174,
-                thumbnailHeight: 174,
-                // isSelected: true,
-                // caption: "After Rain (Jeshu John - designerspics.com)"
+                src: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/50973704_10218307375614614_8508711632241688576_n.jpg?_nc_cat=105&_nc_ht=scontent-iad3-1.xx&oh=c9b48e57267e65633edf44a8a46d1f32&oe=5D3AC652",
+                thumbnail: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/50973704_10218307375614614_8508711632241688576_n.jpg?_nc_cat=105&_nc_ht=scontent-iad3-1.xx&oh=c9b48e57267e65633edf44a8a46d1f32&oe=5D3AC652",
+                thumbnailWidth: 400,
+                thumbnailHeight: 400,
             },
             {
-                src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                // tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
-                // caption: "Boats (Jeshu John - designerspics.com)"
+                src: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/53918388_10218590028720765_7926476936358920192_n.jpg?_nc_cat=108&_nc_ht=scontent-iad3-1.xx&oh=453d90d14a83cfb114fa1d64c3778088&oe=5D2ABE57",
+                thumbnail: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/53918388_10218590028720765_7926476936358920192_n.jpg?_nc_cat=108&_nc_ht=scontent-iad3-1.xx&oh=453d90d14a83cfb114fa1d64c3778088&oe=5D2ABE57",
+                thumbnailWidth: 400,
+                thumbnailHeight: 400,
             },
-        
             {
-                src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-                thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212
+                src: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/42320512_10217225811096177_1221780249952387072_n.jpg?_nc_cat=106&_nc_ht=scontent-iad3-1.xx&oh=e67d1489d2730202ea9eb3b1085a6f84&oe=5D33C5B2",
+                thumbnail: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/42320512_10217225811096177_1221780249952387072_n.jpg?_nc_cat=106&_nc_ht=scontent-iad3-1.xx&oh=e67d1489d2730202ea9eb3b1085a6f84&oe=5D33C5B2",
+                thumbnailWidth: 400,
+                thumbnailHeight: 400
             }]
         }
     }
