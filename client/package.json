@@ -23,7 +23,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },"engines": {
-    "node": "10.3.0"
+    "node": "8.11.4"
   },
   "browserslist": [
     ">0.2%",
