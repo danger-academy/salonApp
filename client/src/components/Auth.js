@@ -13,13 +13,16 @@ const auth = new auth0.WebAuth({
 });
 
 class Auth extends Component {
-  state = {
-    authenticated: false,
-    user: {
-      role: "visitor"
-    },
-    accessToken: ""
-  };
+    constructor(props){
+        super(props)
+        this.state = {
+            authenticated: false,
+            user: {
+                role: "visitor"
+            },
+            accessToken: ""
+        }
+    }
 
   initiateLogin = () => {
     auth.authorize();
@@ -75,7 +78,7 @@ class Auth extends Component {
                     .then(result => console.log("created a user " + result.data.email));
             }
             else {
-                // console.log("user already be there " + res.data.email);
+                console.log("user already be there " + res.data.email);
             }
         })
   }
@@ -94,4 +97,5 @@ class Auth extends Component {
     );
   }
 }
+
 export default Auth;
