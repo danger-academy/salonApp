@@ -1,9 +1,28 @@
 li {
-    font-family: 'Ovo';
+    font-family: 'Fira Sans';
     font-size: 20px; 
+    margin-left: 0px;
+}
+
+#autoset {
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 35px;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+    margin: auto;
 }
 
 ul {
-    float: right;
     list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#accountInfo {
+    margin-left: 0px;
+    font-size: 25px;
 }

@@ -1,3 +1,8 @@
-#autoset {
-    float: left;
+#profilePic {
+   text-align: center;
 }
+
+.avatar-uploader > .ant-upload {
+    width: 128px;
+    height: 128px;
+  }

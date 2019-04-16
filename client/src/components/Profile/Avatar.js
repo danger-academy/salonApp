@@ -1,39 +1,66 @@
 import React from 'react';
-import { Avatar, Button } from 'antd';
-import'./Avatar.css';
+import { Upload, Icon, message } from 'antd';
+import './Avatar.css';
 
-const UserList = ['U', 'Lucy', 'Tom', 'Edward'];
-const colorList = ['#f56a00', '#7265e6', '#ffbf00', '#00a2ae'];
+function getBase64(img, callback) {
+  const reader = new FileReader();
+  reader.addEventListener('load', () => callback(reader.result));
+  reader.readAsDataURL(img);
+}
 
-class Autoset extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: UserList[0],
-      color: colorList[0],
-    };
+function beforeUpload(file) {
+  const isJPG = file.type === 'image/jpeg';
+  if (!isJPG) {
+    message.error('You can only upload JPG file!');
   }
+  const isLt2M = file.size / 1024 / 1024 < 2;
+  if (!isLt2M) {
+    message.error('Image must smaller than 2MB!');
+  }
+  return isJPG && isLt2M;
+}
 
-  changeUser = () => {
-    const index = UserList.indexOf(this.state.user);
-    this.setState({
-      user: index < UserList.length - 1 ? UserList[index + 1] : UserList[0],
-      color: index < colorList.length - 1 ? colorList[index + 1] : colorList[0],
-    });
+class Avatar extends React.Component {
+  state = {
+    loading: false,
+  };
+
+  handleChange = (info) => {
+    if (info.file.status === 'uploading') {
+      this.setState({ loading: true });
+      return;
+    }
+    if (info.file.status === 'done') {
+      // Get this url from response in real world.
+      getBase64(info.file.originFileObj, imageUrl => this.setState({
+        imageUrl,
+        loading: false,
+      }));
+    }
   }
 
   render() {
-    return (
-      <div>
-        <Avatar style={{ backgroundColor: this.state.color, verticalAlign: 'middle' }} size="large">
-          {this.state.user}
-        </Avatar>
-        <Button size="small" style={{ marginLeft: 16, verticalAlign: 'middle' }} onClick={this.changeUser}>
-          Change
-        </Button>
+    const uploadButton = (
+      <div id="profilePic">
+        <Icon type={this.state.loading ? 'loading' : 'plus'} />
+        <div className="ant-upload-text">Upload</div>
       </div>
+    );
+    const imageUrl = this.state.imageUrl;
+    return (
+      <Upload
+        name="avatar"
+        listType="picture-card"
+        className="avatar-uploader"
+        showUploadList={false}
+        action="//jsonplaceholder.typicode.com/posts/"
+        beforeUpload={beforeUpload}
+        onChange={this.handleChange}
+      >
+        {imageUrl ? <img src={imageUrl} alt="avatar" /> : uploadButton}
+      </Upload>
     );
   }
 }
 
-export default Autoset;
+export default Avatar;

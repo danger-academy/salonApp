@@ -3,8 +3,9 @@ import '../Inventory/Inventory.css';
 import { Empty } from 'antd';
 
 const Inventory = () => (
-    <div>
+    <div id="inventoryContent">
         <Empty />
+        <br />
     </div>
 
 )

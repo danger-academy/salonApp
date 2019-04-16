@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Card } from 'antd';
+import { Row, Col, Card, Divider } from 'antd';
 import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./cuts.css";
@@ -14,10 +14,11 @@ class Cuts extends Component {
         return (
             <AuthConsumer>
         {({user}) => (
-            <div>
+            <div id="cutsContent">
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Cuts</h1>
+                        <Divider />
                     </Col>
                 </Row>
                 <Row gutter={20}>

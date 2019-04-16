@@ -5,12 +5,20 @@
     width: 100%;
 }
 
+#cutsContent {
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 20px;
+}
+
 #header {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Cormorant Garamond';
+    font-size: 25px;
     color: #606054;
 }
 
 h4 {
+    font-family: 'Fira Sans';
     background-color: #A9535F;
     padding: 5%; 
     margin: 0;
