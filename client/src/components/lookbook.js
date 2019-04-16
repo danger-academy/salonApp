@@ -14,7 +14,7 @@ class LookBook extends Component {
 
     render() {
         return (
-            <div>
+            <div id="lookContent">
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Look Book</h1>
