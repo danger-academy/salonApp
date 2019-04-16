@@ -5,7 +5,7 @@ import { AuthConsumer } from "../authContext";
 const Logout = () => (
   <AuthConsumer>
     {({ logout }) => (
-      <a id="loginBtn" ghost onClick={logout}>
+      <a id="loginBtn" href="/" ghost onClick={logout}>
         Logout
       </a>
     )}

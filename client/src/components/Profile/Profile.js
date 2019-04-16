@@ -5,21 +5,28 @@ import UpcomingAppoint from '../Appointments/upcomingAppoint';
 import '../Profile/profile.css';
 import UserTest from '../UserTest';
 import UserId from '../UserId';
-import Autoset from '../Profile/Avatar';
+import { Divider } from 'antd';
+import Avatar from './Avatar';
 
 const Profile = () => (
   <AuthConsumer>
     {({user}) => (
       <div>
         <div id='autoset'>
-        <Autoset />
-        </div>
+        <p id='accountInfo'>Account Info</p>
+        <Divider />
+        <Avatar id="avatar"/>
+        <br />
         <ul>
-          <li>Email: {user.email}</li>
-          <li>Role: {user.role}</li>
+          <li>Hello, {user.role}!</li>
+          <li>{user.email}</li>
         </ul>
         <br />
+        <br />
+        <br />
+        <Divider />
         <UpcomingAppoint />
+        </div>
         {console.log("profile inside div - UserTest is " + UserTest)}
         {console.log("profile inside div - UserId is " + UserId)}
       </div>

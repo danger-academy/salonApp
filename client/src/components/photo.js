@@ -13,7 +13,7 @@ import carousel6 from "./ashleypics/carousel/carousel6.jpg";
 
 function Photo() {
   return (
-    
+    <div id="photoContent">
     <Carousel autoplay>
       <div> 
         <Card className="picture2"
@@ -46,6 +46,7 @@ function Photo() {
         </Card>
       </div>
     </Carousel>
+    </div>
 
       );
     }

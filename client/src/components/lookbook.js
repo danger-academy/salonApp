@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Card } from 'antd';
+import { Row, Col, Card, Divider } from 'antd';
 import ZoomImg from './ZoomImg';
 import LBButton from './lookbookbutton.js';
 import 'antd/dist/antd.css';
@@ -14,10 +14,11 @@ class LookBook extends Component {
 
     render() {
         return (
-            <div>
+            <div id="lookContent">
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Look Book</h1>
+                        <Divider />
                     </Col>
                 </Row>
                 <Row gutter={20}>

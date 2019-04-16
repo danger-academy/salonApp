@@ -1,15 +1,17 @@
 .font {
-    font-family: 'Ovo';
-    font-size: 17px;
+    font-family: 'Fira Sans';
+    font-size: 15px;
     margin-left: 0px;
 }
 
 .fontTitle {
-    font-family: 'Ovo';
-    font-size: 20px;
+    font-family: 'Cormorant Garamond';
+    font-size: 25px;
     margin-left: 0px;
 }
 
 #scheduleContent {
+    border: solid 2px #606054;
+    border-radius: 7px;
     padding: 20px;
 }

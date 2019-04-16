@@ -10,27 +10,23 @@ class PortfolioUpDos extends Component {
         super(props);
         this.state = {
             images:  [{
-                src: "https://www.closetcouture.com/wp-content/uploads/2018/12/24190618-updos-for-long-hair-.jpg",
-                thumbnail: "https://www.closetcouture.com/wp-content/uploads/2018/12/24190618-updos-for-long-hair-.jpg",
-                thumbnailWidth: 200,
-                thumbnailHeight: 174,
-                // isSelected: true,
-                // caption: "After Rain (Jeshu John - designerspics.com)"
+                src: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/30707146_10216024515464537_4738488575040007026_n.jpg?_nc_cat=108&_nc_ht=scontent-iad3-1.xx&oh=62d75c6efb724804cd2b506ddc922ba0&oe=5D499006",
+                thumbnail: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/30707146_10216024515464537_4738488575040007026_n.jpg?_nc_cat=108&_nc_ht=scontent-iad3-1.xx&oh=62d75c6efb724804cd2b506ddc922ba0&oe=5D499006",
+                thumbnailWidth: 400,
+                thumbnailHeight: 400,
             },
             {
-                src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-                thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212,
-                // tags: [{ value: "Ocean", title: "Ocean" }, { value: "People", title: "People" }],
-                // caption: "Boats (Jeshu John - designerspics.com)"
+                src: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/36754154_10216617418686747_9072192460800655360_n.jpg?_nc_cat=105&_nc_ht=scontent-iad3-1.xx&oh=72cfaa38ce4c734bf1d02871a40da4af&oe=5D345490",
+                thumbnail: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/36754154_10216617418686747_9072192460800655360_n.jpg?_nc_cat=105&_nc_ht=scontent-iad3-1.xx&oh=72cfaa38ce4c734bf1d02871a40da4af&oe=5D345490",
+                thumbnailWidth: 400,
+                thumbnailHeight: 400,
             },
         
             {
-                src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-                thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-                thumbnailWidth: 320,
-                thumbnailHeight: 212
+                src: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/43477929_10217370116383719_8709626654705582080_n.jpg?_nc_cat=111&_nc_ht=scontent-iad3-1.xx&oh=0045bfec2a94b07b736d0f4aacb1ecbc&oe=5D42216A",
+                thumbnail: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/43477929_10217370116383719_8709626654705582080_n.jpg?_nc_cat=111&_nc_ht=scontent-iad3-1.xx&oh=0045bfec2a94b07b736d0f4aacb1ecbc&oe=5D42216A",
+                thumbnailWidth: 400,
+                thumbnailHeight: 400
             }]
         }
     }

@@ -1,11 +1,47 @@
-.ReactGridGallery_tile-viewport img {
+/* .ReactGridGallery_tile-viewport img {
     margin-left: 0 !important;
-}
+} */
 
-#content {
-    min-height: 230px !important;
+.ReactGridGallery_tile-viewport {
+    width: auto !important; 
 }
 
 .images {
     overflow: auto;
+}
+
+@media screen and (max-width: 320px) {
+    #ReactGridGallery {
+        margin: 0 12%; 
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+ #ReactGridGallery {
+     margin: 0 17%; 
+ }
+}
+
+@media screen and (min-width: 361px) and (max-width: 376px) {
+    #ReactGridGallery {
+        margin: 0 18%; 
+    }
+}
+
+@media screen and (min-width: 377px) and (max-width: 415px) {
+    #ReactGridGallery {
+        margin: 0 22%; 
+    }
+}
+
+@media screen and (min-width: 416px) and (max-width: 769px) {
+    #ReactGridGallery {
+        margin: 0 9%; 
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+    #ReactGridGallery {
+        margin: 0 7%; 
+    }
 }

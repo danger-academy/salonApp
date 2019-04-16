@@ -43,7 +43,7 @@ class HomePage extends Component {
       <Sider
         id="sider"
         width="295"
-        breakpoint="lg"
+        breakpoint="xl"
         collapsedWidth="0"
         onBreakpoint={(broken) => { console.log(broken); }}
         onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
@@ -166,8 +166,8 @@ class HomePage extends Component {
               <Layout style={{ minHeight: '100vh'}}>
                 <Sider
                   id="sider"
-                  width='295'
-                  breakpoint="lg"
+                  width="295"
+                  breakpoint="xl"
                   collapsedWidth="0"
                   onBreakpoint={(broken) => { console.log(broken); }}
                   onCollapse={(collapsed, type) => { console.log(collapsed, type); }}

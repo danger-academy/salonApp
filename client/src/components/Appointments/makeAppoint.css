@@ -1,19 +1,25 @@
 #title {
-    font-family: 'Ovo';
-    font-size: 20px;
+    font-family: 'Cormorant Garamond';
+    font-size: 25px;
     margin-left: 0px;
 }
 
 a {
-    font-family: 'Ovo';
+    font-family: 'Fira Sans';
     font-size: 15px;
 }
 
 .menu {
-    font-family: 'Ovo';
+    font-family: 'Fira Sans';
 }
 
 .ant-calendar-picker-input {
     margin-right: 65px;
     margin-top: 10px;
+}
+
+#makeAppContent {
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 20px;
 }

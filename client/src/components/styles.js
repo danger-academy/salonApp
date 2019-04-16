@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Card } from 'antd';
+import { Row, Col, Card, Divider } from 'antd';
 import { Link } from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./styles.css";
@@ -11,14 +11,15 @@ class Styles extends Component {
 
     render() {
         return (
-            <div>
+            <div id="styleContent">
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Styles</h1>
+                        <Divider />
                     </Col>
                 </Row>
-                <Row gutter={20}>
-                    <Col xs={{span: 24}} sm={{span: 12}}>
+                <Row gutter={20} type="flex" justify="space-around">
+                    <Col xs={{span: 24}} sm={{span: 6}}>
                         <Link to="/portfolioupdos">
                             <Card
                                 className="stylesmallscreen"
@@ -33,7 +34,7 @@ class Styles extends Component {
                             </Card>
                         </Link>
                     </Col>
-                    <Col  xs={{span: 24}} sm={{span: 12}}>
+                    <Col  xs={{span: 24}} sm={{span: 6}}>
                         <Link to="/portfoliodaytoday">
                             <Card
                                 hoverable
