@@ -19,9 +19,12 @@ const UserSchema = new Schema({
   id_token: {
     type: String
   },
-  appointment: {
-    type: String
-  },
+  appointment: [
+    {
+        type: Schema.Types.ObjectId,
+        ref: "Appt"
+    }
+  ],
   image: {
     type: String
   },
