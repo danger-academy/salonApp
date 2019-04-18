@@ -9,6 +9,7 @@ import { AuthConsumer } from "../../authContext";
 function makeAppoint() {
 
     const data = useContext(AuthConsumer);
+    const user = data.user;
 
     function onChange(value, dateString) {
         console.log('Selected Time: ', value);
@@ -17,12 +18,10 @@ function makeAppoint() {
 
     const onOk = dateString => {
         console.log('onOk: ', dateString); 
-        API.saveTheDate({
-            date: dateString
-        })
+        API.saveTheDate({ date: dateString, email:user.email })
         .then(res => {
-            console.log(res.data);
-            console.log(data.user.email);
+            console.log(res);
+            // console.log(data.user.email);
         })
     }
 

@@ -13,7 +13,8 @@ module.exports = {
     },
     create: function(req, res) {
         db.Appt.create(req.body)
-        .then(dbModel => res.json(dbModel))
+        .then((dbModel) => db.UserModel.findOneAndUpdate({ email: req.body.email }, { $push: { appointment: dbModel._id } }, {new: true}))
+        .then(dbSuccess => res.json(dbSuccess))
         .catch(err => res.status(422).json(err));
     },
     update: function(req, res) {
