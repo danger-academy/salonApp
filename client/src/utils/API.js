@@ -8,6 +8,7 @@ export default {
         return axios.get("/api/images");
     },
     saveTheDate: function(apptData) {
+        console.log(apptData);
         return axios.post("/api/appt", apptData);
     },
     getTheDate: function() {
