@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "SalonApp",
   "engines": {
-    "node": "8.12.0"
+    "node": "10.15.0",
+    "npm": "6.9.0"
   },
   "main": "server.js",
   "scripts": {
