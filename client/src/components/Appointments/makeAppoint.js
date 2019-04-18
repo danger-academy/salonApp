@@ -1,15 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { DatePicker, Menu, Dropdown, Icon, message, } from 'antd';
 import '../Appointments/makeAppoint.css';
 import API from "../../utils/API";
 import { AuthConsumer } from "../../authContext";
 
-// const user = useContext(AuthConsumer);
-
 function makeAppoint() {
 
-    const data = useContext(AuthConsumer);
-    const user = data.user;
+    const datauser = useContext(AuthConsumer);
+    const user = datauser.user;
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+      API.findTheAppt(user.email)
+        .then(result => setData(result.data.appointment));
+    }, []);
 
     function onChange(value, dateString) {
         console.log('Selected Time: ', value);
@@ -19,10 +23,7 @@ function makeAppoint() {
     const onOk = dateString => {
         console.log('onOk: ', dateString); 
         API.saveTheDate({ date: dateString, email:user.email })
-        .then(res => {
-            console.log(res);
-            // console.log(data.user.email);
-        })
+        .then(res => console.log(res))
     }
 
     const onClick = ({ key }) => {
@@ -60,6 +61,14 @@ function makeAppoint() {
                     onChange={onChange}
                     onOk={onOk}
                 />
+                {console.log(data)}
+                <ul>
+                    {data.map(item => (
+                        <li key={item.date}>
+                            Appointment : {item.date}
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     );

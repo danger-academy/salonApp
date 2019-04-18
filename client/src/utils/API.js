@@ -8,7 +8,6 @@ export default {
         return axios.get("/api/images");
     },
     saveTheDate: function(apptData) {
-        console.log(apptData);
         return axios.post("/api/appt", apptData);
     },
     getTheDate: function() {
@@ -18,8 +17,9 @@ export default {
         return axios.post("/api/user", newUserData);
     },
     findTheUser: function(q) {
-        console.log("What does it all mean? " + q);
-        return axios.get("/api/user/find/" + q);
-        
+        return axios.get("/api/user/find/" + q);        
+    },
+    findTheAppt: function(user) {
+        return axios.get("/api/user/appt/" + user);
     }
 };
