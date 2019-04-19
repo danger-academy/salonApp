@@ -4,26 +4,14 @@ import '../Appointments/makeAppoint.css';
 import API from "../../utils/API";
 import { AuthConsumer } from "../../authContext";
 
-const confirm = Modal.confirm;
 
-function showConfirm() {
-  confirm({
-    title: 'Would you like to make this appointment?',
-    content: 'Click OK to confirm',
-    onOk() {
-      console.log('OK');
-    },
-    onCancel() {
-      console.log('Cancel');
-    },
-  });
-}
 
 function makeAppoint() {
 
     const datauser = useContext(AuthConsumer);
     const user = datauser.user;
     const [data, setData] = useState([]);
+    const [newDateString, setNewDateString] = useState("");
 
     useEffect(() => {
       API.findTheAppt(user.email)
@@ -33,12 +21,29 @@ function makeAppoint() {
     function onChange(value, dateString) {
         console.log('Selected Time: ', value);
         console.log('Formatted Selected Time: ', dateString);
+        setNewDateString(dateString);
     }
 
+    const confirm = Modal.confirm;
+
+    function showConfirm() {
+        confirm({
+            title: 'Would you like to make this appointment? ' + newDateString,
+            content: 'Click OK to confirm',
+            onOk() {
+                console.log('OK');
+                console.log(newDateString);
+                API.saveTheDate({ date: newDateString, email:user.email })
+                .then(res => console.log(res))
+            },
+            onCancel() {
+                console.log('Cancel');
+            },
+        });
+    }
     const onOk = dateString => {
+        // setNewDateString(dateString);
         console.log('onOk: ', dateString); 
-        API.saveTheDate({ date: dateString, email:user.email })
-        .then(res => console.log(res))
     }
 
     const onClick = ({ key }) => {
