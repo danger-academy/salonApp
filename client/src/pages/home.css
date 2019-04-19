@@ -30,12 +30,25 @@ span {
   background: rgba(76, 175, 80, 0.0)
 }
 
+<<<<<<< Updated upstream
 /* .ant-layout-content {
   align-self: center;
 } */
 
+=======
+#sider {
+  max-width: 200px !important;
+}
+
+.ant-layout-sider-dark {
+  max-width: 200px !important;
+}
+>>>>>>> Stashed changes
 
 .ant-layout-sider-children {
+  min-width: 0px !important;
+  width: 200px !important;
+  max-width: 200px !important;
   background-color: #606054;
 }
 
@@ -132,4 +145,8 @@ p {
     font-size: 65%;
     padding: 20px;
   }
+}
+
+@media only screen and (max-width: 414px) {
+
 }
