@@ -4,6 +4,13 @@
     margin-left: 0px;
 }
 
+#choices {
+    border: solid 1px #dedbd2;
+    background-color: #dedbd2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
 a {
     font-family: 'Fira Sans';
     font-size: 15px;
@@ -14,12 +21,18 @@ a {
 }
 
 .ant-calendar-picker-input {
-    margin-right: 65px;
+    /* margin-right: 75px; */
     margin-top: 10px;
 }
 
 #makeAppContent {
     border: solid 2px #606054;
     border-radius: 7px;
-    padding: 20px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 414px) {
+    #makeAppContent {
+        padding: 5px;
+    }
 }
