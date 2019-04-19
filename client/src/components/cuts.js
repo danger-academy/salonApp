@@ -21,7 +21,7 @@ class Cuts extends Component {
                         <Divider />
                     </Col>
                 </Row>
-                <Row gutter={20} type="flex" justify="space-around">
+                <Row gutter={20} type="flex" justify="center">
                     <Col xs={{span: 24}} sm={{span: 6}}>
                         <Link to="/portfoliolong">
                             <Card

@@ -57,7 +57,7 @@ lock.on('authenticated', authResult => {
   };
 
   localStorage.setItem('User', JSON.stringify(user));
-  var request = axios.post('http://localhost:3000/api/users', {
+  var request = axios.post('https://ashley-love.herokuapp.com/api/users', {
     email: email,
     nickname: nickname
   });
