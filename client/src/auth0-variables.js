@@ -3,5 +3,6 @@ export const AUTH_CONFIG = {
   roleUrl: "https://salon-app/role",
   clientId: "pBVScNgayX1de74KvvmgYywQU0ti2fqt",
   callbackUrl: "https://ashley-love.herokuapp.com/callback"
+  // "http://localhost:3000/callback"
 };
 export default AUTH_CONFIG;

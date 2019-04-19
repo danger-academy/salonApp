@@ -6,8 +6,17 @@
     width: auto !important; 
 }
 
+#header {
+    font-family: 'Cormorant Garamond';
+    font-size: 25px;
+    color: #606054;
+}
+
 .images {
     overflow: auto;
+    border: solid 2px #606054;
+    border-radius: 7px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 320px) {

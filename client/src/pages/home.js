@@ -122,8 +122,8 @@ class HomePage extends Component {
       </Sider>
       <Layout id="background">
         <p id="welcome" className="w3-animate-zoom">ASHLEY LOVE'S DESIGNS</p>
-        <Content style={{ margin: '0 16px' }}>
-          <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
+        <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100  }}>
+          <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
             <Route exact path="/Users" component={Users} />
             <Route exact path="/Inventory" component={Inventory} />
             <Route path="/profile" component={Profile} />
@@ -206,8 +206,8 @@ class HomePage extends Component {
                 </Sider>
                 <Layout id="background">
                   <p id="welcome" className="w3-animate-zoom">ASHLEY LOVE'S DESIGNS</p>
-                  <Content style={{ margin: '0 16px' }}>
-                    <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300 }}>
+                  <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100 }}>
+                    <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
                       <Route exact path="/Users" component={Users} />
                       <Route exact path="/Inventory" component={Inventory} />
                       <Route path="/portfoliolong" component={PortfolioLong} />
