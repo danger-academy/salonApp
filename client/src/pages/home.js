@@ -29,14 +29,21 @@ const { Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
 
 class HomePage extends Component {
+
   state = {
     collapsed: false,
   };
 
   onCollapse = (collapsed) => {
+    // var containerElement = document.getElementById('background');
     console.log(collapsed);
     this.setState({ collapsed });
-  }
+  //   if ( collapsed === true){
+  //         containerElement.setAttribute('id', 'blur');
+  // } else {
+  //   containerElement.setAttribute('id', null);
+  // }
+}
 
   onLoggedIn = (user) => (
     <Layout style={{ minHeight: '100vh' }}>
