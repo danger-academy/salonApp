@@ -30,9 +30,9 @@ span {
   background: rgba(76, 175, 80, 0.0)
 }
 
-.ant-layout-content {
+/* .ant-layout-content {
   align-self: center;
-}
+} */
 
 .ant-layout-sider-children {
   background-color: #606054;
