@@ -42,10 +42,7 @@ class HomePage extends Component {
     <Layout style={{ minHeight: '100vh' }}>
       <Sider
         id="sider"
-<<<<<<< Updated upstream
-=======
-        // width="295"
->>>>>>> Stashed changes
+        width="295"
         breakpoint="xl"
         collapsedWidth="0"
         onBreakpoint={(broken) => { console.log(broken); }}
@@ -169,10 +166,7 @@ class HomePage extends Component {
               <Layout style={{ minHeight: '100vh'}}>
                 <Sider
                   id="sider"
-<<<<<<< Updated upstream
-=======
-                  // width="295"
->>>>>>> Stashed changes
+                  width="295"
                   breakpoint="xl"
                   collapsedWidth="0"
                   onBreakpoint={(broken) => { console.log(broken); }}

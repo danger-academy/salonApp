@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { DatePicker, Menu, Dropdown, Icon, message, Modal, Button } from 'antd';
+import { DatePicker, Menu, Dropdown, Icon, message, Modal, Button, Divider } from 'antd';
 import '../Appointments/makeAppoint.css';
 import API from "../../utils/API";
 import { AuthConsumer } from "../../authContext";
@@ -60,6 +60,7 @@ function makeAppoint() {
     return( 
         <div id="makeAppContent">
             <p id="title">Create a new appointment</p>
+            <Divider />
             <br />
             <div id='choices'>
                 <Dropdown overlay={menu}>
@@ -76,9 +77,12 @@ function makeAppoint() {
                     onChange={onChange}
                     onOk={onOk}
                 />
-                <Button block onClick={showConfirm}>
+                <br />
+                <br />
+                <Button onClick={showConfirm}>
                  Confirm
                 </Button>
+                <br />
                 {console.log(data)}
                 <ul>
                     {data.map(item => (

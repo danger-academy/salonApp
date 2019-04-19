@@ -14,11 +14,7 @@ class LookBook extends Component {
 
     render() {
         return (
-<<<<<<< Updated upstream
-            <div id="lookContent">
-=======
             <div id="lookBookContent">
->>>>>>> Stashed changes
                 <Row>
                     <Col span={24}>
                         <h1 id="header">Look Book</h1>

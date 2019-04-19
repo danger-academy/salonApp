@@ -2,6 +2,7 @@ export const AUTH_CONFIG = {
   domain: "salon-app.auth0.com",
   roleUrl: "https://salon-app/role",
   clientId: "pBVScNgayX1de74KvvmgYywQU0ti2fqt",
-  callbackUrl: "https://ashley-love.herokuapp.com/callback"
+  callbackUrl: "http://localhost:3000/callback"
+  // "https://ashley-love.herokuapp.com/callback"
 };
 export default AUTH_CONFIG;

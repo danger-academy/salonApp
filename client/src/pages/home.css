@@ -30,25 +30,18 @@ span {
   background: rgba(76, 175, 80, 0.0)
 }
 
-<<<<<<< Updated upstream
-/* .ant-layout-content {
-  align-self: center;
-} */
-
-=======
 #sider {
   max-width: 200px !important;
 }
 
-.ant-layout-sider-dark {
+/* .ant-layout-sider-dark {
   max-width: 200px !important;
-}
->>>>>>> Stashed changes
+} */
 
 .ant-layout-sider-children {
-  min-width: 0px !important;
+  /* min-width: 0px !important;
   width: 200px !important;
-  max-width: 200px !important;
+  max-width: 200px !important; */
   background-color: #606054;
 }
 
@@ -107,7 +100,7 @@ p {
 
 @media only screen and (max-width: 895px) {
 
-.ant-layout-sider-children {
+/* .ant-layout-sider-children {
     flex: 0 0 295px !important;
     min-width: 0px !important;
     max-width: 295px !important;
@@ -119,7 +112,7 @@ p {
   min-width: 0px !important;
   max-width: 295px !important;
   width: 295px !important;
-}
+} */
 
   #background {
     background-attachment: fixed;
