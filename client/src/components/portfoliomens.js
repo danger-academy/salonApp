@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Gallery from 'react-grid-gallery';
+import { Divider } from 'antd';
 import "./portfoliomens.css";
 
 
@@ -20,6 +21,8 @@ class PortfolioMens extends Component {
     render() {
         return (
             <div className="images">
+            <h1 id="title">Men's Cuts</h1>
+            <Divider />
                 <Gallery images={this.state.images} />
             </div>
         );

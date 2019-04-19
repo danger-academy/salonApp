@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { AuthConsumer } from "../../authContext";
 import API from "../../utils/API";
 
 const API_KEY = "164352566276885";
@@ -51,13 +52,11 @@ class Drop extends Component {
     }
 
     fileSaveHandler = res => {
-        // console.log(res.data.secure_url);
     
-        API.saveIt({
-            link: res.data.secure_url
-    //         // categories: image.volumeInfo.category,
-    //         // comments: image.volumeInfo.description
-        })
+        API.saveIt({ link: res.data.secure_url })
+            .then(res => {
+                console.log(res);
+            })
     }
 
     render() {

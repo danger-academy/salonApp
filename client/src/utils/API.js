@@ -17,8 +17,9 @@ export default {
         return axios.post("/api/user", newUserData);
     },
     findTheUser: function(q) {
-        console.log("What does it all mean? " + q);
-        return axios.get("/api/user/find/" + q);
-        
+        return axios.get("/api/user/find/" + q);        
+    },
+    findTheAppt: function(user) {
+        return axios.get("/api/user/appt/" + user);
     }
 };

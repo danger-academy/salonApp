@@ -13,4 +13,7 @@ router.route("/:id")
 router.route("/find/:id")
     .get(userControl.findByUser);
 
+    router.route("/appt/:id")
+    .get(userControl.findByAppt);
+
 module.exports = router;

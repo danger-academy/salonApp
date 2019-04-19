@@ -30,6 +30,11 @@ span {
   background: rgba(76, 175, 80, 0.0)
 }
 
+.ant-layout-content {
+  align-self: center;
+}
+
+
 .ant-layout-sider-children {
   background-color: #606054;
 }
@@ -88,6 +93,20 @@ p {
 }
 
 @media only screen and (max-width: 895px) {
+
+.ant-layout-sider-children {
+    flex: 0 0 295px !important;
+    min-width: 0px !important;
+    max-width: 295px !important;
+    width: 295px !important;
+  }
+  
+#sider {
+  flex: 0 0 295px !important;
+  min-width: 0px !important;
+  max-width: 295px !important;
+  width: 295px !important;
+}
 
   #background {
     background-attachment: fixed;
