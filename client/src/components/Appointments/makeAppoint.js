@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { DatePicker, Menu, Dropdown, Icon, message, Modal, Button, Divider } from 'antd';
+import { DatePicker, Menu, Dropdown, Icon, message, Modal, Button, Divider, Alert } from 'antd';
 import '../Appointments/makeAppoint.css';
 import API from "../../utils/API";
 import { AuthConsumer } from "../../authContext";
@@ -42,8 +42,8 @@ function makeAppoint() {
         });
     }
     const onOk = dateString => {
-        // setNewDateString(dateString);
-        console.log('onOk: ', dateString); 
+        console.log('onOk: ', dateString);
+         
     }
 
     const onClick = ({ key }) => {
@@ -74,6 +74,7 @@ function makeAppoint() {
                 </a>
                 </Dropdown>
                 <br />
+                <br />
                 <DatePicker
                     id='dateMake'
                     showTime={{ use12Hours: true, format: "HH:mm a" }}
@@ -87,17 +88,21 @@ function makeAppoint() {
                 <Button onClick={showConfirm}>
                  Confirm
                 </Button>
+                </div>
+                <br />
                 <br />
                 {console.log(data)}
                 <ul>
                     {data.map(item => (
-                        <li key={item.date}>
-                            Appointment : {item.date}
-                        </li>
+                        <Alert
+                            key={item.date}
+                            message={"Recently Made Appointment : " + item.date}
+                            closable
+                            />
+                        
                     ))}
                 </ul>
             </div>
-        </div>
     );
 }
 

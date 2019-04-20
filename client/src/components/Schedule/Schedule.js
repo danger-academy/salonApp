@@ -16,6 +16,7 @@ const Scheduler = () => (
     <p className="fontTitle">Create Your Schedule</p>
     <Divider />
     <br />
+    <div id="scheduleInput">
     <p className="font">Start time/date</p>
     <DatePicker
       showTime
@@ -36,6 +37,7 @@ const Scheduler = () => (
       onChange={onChange}
       onOk={onOk}
     />
+    </div>
   </div>
 );
 
