@@ -43,14 +43,7 @@ function makeAppoint() {
     }
     const onOk = dateString => {
         console.log('onOk: ', dateString);
-        {data.map(item => (
-            <Alert
-                key={item.date}
-                message={"Recently Made Appointment : " + item.date}
-                closable
-                />
-            
-        ))} 
+         
     }
 
     const onClick = ({ key }) => {
@@ -96,7 +89,6 @@ function makeAppoint() {
                  Confirm
                 </Button>
                 </div>
-                <br />
                 <br />
                 <br />
                 {console.log(data)}

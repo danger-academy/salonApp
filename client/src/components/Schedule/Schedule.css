@@ -4,6 +4,13 @@
     margin-left: 0px;
 }
 
+#scheduleInput {
+    border: solid 1px #dedbd2;
+    background-color: #dedbd2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
 .fontTitle {
     font-family: 'Cormorant Garamond';
     font-size: 25px;
