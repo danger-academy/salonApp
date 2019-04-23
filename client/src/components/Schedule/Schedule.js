@@ -27,9 +27,7 @@ const Scheduler = () => (
     onChange={onChange}
     onOk={onOk}
     />
-    <br />
-    <br />
-    <br />
+    <Divider />
     <p className="font">Select the Start/End Time:</p>
     <br />
     <TimePicker use12Hours format="h:mm a" onChange={onChange} />

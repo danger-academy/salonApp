@@ -64,17 +64,16 @@ function makeAppoint() {
 // const makeAppoint = () => (
     return( 
         <div id="makeAppContent">
-            <p id="title">Create a new appointment</p>
+            <p id="title">Create A New Appointment</p>
             <Divider />
-            <br />
             <div id='choices'>
                 <Dropdown overlay={menu}>
                 <a className="ant-dropdown-link">
-                    Select a service<Icon type="down" />
+                    Select A Service<Icon type="down" />
                 </a>
                 </Dropdown>
-                <br />
-                <br />
+                <Divider />
+                <p id="dateInputText">Select Your Date:</p>
                 <DatePicker
                     id='dateMake'
                     showTime={{ use12Hours: true, format: "HH:mm a" }}
@@ -83,7 +82,7 @@ function makeAppoint() {
                     onChange={onChange}
                     onOk={onOk}
                 />
-                <br />
+                <Divider />
                 <br />
                 <Button onClick={showConfirm}>
                  Confirm
