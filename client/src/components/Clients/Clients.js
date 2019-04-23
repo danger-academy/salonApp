@@ -11,7 +11,7 @@ function handleChange(value) {
 const Clients = () => (
     
     <div id="userContent">
-        <p id="usersTitle">Users Features</p>
+        <p id="usersTitle">Client's Features</p>
         <Divider />
         <div id='userChoices'>
         <p id="userChoice">Choose A Person To View Their Features:</p>

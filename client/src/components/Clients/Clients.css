@@ -27,3 +27,11 @@
     border-radius: 7px;
     padding: 20px;
 }
+
+@media only screen and (max-width: 414px) {
+
+#userContent {
+    padding: 5px;
+    }
+
+}

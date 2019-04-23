@@ -83,7 +83,6 @@ function makeAppoint() {
                     onOk={onOk}
                 />
                 <Divider />
-                <br />
                 <Button onClick={showConfirm}>
                  Confirm
                 </Button>
