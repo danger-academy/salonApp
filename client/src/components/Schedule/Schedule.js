@@ -31,6 +31,7 @@ const Scheduler = () => (
     <br />
     <br />
     <p className="font">Chose the Start/End Time:</p>
+    <br />
     <TimePicker use12Hours format="h:mm a" onChange={onChange} />
     <TimePicker use12Hours format="h:mm a" onChange={onChange} />
     <br />
