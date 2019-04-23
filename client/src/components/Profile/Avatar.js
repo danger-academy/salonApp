@@ -57,7 +57,7 @@ class Avatar extends React.Component {
         beforeUpload={beforeUpload}
         onChange={this.handleChange}
       >
-        {imageUrl ? <img src={imageUrl} alt="avatar" /> : uploadButton}
+        {imageUrl ? <img id="avatarPhoto"src={imageUrl} alt="avatar" /> : uploadButton}
       </Upload>
     );
   }
