@@ -93,14 +93,14 @@ function makeAppoint() {
                 <br />
                 {console.log(data)}
                 <ul>
-                    {/* {data.map(item => (
+                    {data.map(item => (
                         <Alert
                             key={item.date}
-                            message={"Recently Made Appointment : " + item.date}
+                            message={"Current Appointment : " + item.date}
                             closable
                             />
                         
-                    ))} */}
+                    ))}
                 </ul>
             </div>
     );
