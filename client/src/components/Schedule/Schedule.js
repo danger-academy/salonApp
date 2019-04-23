@@ -20,7 +20,7 @@ const Scheduler = () => (
     <Divider />
     <br />
     <div id="scheduleInput">
-    <p className="font">Chose The Date:</p>
+    <p className="font">Select The Date:</p>
     <DatePicker 
     defaultValue={moment('01/01/2019', dateFormatList[0])} 
     format={dateFormatList}
@@ -30,7 +30,7 @@ const Scheduler = () => (
     <br />
     <br />
     <br />
-    <p className="font">Chose the Start/End Time:</p>
+    <p className="font">Select the Start/End Time:</p>
     <br />
     <TimePicker use12Hours format="h:mm a" onChange={onChange} />
     <TimePicker use12Hours format="h:mm a" onChange={onChange} />
