@@ -47,17 +47,17 @@ function makeAppoint() {
     }
 
     const onClick = ({ key }) => {
-        message.info(`Service Chosen`);
+        message.info( "You chose " + key + ".");
     };
 
     const menu = (
-        <Menu className="menu" onClick={onClick}>
-            <Menu.Item key="1">Men's Cut</Menu.Item>
-            <Menu.Item key="2">Woman's Cut</Menu.Item>
-            <Menu.Item key="3">Woman's Cut and Style</Menu.Item>
-            <Menu.Item key="4">Mens Cut and Color</Menu.Item>
-            <Menu.Item key="5">Woman's Cut and Color</Menu.Item>
-            <Menu.Item key="6">Nail Services</Menu.Item>
+        <Menu className="menu" onClick={onClick}>     
+            <Menu.Item key="Woman's Cut">Woman's Cut</Menu.Item>
+            <Menu.Item key="Woman's Cut and Style">Woman's Cut and Style</Menu.Item>
+            <Menu.Item key="Woman's Cut and Color">Woman's Cut and Color</Menu.Item>
+            <Menu.Item key="Men's Cut">Men's Cut</Menu.Item>
+            <Menu.Item key="Men's Cut and Color">Mens Cut and Color</Menu.Item>
+            <Menu.Item key="Nail Services">Nail Services</Menu.Item>
         </Menu>
     );
 
@@ -93,14 +93,14 @@ function makeAppoint() {
                 <br />
                 {console.log(data)}
                 <ul>
-                    {data.map(item => (
+                    {/* {data.map(item => (
                         <Alert
                             key={item.date}
                             message={"Recently Made Appointment : " + item.date}
                             closable
                             />
                         
-                    ))}
+                    ))} */}
                 </ul>
             </div>
     );
