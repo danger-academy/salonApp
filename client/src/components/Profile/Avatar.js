@@ -38,10 +38,9 @@ function Avatar() {
     useEffect(() => {
         API.findTheAvatar(user.email)
             .then(result => {
-                console.log(result.data.avatar.length);
                 const avi = result.data.avatar.length - 1;
                 console.log(avi);
-                setImageUrl(result.data.avatar[avi].link)});
+                setImageUrl(result.data.avatar[0].link)});
     }, '');
 
     const handleChange = info => {
