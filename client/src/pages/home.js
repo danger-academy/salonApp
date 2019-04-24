@@ -128,7 +128,7 @@ class HomePage extends Component {
         </Menu>
       </Sider>
       <Layout id="background">
-        <p id="welcome" className="w3-animate-zoom">ASHLEY LOVE'S DESIGNS</p>
+        <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
         <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100  }}>
           <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
             <Route exact path="/Clients" component={Clients} />
@@ -212,7 +212,7 @@ class HomePage extends Component {
                   </Menu>
                 </Sider>
                 <Layout id="background">
-                  <p id="welcome" className="w3-animate-zoom">ASHLEY LOVE'S DESIGNS</p>
+                  <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
                   <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100 }}>
                     <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
                       <Route exact path="/Clients" component={Clients} />
