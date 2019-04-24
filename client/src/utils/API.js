@@ -4,6 +4,9 @@ export default {
     saveIt: function(imageData) {
         return axios.post("/api/images", imageData);
     },
+    saveAvatar: function(avatarData) {
+        return axios.post("/api/images/avatar", avatarData);
+    },
     getImages: function() {
         return axios.get("/api/images");
     },
@@ -21,5 +24,8 @@ export default {
     },
     findTheAppt: function(user) {
         return axios.get("/api/user/appt/" + user);
+    },
+    findTheAvatar: function(user) {
+        return axios.get("/api/user/avatar/" + user);
     }
 };

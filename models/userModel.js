@@ -28,6 +28,12 @@ const UserSchema = new Schema({
   image: {
     type: String
   },
+  avatar: [
+    {
+        type: Schema.Types.ObjectId,
+        ref: "Image"
+    }
+  ],
   date: {
     type: Date,
     default: Date.now

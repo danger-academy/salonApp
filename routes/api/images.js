@@ -5,6 +5,9 @@ router.route("/")
     .get(imageControl.findAll)
     .post(imageControl.create);
 
+router.route("/avatar")
+    .post(imageControl.createAvatar);
+
 router.route("/:id")
     .get(imageControl.findById)
     // .put(imageControl.update)

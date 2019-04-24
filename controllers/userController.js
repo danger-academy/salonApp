@@ -14,7 +14,13 @@ module.exports = {
     findByAppt: function(req, res) {
         db.UserModel.findOne({ email: req.params.id })
         .populate("appointment")
-        .then((dbModel) => res.json(dbModel))
+        .then(dbModel => res.json(dbModel))
+        .catch((err) => res.json(err));
+    },
+    findByAvatar: function(req, res) {
+        db.UserModel.findOne({ email: req.params.id })
+        .populate("avatar")
+        .then(dbModel => res.json(dbModel))
         .catch((err) => res.json(err));
     },
     findByUser: function(req, res) {
