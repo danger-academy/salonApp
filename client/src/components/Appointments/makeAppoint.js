@@ -47,34 +47,33 @@ function makeAppoint() {
     }
 
     const onClick = ({ key }) => {
-        message.info(`Service Chosen`);
+        message.info( "You chose " + key + ".");
     };
 
     const menu = (
-        <Menu className="menu" onClick={onClick}>
-            <Menu.Item key="1">Men's Cut</Menu.Item>
-            <Menu.Item key="2">Woman's Cut</Menu.Item>
-            <Menu.Item key="3">Woman's Cut and Style</Menu.Item>
-            <Menu.Item key="4">Mens Cut and Color</Menu.Item>
-            <Menu.Item key="5">Woman's Cut and Color</Menu.Item>
-            <Menu.Item key="6">Nail Services</Menu.Item>
+        <Menu className="menu" onClick={onClick}>     
+            <Menu.Item key="Woman's Cut">Woman's Cut</Menu.Item>
+            <Menu.Item key="Woman's Cut and Style">Woman's Cut and Style</Menu.Item>
+            <Menu.Item key="Woman's Cut and Color">Woman's Cut and Color</Menu.Item>
+            <Menu.Item key="Men's Cut">Men's Cut</Menu.Item>
+            <Menu.Item key="Men's Cut and Color">Mens Cut and Color</Menu.Item>
+            <Menu.Item key="Nail Services">Nail Services</Menu.Item>
         </Menu>
     );
 
 // const makeAppoint = () => (
     return( 
         <div id="makeAppContent">
-            <p id="title">Create a new appointment</p>
+            <p id="title">Create A New Appointment</p>
             <Divider />
-            <br />
             <div id='choices'>
                 <Dropdown overlay={menu}>
                 <a className="ant-dropdown-link">
-                    Select a service<Icon type="down" />
+                    Select A Service<Icon type="down" />
                 </a>
                 </Dropdown>
-                <br />
-                <br />
+                <Divider />
+                <p id="dateInputText">Select Your Date:</p>
                 <DatePicker
                     id='dateMake'
                     showTime={{ use12Hours: true, format: "HH:mm a" }}
@@ -83,8 +82,7 @@ function makeAppoint() {
                     onChange={onChange}
                     onOk={onOk}
                 />
-                <br />
-                <br />
+                <Divider />
                 <Button onClick={showConfirm}>
                  Confirm
                 </Button>
@@ -96,7 +94,7 @@ function makeAppoint() {
                     {data.map(item => (
                         <Alert
                             key={item.date}
-                            message={"Recently Made Appointment : " + item.date}
+                            message={"Current Appointment : " + item.date}
                             closable
                             />
                         

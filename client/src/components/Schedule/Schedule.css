@@ -22,3 +22,15 @@
     border-radius: 7px;
     padding: 20px;
 }
+
+@media only screen and (max-width: 414px) {
+
+    #userChoices {
+        padding: 5px !important;
+    }
+
+    #scheduleContent {
+        padding: 5px;
+        }
+    
+    }

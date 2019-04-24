@@ -1,6 +1,9 @@
 import React from 'react';
-import { DatePicker, Divider } from 'antd';
+import { DatePicker, Divider, TimePicker } from 'antd';
+import moment from 'moment';
 import '../Schedule/Schedule.css';
+
+const dateFormatList = ['MM/DD/YYYY','MM/DD/YY']
 
 function onChange(value, dateString) {
   console.log('Selected Time: ', value);
@@ -17,26 +20,20 @@ const Scheduler = () => (
     <Divider />
     <br />
     <div id="scheduleInput">
-    <p className="font">Start time/date</p>
-    <DatePicker
-      showTime
-      showTime={{ use12Hours: true, format: "HH:mm a" }}
-      format="YYYY-MM-DD HH:mm a"
-      placeholder="Select Time"
-      onChange={onChange}
-      onOk={onOk}
+    <p className="font">Select The Date:</p>
+    <DatePicker 
+    defaultValue={moment('01/01/2019', dateFormatList[0])} 
+    format={dateFormatList}
+    onChange={onChange}
+    onOk={onOk}
     />
+    <Divider />
+    <p className="font">Select the Start/End Time:</p>
+    <br />
+    <TimePicker use12Hours format="h:mm a" onChange={onChange} />
+    <TimePicker use12Hours format="h:mm a" onChange={onChange} />
     <br />
     <br />
-    <p className="font">End time/date</p>
-    <DatePicker
-      showTime
-      showTime={{ use12Hours: true, format: "HH:mm a" }}
-      format="YYYY-MM-DD HH:mm a"
-      placeholder="Select Time"
-      onChange={onChange}
-      onOk={onOk}
-    />
     </div>
   </div>
 );

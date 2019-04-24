@@ -13,7 +13,7 @@ const Profile = () => (
     {({user}) => (
       <div>
         <div id='autoset'>
-        <p id='accountInfo'>Account Info</p>
+        <p id='accountInfo'>Profile</p>
         <Divider />
         <Avatar id="avatar"/>
         <br />

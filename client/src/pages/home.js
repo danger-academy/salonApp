@@ -16,7 +16,7 @@ import PortfolioFashion from '../components/portfoliofashion';
 import PortfolioUpDos from '../components/portfolioupdos';
 import PortfolioDayToDay from '../components/portfoliodaytoday';
 import Cuts from '../components/cuts.js';
-import Users from '../components/Users/Users';
+import Clients from '../components/Clients/Clients.js';
 import Inventory from '../components/Inventory/Inventory.js';
 import Colors from '../components/colors.js';
 import Styles from '../components/styles.js';
@@ -101,9 +101,9 @@ class HomePage extends Component {
           {(user.role === 'admin') ? (
             <Menu>
               <Menu.Item key="9">
-                <Link to="/Users">
+                <Link to="/Clients">
                   <Icon type="team" />
-                  <span>Users</span>
+                  <span>Clients</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="10">
@@ -128,10 +128,10 @@ class HomePage extends Component {
         </Menu>
       </Sider>
       <Layout id="background">
-        <p id="welcome" className="w3-animate-zoom">ASHLEY LOVE'S DESIGNS</p>
+        <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
         <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100  }}>
           <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
-            <Route exact path="/Users" component={Users} />
+            <Route exact path="/Clients" component={Clients} />
             <Route exact path="/Inventory" component={Inventory} />
             <Route path="/profile" component={Profile} />
             <Route path="/makeAppoint" component={makeAppoint} />
@@ -212,10 +212,10 @@ class HomePage extends Component {
                   </Menu>
                 </Sider>
                 <Layout id="background">
-                  <p id="welcome" className="w3-animate-zoom">ASHLEY LOVE'S DESIGNS</p>
+                  <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
                   <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100 }}>
                     <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
-                      <Route exact path="/Users" component={Users} />
+                      <Route exact path="/Clients" component={Clients} />
                       <Route exact path="/Inventory" component={Inventory} />
                       <Route path="/portfoliolong" component={PortfolioLong} />
                       <Route path="/portfolioshort" component={PortfolioShort} />
