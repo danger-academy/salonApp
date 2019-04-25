@@ -16,6 +16,12 @@ module.exports = {
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
+    createAvatar: function(req, res) {
+        db.Image.create(req.body)
+        .then(dbModel => db.UserModel.findOneAndUpdate({ email: req.body.email }, { $push: { avatar: dbModel._id } }, {new: true}))
+        .then(dbSuccess => res.json(dbSuccess))
+        .catch(err => res.status(422).json(err));
+    },
     // update: function(req, res) {
     //     db.Image.findOneAndUpdate({ _id: req.params.id }, req.body)
     //     .then(dbModel => res.json(dbModel))

@@ -5,7 +5,6 @@ import API from "../../utils/API";
 import { AuthConsumer } from "../../authContext";
 
 
-
 function makeAppoint() {
 
     const datauser = useContext(AuthConsumer);
@@ -33,7 +32,7 @@ function makeAppoint() {
             onOk() {
                 console.log('OK');
                 console.log(newDateString);
-                API.saveTheDate({ date: newDateString, email:user.email })
+                API.saveTheDate({ date: newDateString, email: user.email })
                 .then(res => console.log(res))
             },
             onCancel() {
@@ -41,9 +40,10 @@ function makeAppoint() {
             },
         });
     }
-    const onOk = dateString => {
-        console.log('onOk: ', dateString);
-         
+
+    const onOk = newDateString => {
+        // setNewDateString(dateString);
+        console.log('onOk: ', newDateString); 
     }
 
     const onClick = ({ key }) => {
