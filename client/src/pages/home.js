@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Photo from "../components/photo";
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu, Icon, Button } from 'antd';
 import Login from '../components/Login';
 import Logout from '../components/Logout';
 import LookBook from "../components/lookbook";
@@ -30,20 +30,53 @@ const SubMenu = Menu.SubMenu;
 
 class HomePage extends Component {
 
-  state = {
-    collapsed: false,
-  };
+  constructor(props) {
+    super(props);
+    this.toggleClass = this.toggleClass.bind(this);
+    this.state = {
+      active: false,
+      collapsed: true,
+    };
+  }
+
+  // addActiveClass() {
+  //   this.setState({
+  //     active: true
+  //   })
+  // }
+
+  toggleClass() {
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
+    console.log(this.state, "this state")
+    // if (this.state.active) {
+    //   this.setState({ 'active': false, 'class': 'activeisfalse' })
+    // } else {
+    //   this.setState({ 'active': true, 'class': 'activeistrue' })
+    // }
+  }
+
+  toggleCollapsed = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
+  }
+
+
+  // state = {
+  //   collapsed: false,
+  // };
 
   onCollapse = (collapsed) => {
     // var containerElement = document.getElementById('background');
     console.log(collapsed);
     this.setState({ collapsed });
-  //   if ( collapsed === true){
-  //         containerElement.setAttribute('id', 'blur');
-  // } else {
-  //   containerElement.setAttribute('id', null);
-  // }
-}
+    //   if ( collapsed === true){
+    //         containerElement.setAttribute('id', 'blur');
+    // } else {
+    //   containerElement.setAttribute('id', null);
+    // }
+  }
 
   onLoggedIn = (user) => (
     <Layout style={{ minHeight: '100vh' }}>
@@ -54,9 +87,11 @@ class HomePage extends Component {
         collapsedWidth="0"
         onBreakpoint={(broken) => { console.log(broken); }}
         onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
+        className={this.state.active ? "Open" : "Closed"}
+        onClick={this.toggleClass}
       >
         <div className="logo" />
-        <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
+        <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline" inlineCollapsed={this.state.collapsed}>
           <SubMenu key="sub4" title={<span><Icon type="camera" /><span>Portfolio</span></span>}>
             <Menu.Item key="1">
               <Link to="/cuts">
@@ -126,10 +161,13 @@ class HomePage extends Component {
             </Menu.Item>
           </SubMenu>
         </Menu>
+        <Button className="menuButton" type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
+          <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
+        </Button>
       </Sider>
       <Layout id="background">
         <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
-        <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100  }}>
+        <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100 }}>
           <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
             <Route exact path="/Clients" component={Clients} />
             <Route exact path="/Inventory" component={Inventory} />
@@ -170,7 +208,8 @@ class HomePage extends Component {
               {console.log("home user id is " + user.id)}
             </div>
           ) : (
-              <Layout style={{ minHeight: '100vh'}}>
+              <Layout style={{ minHeight: '100vh' }}>
+              
                 <Sider
                   id="sider"
                   // width="295"
@@ -178,9 +217,11 @@ class HomePage extends Component {
                   collapsedWidth="0"
                   onBreakpoint={(broken) => { console.log(broken); }}
                   onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
+                  className={this.state.active ? "Open" : "Closed"}
+                  onClick={this.toggleClass}
                 >
                   <div className="logo" />
-                  <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
+                  <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline" inlineCollapsed={this.state.collapsed}>
                     <SubMenu key="sub4" title={<span><Icon type="camera" /><span>Portfolio</span></span>}>
                       <Menu.Item key="1">
                         <Link to="/cuts">
@@ -210,6 +251,9 @@ class HomePage extends Component {
                       </Menu.Item>
                     </SubMenu>
                   </Menu>
+                  <Button className="menuButton" type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
+                    <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
+                  </Button>
                 </Sider>
                 <Layout id="background">
                   <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
@@ -230,7 +274,7 @@ class HomePage extends Component {
                       <Route path="/colors" component={Colors} />
                       <Route path="/styles" component={Styles} />
                       <Route exact path="/" component={Photo} />
-                      
+
                     </div>
                   </Content>
                   <Footer id="footer">

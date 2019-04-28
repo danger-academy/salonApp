@@ -38,9 +38,9 @@ span {
   background: rgba(76, 175, 80, 0.0)
 }
 
-#sider {
+/* #sider {
   max-width: 200px !important;
-}
+} */
 
 /* .ant-layout-sider-dark {
   max-width: 200px !important;
@@ -148,6 +148,37 @@ p {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 767px) {
+  .Open {
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+    flex-basis: 100vw !important;
+    min-width: 0 !important;
+    width: 100vw !important; 
+    max-width: 100vw !important;
+  }
 
+  .ant-layout-sider-zero-width > * {
+    overflow-x: visible !important;
+    overflow-y: visible !important; 
+  }
+
+  /* .ant-btn::before {
+    display: block !important; 
+  } */
+
+  .menuButton {
+    display: block;
+  }
+
+  #menu {
+    max-width: 100vw !important; 
+  }
+
+  .Closed {
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+    flex-basis: 0px !important;
+    min-width: 0 !important;
+  }
 }
