@@ -37,9 +37,8 @@ function Avatar() {
 
     useEffect(() => {
         API.findTheAvatar(user.id)
-            .then(result => {
-                setImageUrl(result.data.avatar[0].link)});
-    }, []);
+            .then(result => setImageUrl(result.data.avatar[0].link));
+    }, '');
 
     const handleChange = info => {
         setSelectedFile(info.file);

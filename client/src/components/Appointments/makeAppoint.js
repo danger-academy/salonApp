@@ -7,8 +7,8 @@ import { AuthConsumer } from "../../authContext";
 
 function makeAppoint() {
 
-    const datauser = useContext(AuthConsumer);
-    const user = datauser.user;
+    const dataUser = useContext(AuthConsumer);
+    const user = dataUser.user;
     const [data, setData] = useState([]);
     const [newDateString, setNewDateString] = useState("");
 
