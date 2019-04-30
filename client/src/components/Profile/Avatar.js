@@ -36,12 +36,10 @@ function Avatar() {
     const [imageUrl, setImageUrl] = useState('');
 
     useEffect(() => {
-        API.findTheAvatar(user.email)
+        API.findTheAvatar(user.id)
             .then(result => {
-                const avi = result.data.avatar.length - 1;
-                console.log(avi);
                 setImageUrl(result.data.avatar[0].link)});
-    }, '');
+    }, []);
 
     const handleChange = info => {
         setSelectedFile(info.file);
@@ -76,7 +74,7 @@ function Avatar() {
     }
 
     const fileSaveHandler = imageUrl => {
-        API.saveAvatar({ link: imageUrl, email: user.email })
+        API.saveAvatar({ link: imageUrl, user_id: user.id })
         .then(res => {
             console.log(res);
             // setImageUrl(res.data.avatar[0].link);
@@ -114,7 +112,7 @@ function Avatar() {
         <div className="ant-upload-text">Upload</div>
       </div>
     );
-    // const imageUrl = this.state.imageUrl;
+    
     return (
       <Upload
         name="avatar"

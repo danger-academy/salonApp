@@ -13,7 +13,7 @@ function makeAppoint() {
     const [newDateString, setNewDateString] = useState("");
 
     useEffect(() => {
-      API.findTheAppt(user.email)
+      API.findTheAppt(user.id)
         .then(result => setData(result.data.appointment));
     }, []);
 
@@ -32,7 +32,7 @@ function makeAppoint() {
             onOk() {
                 console.log('OK');
                 console.log(newDateString);
-                API.saveTheDate({ date: newDateString, email: user.email })
+                API.saveTheDate({ date: newDateString, user_id: user.id })
                 .then(res => console.log(res))
             },
             onCancel() {

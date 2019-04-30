@@ -12,19 +12,19 @@ module.exports = {
         .catch(err => res.status(422).json(err));
     },
     findByAppt: function(req, res) {
-        db.UserModel.findOne({ email: req.params.id })
+        db.UserModel.findOne({ user_id: req.params.id })
         .populate("appointment")
         .then(dbModel => res.json(dbModel))
         .catch((err) => res.json(err));
     },
     findByAvatar: function(req, res) {
-        db.UserModel.findOne({ email: req.params.id })
+        db.UserModel.findOne({ user_id: req.params.id })
         .populate("avatar")
         .then(dbModel => res.json(dbModel))
         .catch((err) => res.json(err));
     },
     findByUser: function(req, res) {
-        db.UserModel.findOne({email: req.params.id})
+        db.UserModel.findOne({ user_id: req.params.id })
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
