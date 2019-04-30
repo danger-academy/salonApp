@@ -34,7 +34,7 @@ function Avatar() {
     const [selectedFile, setSelectedFile] = useState([]);
     const [loading, setLoading] = useState(false);
     const [imageUrl, setImageUrl] = useState('');
-    const [newImageUrl, setNewImageUrl] = useState();
+    // const [newImageUrl, setNewImageUrl] = useState();
 
     useEffect(() => {
         API.findTheAvatar(user.id)
