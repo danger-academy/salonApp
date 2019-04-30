@@ -60,7 +60,6 @@ function makeAppoint() {
             <Menu.Item key="Nail Services">Nail Services</Menu.Item>
         </Menu>
     );
-
 // const makeAppoint = () => (
     return( 
         <div id="makeAppContent">
@@ -103,5 +102,4 @@ function makeAppoint() {
             </div>
     );
 }
-
 export default makeAppoint;

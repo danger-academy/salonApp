@@ -230,7 +230,6 @@ class HomePage extends Component {
                       <Route path="/colors" component={Colors} />
                       <Route path="/styles" component={Styles} />
                       <Route exact path="/" component={Photo} />
-                      
                     </div>
                   </Content>
                   <Footer id="footer">
