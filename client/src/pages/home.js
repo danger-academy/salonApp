@@ -81,13 +81,13 @@ class HomePage extends Component {
   onLoggedIn = (user) => (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider
-        id="sider"
+        // id="sider"
         // width="295"
         breakpoint="xl"
         collapsedWidth="0"
         onBreakpoint={(broken) => { console.log(broken); }}
         onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
-        className={this.state.active ? "Open" : "Closed"}
+        id={this.state.active ? "Open" : "Closed"}
         onClick={this.toggleClass}
       >
         <div className="logo" />
@@ -161,9 +161,9 @@ class HomePage extends Component {
             </Menu.Item>
           </SubMenu>
         </Menu>
-        <Button className="menuButton" type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
+        {/* <Button className="menuButton" type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
           <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
-        </Button>
+        </Button> */}
       </Sider>
       <Layout id="background">
         <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
@@ -211,13 +211,13 @@ class HomePage extends Component {
               <Layout style={{ minHeight: '100vh' }}>
               
                 <Sider
-                  id="sider"
+                  // id="sider"
                   // width="295"
                   breakpoint="xl"
                   collapsedWidth="0"
                   onBreakpoint={(broken) => { console.log(broken); }}
                   onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
-                  className={this.state.active ? "Open" : "Closed"}
+                  id={this.state.active ? "Open" : "Closed"}
                   onClick={this.toggleClass}
                 >
                   <div className="logo" />
@@ -251,9 +251,9 @@ class HomePage extends Component {
                       </Menu.Item>
                     </SubMenu>
                   </Menu>
-                  <Button className="menuButton" type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
+                  {/* <Button className="menuButton" type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
                     <Icon type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'} />
-                  </Button>
+                  </Button> */}
                 </Sider>
                 <Layout id="background">
                   <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
