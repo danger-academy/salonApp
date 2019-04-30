@@ -34,6 +34,7 @@ function Avatar() {
     const [selectedFile, setSelectedFile] = useState([]);
     const [loading, setLoading] = useState(false);
     const [imageUrl, setImageUrl] = useState('');
+    const [newImageUrl, setNewImageUrl] = useState();
 
     useEffect(() => {
         API.findTheAvatar(user.id)
@@ -65,15 +66,20 @@ function Avatar() {
         axios.post('https://api.cloudinary.com/v1_1/dfosqdpwl/image/upload', fd)
         .then(res => {
             setLoading(false);
-            console.log(res);
-            console.log(res.data.secure_url);
-            setImageUrl(res.data.secure_url);
-            fileSaveHandler(imageUrl);
+            // console.log(res);
+            // console.log(res.data.secure_url);
+            const newImageUrl = res.data.secure_url;
+            // setNewImageUrl(res.data.secure_url);
+            // setImageUrl(res.data.secure_url);
+            console.log(newImageUrl);
+            fileSaveHandler(newImageUrl);
         })
     }
 
-    const fileSaveHandler = imageUrl => {
-        API.saveAvatar({ link: imageUrl, user_id: user.id })
+    const fileSaveHandler = newImageUrl => {
+        // console.log(newImageUrl);
+        setImageUrl(newImageUrl);
+        API.saveAvatar({ link: newImageUrl, user_id: user.id })
         .then(res => {
             console.log(res);
             // setImageUrl(res.data.avatar[0].link);

@@ -18,7 +18,7 @@ module.exports = {
     },
     createAvatar: function(req, res) {
         db.Image.create(req.body)
-        .then(dbModel => db.UserModel.findOneAndUpdate({ user_id: req.body.user_id }, { $push: { avatar: dbModel._id } }, {new: true}))
+        .then(dbModel => db.UserModel.findOneAndUpdate({ user_id: req.body.user_id }, { $set: { avatar: dbModel._id } }, {new: true}))
         .then(dbSuccess => res.json(dbSuccess))
         .catch(err => res.status(422).json(err));
     },
