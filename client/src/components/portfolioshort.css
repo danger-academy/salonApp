@@ -1,9 +1,9 @@
-/* .ReactGridGallery_tile-viewport img {
-    margin-left: 0 !important;
-} */
+.ReactGridGallery_tile-viewport img {
+    margin: 0 !important; 
+}
 
 .ReactGridGallery_tile-viewport {
-    width: auto !important; 
+    width: auto !important;
 }
 
 #header {
@@ -17,40 +17,4 @@
     border: solid 2px #606054;
     border-radius: 7px;
     padding: 20px;
-}
-
-@media screen and (max-width: 320px) {
-    #ReactGridGallery {
-        margin: 0 12%; 
-    }
-}
-
-@media screen and (min-width: 321px) and (max-width: 360px) {
- #ReactGridGallery {
-     margin: 0 17%; 
- }
-}
-
-@media screen and (min-width: 361px) and (max-width: 376px) {
-    #ReactGridGallery {
-        margin: 0 18%; 
-    }
-}
-
-@media screen and (min-width: 377px) and (max-width: 415px) {
-    #ReactGridGallery {
-        margin: 0 22%; 
-    }
-}
-
-@media screen and (min-width: 416px) and (max-width: 769px) {
-    #ReactGridGallery {
-        margin: 0 9%; 
-    }
-}
-
-@media screen and (min-width: 770px) and (max-width: 1025px) {
-    #ReactGridGallery {
-        margin: 0 7%; 
-    }
 }
