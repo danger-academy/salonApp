@@ -28,7 +28,7 @@ function makeAppoint() {
 
     function showConfirm() {
         confirm({
-            title: 'Would you like to make this appointment? ' + newDateString,
+            title: 'Would you like to make this appointment? ' + styleService + " on " + newDateString,
             content: 'Click OK to confirm',
             onOk() {
                 console.log('OK');
