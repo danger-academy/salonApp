@@ -53,10 +53,6 @@ span {
   background-color: #606054;
 }
 
-.ant-layout-content {
-  align-self: center;
-}
-
 .ant-layout-sider-trigger {
   color: #DEDBD2;
   background-color: #a9535f;
@@ -153,5 +149,11 @@ p {
   .ant-layout-footer {
     font-size: 65%;
     padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .ant-layout-content {
+    align-self: center;
   }
 }

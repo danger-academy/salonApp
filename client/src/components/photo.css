@@ -35,7 +35,7 @@
 }
 
 
-@media (min-width: 1025px) {
+@media (min-width: 767px) {
   #photoContent {
     display: flex; 
     justify-content: center ! important; 
