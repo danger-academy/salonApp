@@ -11,6 +11,7 @@ function makeAppoint() {
     const user = dataUser.user;
     const [data, setData] = useState([]);
     const [newDateString, setNewDateString] = useState("");
+    const [styleService, setStyleService] = useState("");
 
     useEffect(() => {
       API.findTheAppt(user.id)
@@ -32,8 +33,8 @@ function makeAppoint() {
             onOk() {
                 console.log('OK');
                 console.log(newDateString);
-                API.saveTheDate({ date: newDateString, user_id: user.id })
-                .then(res => console.log(res))
+                API.saveTheDate({ date: newDateString, service: styleService, user_id: user.id })
+                    .then(res => console.log(res))
             },
             onCancel() {
                 console.log('Cancel');
@@ -48,6 +49,8 @@ function makeAppoint() {
 
     const onClick = ({ key }) => {
         message.info( "You chose " + key + ".");
+        setStyleService(key);
+        console.log(styleService);
     };
 
     const menu = (
@@ -96,8 +99,7 @@ function makeAppoint() {
                             key={item.date}
                             message={"Current Appointment : " + item.date}
                             closable
-                            />
-                        
+                        />                        
                     ))}
                 </ul>
             </div>
