@@ -28,7 +28,7 @@ function makeAppoint() {
 
     function showConfirm() {
         confirm({
-            title: 'Would you like to make this appointment? ' + newDateString,
+            title: 'Would you like to make this appointment? ' + styleService + " on " + newDateString,
             content: 'Click OK to confirm',
             onOk() {
                 console.log('OK');
@@ -88,20 +88,20 @@ function makeAppoint() {
                 <Button onClick={showConfirm}>
                  Confirm
                 </Button>
-                </div>
-                <br />
-                <br />
-                {console.log(data)}
-                <ul>
-                    {data.map(item => (
-                        <Alert
-                            key={item.date}
-                            message={"Current Appointment : " + item.date}
-                            closable
-                        />                        
-                    ))}
-                </ul>
             </div>
+            <br />
+            <br />
+            {console.log(data)}
+            <ul>
+                {data.map(item => (
+                    <Alert
+                        key={item.date}
+                        message={"Current Appointment : " + item.date + " Service : " + item.service}
+                        closable
+                    />                        
+                ))}
+            </ul>
+        </div>
     );
 }
 export default makeAppoint;
