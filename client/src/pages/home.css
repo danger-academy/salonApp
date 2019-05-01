@@ -53,6 +53,10 @@ span {
   background-color: #606054;
 }
 
+.ant-layout-content {
+  align-self: center;
+}
+
 .ant-layout-sider-trigger {
   color: #DEDBD2;
   background-color: #a9535f;
@@ -106,6 +110,10 @@ p {
   background-size: 100% 100%;
 }
 
+.ReactGridGallery_tile {
+  float: none !important;
+  display: inline-block !important;
+}
 @media only screen and (max-width: 895px) {
 
 /* .ant-layout-sider-children {
@@ -146,8 +154,4 @@ p {
     font-size: 65%;
     padding: 20px;
   }
-}
-
-@media only screen and (max-width: 414px) {
-
 }
