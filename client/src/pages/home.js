@@ -30,9 +30,29 @@ const SubMenu = Menu.SubMenu;
 
 class HomePage extends Component {
 
-  state = {
-    collapsed: false,
-  };
+  constructor(props) {
+    super(props);
+    this.toggleClass = this.toggleClass.bind(this);
+    this.state = {
+      active: false,
+      collapsed: true,
+    };
+  }
+  
+  toggleClass() {
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
+    console.log(this.state, "this state")
+  }
+
+  toggleCollapsed = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
+    });
+  }
+  // state = {
+  //   collapsed: false,
+  // };
 
   onCollapse = (collapsed) => {
     // var containerElement = document.getElementById('background');
@@ -48,12 +68,14 @@ class HomePage extends Component {
   onLoggedIn = (user) => (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider
-        id="sider"
+        // id="sider"
         // width="295"
         breakpoint="xl"
         collapsedWidth="0"
         onBreakpoint={(broken) => { console.log(broken); }}
         onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
+        // id={this.state.active ? "Open" : "Closed"}
+        onClick={this.toggleClass}
       >
         <div className="logo" />
         <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
@@ -127,7 +149,10 @@ class HomePage extends Component {
           </SubMenu>
         </Menu>
       </Sider>
-      <Layout id="background">
+      <Layout id="background"
+              className={this.state.active ? "Open" : "Closed"}
+              // onClick={this.toggleClass}
+              >
         <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
         <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100  }}>
           <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
@@ -172,12 +197,14 @@ class HomePage extends Component {
           ) : (
               <Layout style={{ minHeight: '100vh'}}>
                 <Sider
-                  id="sider"
+                  // id="sider"
                   // width="295"
                   breakpoint="xl"
                   collapsedWidth="0"
                   onBreakpoint={(broken) => { console.log(broken); }}
                   onCollapse={(collapsed, type) => { console.log(collapsed, type); }}
+                  // id={this.state.active ? "Open" : "Closed"}
+                  onClick={this.toggleClass}
                 >
                   <div className="logo" />
                   <Menu id="menu" theme="light" defaultSelectedKeys={['1']} mode="inline">
@@ -211,7 +238,10 @@ class HomePage extends Component {
                     </SubMenu>
                   </Menu>
                 </Sider>
-                <Layout id="background">
+                <Layout id="background"
+                        className={this.state.active ? "Open" : "Closed"}
+                        // onClick={this.toggleClass}
+                        >
                   <p id="welcome" className="w3-animate-zoom">Love Hair by Ashley</p>
                   <Content style={{ margin: '0 16px', minHeight: 300, minWidth: 100 }}>
                     <div id="content" style={{ padding: 24, background: 'whitesmoke', minHeight: 300, minWidth: 100 }}>
