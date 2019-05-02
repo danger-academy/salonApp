@@ -53,10 +53,6 @@ span {
   background-color: #606054;
 }
 
-.ant-layout-content {
-  align-self: center;
-}
-
 .ant-layout-sider-trigger {
   color: #DEDBD2;
   background-color: #a9535f;
@@ -153,5 +149,31 @@ p {
   .ant-layout-footer {
     font-size: 65%;
     padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Closed::before {
+    /* background-image: url("../components/flower-filled.png");
+    background-size: cover;
+    background-size: 100% 100%;
+    z-index: 100; */
+    position: absolute;
+    content: '';
+    background-image: url("../components/flowers-side.png");
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .ant-layout-sider-zero-width-trigger {
+    z-index: 11;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .ant-layout-content {
+    align-self: center;
   }
 }
