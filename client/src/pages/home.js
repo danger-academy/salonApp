@@ -34,7 +34,7 @@ class HomePage extends Component {
     super(props);
     this.toggleClass = this.toggleClass.bind(this);
     this.state = {
-      active: false,
+      active: true,
       collapsed: true,
     };
   }
@@ -50,19 +50,13 @@ class HomePage extends Component {
       collapsed: !this.state.collapsed,
     });
   }
-  // state = {
-  //   collapsed: false,
-  // };
+ 
 
   onCollapse = (collapsed) => {
     // var containerElement = document.getElementById('background');
     console.log(collapsed);
     this.setState({ collapsed });
-  //   if ( collapsed === true){
-  //         containerElement.setAttribute('id', 'blur');
-  // } else {
-  //   containerElement.setAttribute('id', null);
-  // }
+
 }
 
   onLoggedIn = (user) => (
